@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Template2023.dir/src/main.cpp.o"
-  "Template2023.pdb"
-  "Template2023"
+  "CMakeFiles/template2023.dir/src/main.cpp.o"
+  "template2023.pdb"
+  "template2023"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)
-  include(CMakeFiles/Template2023.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/template2023.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

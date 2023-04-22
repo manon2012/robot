@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/opt/wupei/source/projectTemplate/src/main.cpp" "/opt/wupei/source/projectTemplate/build/CMakeFiles/Template2023.dir/src/main.cpp.o"
+  "/opt/wupei/source/projectTemplate/src/main.cpp" "/opt/wupei/source/projectTemplate/build/CMakeFiles/template2023.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

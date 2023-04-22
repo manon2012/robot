@@ -49,65 +49,65 @@ CMAKE_SOURCE_DIR = /opt/wupei/source/projectTemplate
 CMAKE_BINARY_DIR = /opt/wupei/source/projectTemplate/build
 
 # Include any dependencies generated for this target.
-include CMakeFiles/Template2023.dir/depend.make
+include CMakeFiles/template2023.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/Template2023.dir/progress.make
+include CMakeFiles/template2023.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/Template2023.dir/flags.make
+include CMakeFiles/template2023.dir/flags.make
 
-CMakeFiles/Template2023.dir/src/main.cpp.o: CMakeFiles/Template2023.dir/flags.make
-CMakeFiles/Template2023.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/source/projectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Template2023.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Template2023.dir/src/main.cpp.o -c /opt/wupei/source/projectTemplate/src/main.cpp
+CMakeFiles/template2023.dir/src/main.cpp.o: CMakeFiles/template2023.dir/flags.make
+CMakeFiles/template2023.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/source/projectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/template2023.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template2023.dir/src/main.cpp.o -c /opt/wupei/source/projectTemplate/src/main.cpp
 
-CMakeFiles/Template2023.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Template2023.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/source/projectTemplate/src/main.cpp > CMakeFiles/Template2023.dir/src/main.cpp.i
+CMakeFiles/template2023.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template2023.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/source/projectTemplate/src/main.cpp > CMakeFiles/template2023.dir/src/main.cpp.i
 
-CMakeFiles/Template2023.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Template2023.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/source/projectTemplate/src/main.cpp -o CMakeFiles/Template2023.dir/src/main.cpp.s
+CMakeFiles/template2023.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template2023.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/source/projectTemplate/src/main.cpp -o CMakeFiles/template2023.dir/src/main.cpp.s
 
-CMakeFiles/Template2023.dir/src/main.cpp.o.requires:
+CMakeFiles/template2023.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Template2023.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/template2023.dir/src/main.cpp.o.requires
 
-CMakeFiles/Template2023.dir/src/main.cpp.o.provides: CMakeFiles/Template2023.dir/src/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Template2023.dir/build.make CMakeFiles/Template2023.dir/src/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Template2023.dir/src/main.cpp.o.provides
+CMakeFiles/template2023.dir/src/main.cpp.o.provides: CMakeFiles/template2023.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/template2023.dir/build.make CMakeFiles/template2023.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/template2023.dir/src/main.cpp.o.provides
 
-CMakeFiles/Template2023.dir/src/main.cpp.o.provides.build: CMakeFiles/Template2023.dir/src/main.cpp.o
+CMakeFiles/template2023.dir/src/main.cpp.o.provides.build: CMakeFiles/template2023.dir/src/main.cpp.o
 
 
-# Object files for target Template2023
-Template2023_OBJECTS = \
-"CMakeFiles/Template2023.dir/src/main.cpp.o"
+# Object files for target template2023
+template2023_OBJECTS = \
+"CMakeFiles/template2023.dir/src/main.cpp.o"
 
-# External object files for target Template2023
-Template2023_EXTERNAL_OBJECTS =
+# External object files for target template2023
+template2023_EXTERNAL_OBJECTS =
 
-Template2023: CMakeFiles/Template2023.dir/src/main.cpp.o
-Template2023: CMakeFiles/Template2023.dir/build.make
-Template2023: CMakeFiles/Template2023.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/opt/wupei/source/projectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Template2023"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Template2023.dir/link.txt --verbose=$(VERBOSE)
+template2023: CMakeFiles/template2023.dir/src/main.cpp.o
+template2023: CMakeFiles/template2023.dir/build.make
+template2023: CMakeFiles/template2023.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/opt/wupei/source/projectTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable template2023"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/template2023.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Template2023.dir/build: Template2023
+CMakeFiles/template2023.dir/build: template2023
 
-.PHONY : CMakeFiles/Template2023.dir/build
+.PHONY : CMakeFiles/template2023.dir/build
 
-CMakeFiles/Template2023.dir/requires: CMakeFiles/Template2023.dir/src/main.cpp.o.requires
+CMakeFiles/template2023.dir/requires: CMakeFiles/template2023.dir/src/main.cpp.o.requires
 
-.PHONY : CMakeFiles/Template2023.dir/requires
+.PHONY : CMakeFiles/template2023.dir/requires
 
-CMakeFiles/Template2023.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/Template2023.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/Template2023.dir/clean
+CMakeFiles/template2023.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/template2023.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/template2023.dir/clean
 
-CMakeFiles/Template2023.dir/depend:
-	cd /opt/wupei/source/projectTemplate/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /opt/wupei/source/projectTemplate /opt/wupei/source/projectTemplate /opt/wupei/source/projectTemplate/build /opt/wupei/source/projectTemplate/build /opt/wupei/source/projectTemplate/build/CMakeFiles/Template2023.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/Template2023.dir/depend
+CMakeFiles/template2023.dir/depend:
+	cd /opt/wupei/source/projectTemplate/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /opt/wupei/source/projectTemplate /opt/wupei/source/projectTemplate /opt/wupei/source/projectTemplate/build /opt/wupei/source/projectTemplate/build /opt/wupei/source/projectTemplate/build/CMakeFiles/template2023.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/template2023.dir/depend
 

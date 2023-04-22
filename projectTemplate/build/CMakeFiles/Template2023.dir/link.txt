@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Template2023.dir/src/main.cpp.o  -o Template2023 -lpthread 
+/usr/bin/c++  -g   CMakeFiles/template2023.dir/src/main.cpp.o  -o template2023 -lpthread 
