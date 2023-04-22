@@ -236,3 +236,19 @@ sellticket0:3
 sellticket0:2
 sellticket0:1
 */
+
+
+//t6
+/*
+sellticket0:10
+sellticket1:9
+sellticket2:8
+sellticket2:7
+sellticket0:6
+sellticket1:5
+sellticket2:4
+sellticket1:3
+sellticket0:2
+sellticket2:1
+Hello World!
+*/
