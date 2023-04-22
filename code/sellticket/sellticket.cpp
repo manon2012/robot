@@ -134,7 +134,7 @@ int main()
     list<thread> tlist;
     for (int i=0;i<3; i++)
     {
-        tlist.push_back(thread(sellticket6, i));
+        tlist.push_back(thread(sellticket7, i));
     }
 
     for (auto& t : tlist)
@@ -250,5 +250,20 @@ sellticket2:4
 sellticket1:3
 sellticket0:2
 sellticket2:1
+Hello World!
+*/
+
+//t7
+/*
+sellticket1:10
+sellticket0:9
+sellticket2:8
+sellticket0:7
+sellticket1:6
+sellticket2:5
+sellticket1:4
+sellticket0:3
+sellticket2:2
+sellticket0:1
 Hello World!
 */
