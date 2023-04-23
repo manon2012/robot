@@ -1,3 +1,3 @@
-/opt/wupei/source/projectgtest/build/CMakeFiles/rebuild_cache.dir
-/opt/wupei/source/projectgtest/build/CMakeFiles/gtestdiana.dir
-/opt/wupei/source/projectgtest/build/CMakeFiles/edit_cache.dir
+/opt/wupei/git/code/projectgtest/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir
+/opt/wupei/git/code/projectgtest/build/CMakeFiles/edit_cache.dir

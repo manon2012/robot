@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/opt/wupei/source/projectgtest/src/fixturetest.cpp" "/opt/wupei/source/projectgtest/build/CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o"
-  "/opt/wupei/source/projectgtest/src/init.cpp" "/opt/wupei/source/projectgtest/build/CMakeFiles/gtestdiana.dir/src/init.cpp.o"
-  "/opt/wupei/source/projectgtest/src/main.cpp" "/opt/wupei/source/projectgtest/build/CMakeFiles/gtestdiana.dir/src/main.cpp.o"
-  "/opt/wupei/source/projectgtest/src/move3plus3.cpp" "/opt/wupei/source/projectgtest/build/CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o"
-  "/opt/wupei/source/projectgtest/src/test_base.cpp" "/opt/wupei/source/projectgtest/build/CMakeFiles/gtestdiana.dir/src/test_base.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/fixturetest.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/init.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/init.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/main.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/main.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/move3plus3.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/test_base.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/test_base.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

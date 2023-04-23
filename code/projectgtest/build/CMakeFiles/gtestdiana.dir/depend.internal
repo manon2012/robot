@@ -28,7 +28,7 @@ CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-port.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-string.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
- /opt/wupei/source/projectgtest/src/fixturetest.cpp
+ /opt/wupei/git/code/projectgtest/src/fixturetest.cpp
 CMakeFiles/gtestdiana.dir/src/init.cpp.o
  .././include/DianaAPI.h
  .././include/test_base.h
@@ -56,7 +56,7 @@ CMakeFiles/gtestdiana.dir/src/init.cpp.o
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-port.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-string.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
- /opt/wupei/source/projectgtest/src/init.cpp
+ /opt/wupei/git/code/projectgtest/src/init.cpp
 CMakeFiles/gtestdiana.dir/src/main.cpp.o
  /home/wupei/gtest/googletest/include/gtest/gtest-assertion-result.h
  /home/wupei/gtest/googletest/include/gtest/gtest-death-test.h
@@ -79,7 +79,7 @@ CMakeFiles/gtestdiana.dir/src/main.cpp.o
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-port.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-string.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
- /opt/wupei/source/projectgtest/src/main.cpp
+ /opt/wupei/git/code/projectgtest/src/main.cpp
 CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o
  .././include/DianaAPI.h
  .././include/test_base.h
@@ -107,11 +107,11 @@ CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-port.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-string.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
- /opt/wupei/source/projectgtest/src/move3plus3.cpp
+ /opt/wupei/git/code/projectgtest/src/move3plus3.cpp
 CMakeFiles/gtestdiana.dir/src/test_base.cpp.o
  .././include/DianaAPI.h
  .././include/test_base.h
  /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/DianaAPIDef.h
  /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/Environment.h
  /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/FunctionOptDef.h
- /opt/wupei/source/projectgtest/src/test_base.cpp
+ /opt/wupei/git/code/projectgtest/src/test_base.cpp
