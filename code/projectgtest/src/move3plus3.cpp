@@ -186,22 +186,3 @@ TEST(MoveTest, add100)
     }
     EXPECT_EQ(5050,sum);
 }
-
-TEST(MoveTest, d0)
-{
-    int abc = 100;
-    int b = abc/0;
-
-}
-
-TEST(MoveTest, onlyprint)
-{
-    std::cout <<"agile " << std::endl;
-    std::cout <<"robot " << std::endl;
-
-    int *abc = new int[100];
-    std::cout <<*abc<<std::endl;
-    std::cout <<abc<<std::endl;
-    std::cout <<&(*abc)<<std::endl;
-    sleep(10);
-}

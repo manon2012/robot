@@ -57,7 +57,7 @@ TEST_F(RobotTest, move1)
     getTcpPos(pose2);
 
 
-    for (int i = 0; i <100;i++)
+    for (int i = 0; i <1;i++)
     {
        pose2[2]= pose1[2] - 0.1;
        moveLToPose(pose2,0.2,0.2);

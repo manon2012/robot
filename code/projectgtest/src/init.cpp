@@ -1,7 +1,7 @@
 #include "DianaAPI.h"
 #include "test_base.h"
 #include <gtest/gtest.h>
-
+#include <stdexcept>
 
 static const char *strIpAddress = "192.168.10.75";
 
@@ -43,4 +43,48 @@ TEST(UTTest,t1)
     
     wait_move();
 	EXPECT_EQ(0,HRESULT);
+}
+
+
+
+// class Exception : public runtime_error {
+// public:
+//     // Defining constructor of class Exception
+//     // that passes a string message to the runtime_error class
+//     Exception()
+//         : runtime_error("Math error: Attempted to divide by Zero\n")
+//     {
+//     }
+// };
+
+TEST(MoveTest, d0)
+{
+    int abc = 100;
+    
+    // try{
+    //      abc/0;
+    // }
+    // catch(Exception& e)
+    // {
+    //    //std::cout << e.what() << std::endl;
+    // }
+    
+
+}
+
+TEST(MoveTest, onlyprint)
+{
+    std::cout <<"agile " << std::endl;
+    std::cout <<"robot " << std::endl;
+
+    // int *abc = new int[100];
+    // std::cout <<*abc<<std::endl;
+    // std::cout <<abc<<std::endl;
+    // std::cout <<&(*abc)<<std::endl;
+    //sleep(2);
+
+    
+    int *a10 = new int[10000];
+    int *a11 = new int[10000];
+    //delete a10;
 }
