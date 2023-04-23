@@ -1,0 +1,3 @@
+/home/wupei/qtproject/build-qtsellticket-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/wupei/qtproject/build-qtsellticket-Desktop-Debug/CMakeFiles/qtsellticket.dir
+/home/wupei/qtproject/build-qtsellticket-Desktop-Debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,3 @@
+/home/wupei/qtproject/build-TestThread-Desktop-Release-with-Debug-Information/CMakeFiles/rebuild_cache.dir
+/home/wupei/qtproject/build-TestThread-Desktop-Release-with-Debug-Information/CMakeFiles/TestThread.dir
+/home/wupei/qtproject/build-TestThread-Desktop-Release-with-Debug-Information/CMakeFiles/edit_cache.dir

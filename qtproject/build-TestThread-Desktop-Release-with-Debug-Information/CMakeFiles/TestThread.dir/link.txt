@@ -1,0 +1,1 @@
+/usr/bin/g++   -std=c++11 -pthread -O2 -g -DNDEBUG   CMakeFiles/TestThread.dir/main.cpp.o  -o TestThread 

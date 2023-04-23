@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wupei/qtproject/TestThreadCmake/main.cpp
+iostream
+-
+map
+-
+string
+-
+chrono
+-
+thread
+-
+mutex
+-
+
