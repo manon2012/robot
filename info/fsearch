@@ -1,0 +1,15 @@
+
+1.Fsearch下载地址
+
+https://github.com/cboxdoerfer/fsearch
+2.找到Ubuntu对应版本的Fsearch，然后根据提示输入以下指令：
+
+sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-stable
+sudo apt update
+sudo apt install fsearch
+3.使用方法
+
+    打开Fsearch之后，点击【编辑】->【选项】->【数据库】，添加要搜索的路径，例如要全局搜索，那么就把“/”目录加进去
+    输入要搜索的文件或文件夹名称
+
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/sellticket.dir/src/main.cpp.o  -o sellticket -lpthread 

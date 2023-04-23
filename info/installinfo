@@ -1,0 +1,8 @@
+apt 命令用法：
+
+    更新软件列表：apt update -y搜索软件: apt search 关键字显示软件包详情：apt show 软件包名安装软件：apt install 软件包名升级指定软件：apt upgrade 软件包名升级所有可以升级的软件：apt upgrade卸载软件：apt remove 软件包名卸载软件并移除软件依赖：apt autoremove 软件包名卸载软件并删除配置文件：apt remove 软件包名 --purge
+
+在终端占直接运行命令就可以安装，比如使用下面的命令安装 gimp
+
+
+sudo apt install gimp -y

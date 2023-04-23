@@ -1,0 +1,214 @@
+wupei@wupei-robot:~/googletest/googletest/build$ pwd
+/home/wupei/googletest/googletest/build
+wupei@wupei-robot:~/googletest/googletest/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wupei/googletest/googletest/build
+wupei@wupei-robot:~/googletest/googletest/build$ make
+Scanning dependencies of target gtest
+[  1%] Building CXX object CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[  2%] Linking CXX static library lib/libgtest.a
+[  2%] Built target gtest
+Scanning dependencies of target gtest_xml_output_unittest_
+[  3%] Building CXX object CMakeFiles/gtest_xml_output_unittest_.dir/test/gtest_xml_output_unittest_.cc.o
+[  4%] Linking CXX executable gtest_xml_output_unittest_
+[  4%] Built target gtest_xml_output_unittest_
+Scanning dependencies of target gtest_list_output_unittest_
+[  5%] Building CXX object CMakeFiles/gtest_list_output_unittest_.dir/test/gtest_list_output_unittest_.cc.o
+[  6%] Linking CXX executable gtest_list_output_unittest_
+[  6%] Built target gtest_list_output_unittest_
+Scanning dependencies of target googletest-uninitialized-test_
+[  7%] Building CXX object CMakeFiles/googletest-uninitialized-test_.dir/test/googletest-uninitialized-test_.cc.o
+[  8%] Linking CXX executable googletest-uninitialized-test_
+[  8%] Built target googletest-uninitialized-test_
+Scanning dependencies of target gtest_no_exception
+[  9%] Building CXX object CMakeFiles/gtest_no_exception.dir/src/gtest-all.cc.o
+[ 10%] Linking CXX static library lib/libgtest_no_exception.a
+[ 10%] Built target gtest_no_exception
+Scanning dependencies of target googletest-throw-on-failure-test_
+[ 11%] Building CXX object CMakeFiles/googletest-throw-on-failure-test_.dir/test/googletest-throw-on-failure-test_.cc.o
+[ 12%] Linking CXX executable googletest-throw-on-failure-test_
+[ 12%] Built target googletest-throw-on-failure-test_
+Scanning dependencies of target googletest-shuffle-test_
+[ 13%] Building CXX object CMakeFiles/googletest-shuffle-test_.dir/test/googletest-shuffle-test_.cc.o
+[ 14%] Linking CXX executable googletest-shuffle-test_
+[ 14%] Built target googletest-shuffle-test_
+Scanning dependencies of target googletest-output-test_
+[ 15%] Building CXX object CMakeFiles/googletest-output-test_.dir/test/googletest-output-test_.cc.o
+[ 16%] Linking CXX executable googletest-output-test_
+[ 16%] Built target googletest-output-test_
+Scanning dependencies of target googletest-list-tests-unittest_
+[ 17%] Building CXX object CMakeFiles/googletest-list-tests-unittest_.dir/test/googletest-list-tests-unittest_.cc.o
+[ 17%] Linking CXX executable googletest-list-tests-unittest_
+[ 17%] Built target googletest-list-tests-unittest_
+Scanning dependencies of target gtest_main
+[ 18%] Building CXX object CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 19%] Linking CXX static library lib/libgtest_main.a
+[ 19%] Built target gtest_main
+Scanning dependencies of target gtest_help_test_
+[ 20%] Building CXX object CMakeFiles/gtest_help_test_.dir/test/gtest_help_test_.cc.o
+[ 21%] Linking CXX executable gtest_help_test_
+[ 21%] Built target gtest_help_test_
+Scanning dependencies of target googletest-filter-unittest_
+[ 22%] Building CXX object CMakeFiles/googletest-filter-unittest_.dir/test/googletest-filter-unittest_.cc.o
+[ 23%] Linking CXX executable googletest-filter-unittest_
+[ 23%] Built target googletest-filter-unittest_
+Scanning dependencies of target googletest-catch-exceptions-ex-test_
+[ 24%] Building CXX object CMakeFiles/googletest-catch-exceptions-ex-test_.dir/test/googletest-catch-exceptions-test_.cc.o
+[ 25%] Linking CXX executable googletest-catch-exceptions-ex-test_
+[ 25%] Built target googletest-catch-exceptions-ex-test_
+Scanning dependencies of target gtest_prod_test
+[ 26%] Building CXX object CMakeFiles/gtest_prod_test.dir/test/gtest_prod_test.cc.o
+[ 27%] Building CXX object CMakeFiles/gtest_prod_test.dir/test/production.cc.o
+[ 28%] Linking CXX executable gtest_prod_test
+[ 28%] Built target gtest_prod_test
+Scanning dependencies of target gtest_stress_test
+[ 29%] Building CXX object CMakeFiles/gtest_stress_test.dir/test/gtest_stress_test.cc.o
+[ 30%] Linking CXX executable gtest_stress_test
+[ 30%] Built target gtest_stress_test
+Scanning dependencies of target gtest-death-test_ex_nocatch_test
+[ 31%] Building CXX object CMakeFiles/gtest-death-test_ex_nocatch_test.dir/test/googletest-death-test_ex_test.cc.o
+[ 32%] Linking CXX executable gtest-death-test_ex_nocatch_test
+[ 32%] Built target gtest-death-test_ex_nocatch_test
+Scanning dependencies of target gtest_pred_impl_unittest
+[ 33%] Building CXX object CMakeFiles/gtest_pred_impl_unittest.dir/test/gtest_pred_impl_unittest.cc.o
+[ 34%] Linking CXX executable gtest_pred_impl_unittest
+[ 34%] Built target gtest_pred_impl_unittest
+Scanning dependencies of target gtest_environment_test
+[ 35%] Building CXX object CMakeFiles/gtest_environment_test.dir/test/gtest_environment_test.cc.o
+[ 36%] Linking CXX executable gtest_environment_test
+[ 36%] Built target gtest_environment_test
+Scanning dependencies of target gtest_xml_outfile2_test_
+[ 37%] Building CXX object CMakeFiles/gtest_xml_outfile2_test_.dir/test/gtest_xml_outfile2_test_.cc.o
+[ 38%] Linking CXX executable gtest_xml_outfile2_test_
+[ 38%] Built target gtest_xml_outfile2_test_
+Scanning dependencies of target googletest-printers-test
+[ 39%] Building CXX object CMakeFiles/googletest-printers-test.dir/test/googletest-printers-test.cc.o
+[ 40%] Linking CXX executable googletest-printers-test
+[ 40%] Built target googletest-printers-test
+Scanning dependencies of target gtest_main_unittest
+[ 41%] Building CXX object CMakeFiles/gtest_main_unittest.dir/test/gtest_main_unittest.cc.o
+[ 42%] Linking CXX executable gtest_main_unittest
+[ 42%] Built target gtest_main_unittest
+Scanning dependencies of target googletest-options-test
+[ 43%] Building CXX object CMakeFiles/googletest-options-test.dir/test/googletest-options-test.cc.o
+[ 44%] Linking CXX executable googletest-options-test
+[ 44%] Built target googletest-options-test
+Scanning dependencies of target gtest_skip_in_environment_setup_test
+[ 44%] Building CXX object CMakeFiles/gtest_skip_in_environment_setup_test.dir/test/gtest_skip_in_environment_setup_test.cc.o
+[ 45%] Linking CXX executable gtest_skip_in_environment_setup_test
+[ 45%] Built target gtest_skip_in_environment_setup_test
+Scanning dependencies of target googletest-param-test-test
+[ 46%] Building CXX object CMakeFiles/googletest-param-test-test.dir/test/googletest-param-test-test.cc.o
+[ 47%] Building CXX object CMakeFiles/googletest-param-test-test.dir/test/googletest-param-test2-test.cc.o
+[ 48%] Linking CXX executable googletest-param-test-test
+[ 48%] Built target googletest-param-test-test
+Scanning dependencies of target gtest_main_no_rtti
+[ 49%] Building CXX object CMakeFiles/gtest_main_no_rtti.dir/src/gtest-all.cc.o
+[ 50%] Building CXX object CMakeFiles/gtest_main_no_rtti.dir/src/gtest_main.cc.o
+[ 50%] Linking CXX static library lib/libgtest_main_no_rtti.a
+[ 50%] Built target gtest_main_no_rtti
+Scanning dependencies of target googletest-death-test-test
+[ 51%] Building CXX object CMakeFiles/googletest-death-test-test.dir/test/googletest-death-test-test.cc.o
+[ 52%] Linking CXX executable googletest-death-test-test
+[ 52%] Built target googletest-death-test-test
+Scanning dependencies of target googletest-env-var-test_
+[ 53%] Building CXX object CMakeFiles/googletest-env-var-test_.dir/test/googletest-env-var-test_.cc.o
+[ 54%] Linking CXX executable googletest-env-var-test_
+[ 54%] Built target googletest-env-var-test_
+Scanning dependencies of target googletest-listener-test
+[ 55%] Building CXX object CMakeFiles/googletest-listener-test.dir/test/googletest-listener-test.cc.o
+[ 56%] Linking CXX executable googletest-listener-test
+[ 56%] Built target googletest-listener-test
+Scanning dependencies of target googletest-port-test
+[ 57%] Building CXX object CMakeFiles/googletest-port-test.dir/test/googletest-port-test.cc.o
+[ 58%] Linking CXX executable googletest-port-test
+[ 58%] Built target googletest-port-test
+Scanning dependencies of target gtest_xml_outfile1_test_
+[ 59%] Building CXX object CMakeFiles/gtest_xml_outfile1_test_.dir/test/gtest_xml_outfile1_test_.cc.o
+[ 60%] Linking CXX executable gtest_xml_outfile1_test_
+[ 60%] Built target gtest_xml_outfile1_test_
+Scanning dependencies of target googletest-message-test
+[ 61%] Building CXX object CMakeFiles/googletest-message-test.dir/test/googletest-message-test.cc.o
+[ 62%] Linking CXX executable googletest-message-test
+[ 62%] Built target googletest-message-test
+Scanning dependencies of target gtest_repeat_test
+[ 63%] Building CXX object CMakeFiles/gtest_repeat_test.dir/test/gtest_repeat_test.cc.o
+[ 64%] Linking CXX executable gtest_repeat_test
+[ 64%] Built target gtest_repeat_test
+Scanning dependencies of target gtest_no_test_unittest
+[ 65%] Building CXX object CMakeFiles/gtest_no_test_unittest.dir/test/gtest_no_test_unittest.cc.o
+[ 66%] Linking CXX executable gtest_no_test_unittest
+[ 66%] Built target gtest_no_test_unittest
+Scanning dependencies of target googletest-test-part-test
+[ 66%] Building CXX object CMakeFiles/googletest-test-part-test.dir/test/googletest-test-part-test.cc.o
+[ 67%] Linking CXX executable googletest-test-part-test
+[ 67%] Built target googletest-test-part-test
+Scanning dependencies of target gtest-death-test_ex_catch_test
+[ 68%] Building CXX object CMakeFiles/gtest-death-test_ex_catch_test.dir/test/googletest-death-test_ex_test.cc.o
+[ 69%] Linking CXX executable gtest-death-test_ex_catch_test
+[ 69%] Built target gtest-death-test_ex_catch_test
+Scanning dependencies of target gtest_sole_header_test
+[ 70%] Building CXX object CMakeFiles/gtest_sole_header_test.dir/test/gtest_sole_header_test.cc.o
+[ 71%] Linking CXX executable gtest_sole_header_test
+[ 71%] Built target gtest_sole_header_test
+Scanning dependencies of target gtest_dll
+[ 72%] Building CXX object CMakeFiles/gtest_dll.dir/src/gtest-all.cc.o
+[ 72%] Building CXX object CMakeFiles/gtest_dll.dir/src/gtest_main.cc.o
+[ 73%] Linking CXX shared library lib/libgtest_dll.so
+[ 73%] Built target gtest_dll
+Scanning dependencies of target gtest_throw_on_failure_ex_test
+[ 74%] Building CXX object CMakeFiles/gtest_throw_on_failure_ex_test.dir/test/gtest_throw_on_failure_ex_test.cc.o
+[ 75%] Linking CXX executable gtest_throw_on_failure_ex_test
+[ 75%] Built target gtest_throw_on_failure_ex_test
+Scanning dependencies of target gtest-typed-test_test
+[ 76%] Building CXX object CMakeFiles/gtest-typed-test_test.dir/test/gtest-typed-test_test.cc.o
+[ 77%] Building CXX object CMakeFiles/gtest-typed-test_test.dir/test/gtest-typed-test2_test.cc.o
+[ 78%] Linking CXX executable gtest-typed-test_test
+[ 78%] Built target gtest-typed-test_test
+Scanning dependencies of target googletest-filepath-test
+[ 79%] Building CXX object CMakeFiles/googletest-filepath-test.dir/test/googletest-filepath-test.cc.o
+[ 80%] Linking CXX executable googletest-filepath-test
+[ 80%] Built target googletest-filepath-test
+Scanning dependencies of target gtest_no_rtti_unittest
+[ 81%] Building CXX object CMakeFiles/gtest_no_rtti_unittest.dir/test/gtest_unittest.cc.o
+[ 82%] Linking CXX executable gtest_no_rtti_unittest
+[ 82%] Built target gtest_no_rtti_unittest
+Scanning dependencies of target googletest-color-test_
+[ 83%] Building CXX object CMakeFiles/googletest-color-test_.dir/test/googletest-color-test_.cc.o
+[ 84%] Linking CXX executable googletest-color-test_
+[ 84%] Built target googletest-color-test_
+Scanning dependencies of target gtest_premature_exit_test
+[ 85%] Building CXX object CMakeFiles/gtest_premature_exit_test.dir/test/gtest_premature_exit_test.cc.o
+[ 86%] Linking CXX executable gtest_premature_exit_test
+[ 86%] Built target gtest_premature_exit_test
+Scanning dependencies of target gtest_unittest
+[ 87%] Building CXX object CMakeFiles/gtest_unittest.dir/test/gtest_unittest.cc.o
+[ 88%] Linking CXX executable gtest_unittest
+[ 88%] Built target gtest_unittest
+Scanning dependencies of target gtest-unittest-api_test
+[ 89%] Building CXX object CMakeFiles/gtest-unittest-api_test.dir/test/gtest-unittest-api_test.cc.o
+[ 90%] Linking CXX executable gtest-unittest-api_test
+[ 90%] Built target gtest-unittest-api_test
+Scanning dependencies of target gtest_skip_test
+[ 91%] Building CXX object CMakeFiles/gtest_skip_test.dir/test/gtest_skip_test.cc.o
+[ 92%] Linking CXX executable gtest_skip_test
+[ 92%] Built target gtest_skip_test
+Scanning dependencies of target googletest-break-on-failure-unittest_
+[ 92%] Building CXX object CMakeFiles/googletest-break-on-failure-unittest_.dir/test/googletest-break-on-failure-unittest_.cc.o
+[ 93%] Linking CXX executable googletest-break-on-failure-unittest_
+[ 93%] Built target googletest-break-on-failure-unittest_
+Scanning dependencies of target gtest_main_no_exception
+[ 94%] Building CXX object CMakeFiles/gtest_main_no_exception.dir/src/gtest-all.cc.o
+[ 95%] Building CXX object CMakeFiles/gtest_main_no_exception.dir/src/gtest_main.cc.o
+[ 96%] Linking CXX static library lib/libgtest_main_no_exception.a
+[ 96%] Built target gtest_main_no_exception
+Scanning dependencies of target gtest_dll_test_
+[ 97%] Building CXX object CMakeFiles/gtest_dll_test_.dir/test/gtest_all_test.cc.o
+[ 98%] Linking CXX executable gtest_dll_test_
+[ 98%] Built target gtest_dll_test_
+Scanning dependencies of target googletest-catch-exceptions-no-ex-test_
+[ 99%] Building CXX object CMakeFiles/googletest-catch-exceptions-no-ex-test_.dir/test/googletest-catch-exceptions-test_.cc.o
+[100%] Linking CXX executable googletest-catch-exceptions-no-ex-test_
+[100%] Built target googletest-catch-exceptions-no-ex-test_
+wupei@wupei-robot:~/googletest/googletest/build$ 

@@ -1,0 +1,176 @@
+#include "test_base.h"
+#include "DianaAPI.h"
+#include <map>
+
+
+static int order = 0;
+static double frequency = 0;
+static double damping = -100;
+double Targetjoints[7]={0};
+
+std::map<int, std::array<double, 7> > wobjmap;
+
+
+void testAddMove1()
+{   
+
+}
+
+//定义测试用例的描述, 方便用户了解测试内容
+void API_homework_001(){
+    printf("测试函数输入整形默认值.\n");
+}
+
+// 定义测试实体，多个用例可以关联同一个实体
+void api_homework() {
+    srv_net_st net_info;
+    initSrvNetInfo(&net_info);
+    strcpy(net_info.SrvIp, "192.168.10.75");
+    int connect_ret = initSrv(errorControl, nullptr, &net_info);
+    if (connect_ret != 0) {
+        printf("initSrv failed!Return value = %d\n", connect_ret);
+    }
+    releaseBrake();
+    
+    printf("go to home pos...\n");
+    double joints0[7] = { to_rad(0.207),to_rad(-18.868),to_rad(0.422),to_rad(143.074),to_rad(-3.144),to_rad(-55.220),to_rad(-42.312) };
+    double vel = 0.4;
+    double acc = 0.4;
+    int ret = moveJToTarget(joints0, vel, acc, order, frequency, damping);
+    wait_move();
+    printf("go to home pos done.\n");
+
+    
+    printf("go to zero pos ...\n");
+    double zero[7] = { to_rad(0.12),to_rad(33.62),to_rad(-8.51),to_rad(87.64),to_rad(4.73),to_rad(-64.06),to_rad(-42.31) };
+    ret = moveJToTarget(zero, vel, acc, order, frequency, damping);
+    wait_move();
+    printf("go to zero pos done.\n");
+
+    //wobjdata    tcp
+    double srcPose[6] = {0,0,0,to_rad(-2.442),to_rad(0.780),to_rad(-133.151)};
+    //owbjaxis
+    double srcMatrixPose[6] = {0.801,0.089,0.330,to_rad(2.7388),to_rad(-1.8624),to_rad(98.1542)};
+    //basicdata
+    double dstMatrixPose[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    double dstPose[6] = {0};
+
+    double objNumber[25];
+    int index =0;
+    //std::map<int, double*> wobjmap;
+    double robotarray[25][2];
+
+    for (int y=0;y<5;y++) 
+    {
+       srcPose[1] = 0.05*y;
+
+       for (int x=0; x<5; x++)
+       {
+            srcPose[0] = 0.05*x;
+            //std::cout << srcPose[0] << std::endl;
+            //std::cout << srcPose[1]<< std::endl;
+            
+
+             //change wobj to basic
+            poseTransform(srcPose,srcMatrixPose,dstMatrixPose,dstPose);
+
+            //double Targetjoints[7]={0};
+            inverse_ext(zero, dstPose, Targetjoints);
+
+            std::cout<<"show joints under basic axis:"<<std::endl;
+            std::cout<<"index"<<index<<": ";
+            for (int i=0;i<7;i++)
+            {
+                std::cout<<Targetjoints[i]<<" ";
+            }
+            std::cout<<""<<std::endl;
+
+            std::array<double, 7> temp;
+            for (int i=0;i<7;i++)
+            {
+                temp[i]=Targetjoints[i];
+            }
+            wobjmap[index] = temp;
+ 
+           
+
+            //std::cout<<wobjmap[index][0]<<std::endl;
+            //std::cout<<wobjmap[index][1]<<std::endl;
+
+            // for(int loop = 0; loop < 7; loop++) {
+            //      wobjmap[index][loop] = Targetjoints[loop];
+            //  }
+
+            //memcpy(wobjmap[index], Targetjoints, 7);  crash
+
+            //std::cout<<"wobjmap[index]"<<wobjmap[index]<<std::endl;
+            index++;
+
+
+            
+
+            //wobjmap.insert(std::pair<int,double[6]>(index,Targetjoints));
+            
+            //wobjmap[index] = Targetjoints;
+            // moveJToTarget(Targetjoints, vel, acc, order, frequency, damping);
+            // wait_move();
+            // printf("go to target done.\n");
+
+            // moveJToTarget(zero, vel, acc, order, frequency, damping);
+            // wait_move();
+            // printf("go to zero done.\n");
+
+       }
+    }
+
+    //std::cout<<*wobjmap[24]<<std::endl;
+    
+
+    // double targetjoint[7]={0};
+    // for (int i=0;i<7;i++)
+    // {
+    //     targetjoint[i]=wobjmap[24][i];
+    // }
+
+    // moveJToTarget(targetjoint, vel, acc, order, frequency, damping);
+    // wait_move();
+   
+    int num;
+    while(1)
+    {
+        std::cout<<"请选择要去的编号0-24有效,99退出:"<<std::endl;
+        cin>>num;
+        if(num==99)  
+        {
+           break; 
+        }
+
+        std::cout<< "num: "<< num<<std::endl;
+
+        double targetjoint[7]={0};
+        for (int i=0;i<7;i++)
+        {
+            targetjoint[i]=wobjmap[num][i];
+        }
+
+        moveJToTarget(targetjoint, vel, acc, order, frequency, damping);
+        wait_move();
+
+
+        // sleepMilliseconds(1000);
+        // moveJToTarget(zero, vel, acc, order, frequency, damping);
+        // wait_move();
+        printf("go to home zero done.\n");
+    }
+ 
+
+
+    sleepMilliseconds(1000);
+
+    destroySrv();
+    
+}
+
+// 注册测试用例及测试方法
+REGIST_CASE_FUNCTION(api_homework);
+REGIST_CASE(API_homework_001, api_homework, API_homework_001);

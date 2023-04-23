@@ -1,0 +1,3 @@
+/opt/wupei/source/projectsignal/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/source/projectsignal/build/CMakeFiles/signaltest.dir
+/opt/wupei/source/projectsignal/build/CMakeFiles/edit_cache.dir

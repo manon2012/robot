@@ -1,0 +1,16 @@
+ip [192.168.10.75] has been added.
+
+192.168.10.75's server port : 35042(ret=0)
+
+192.168.10.75's realtime server port : 42966 (ret=0)
+
+192.168.10.75's Heartbeat port : 45755 (ret=0)
+
+192.168.10.75's RobotState port : 36044 (ret=0)
+
+Joint count is:7
+
+CHeartbeatSocket core thread stop running
+
+CRobotStateSocket core thread stop running
+destroySrv of ip 192.168.10.75 succeeded!

@@ -1,0 +1,9 @@
+tar -cz ./test | openssl enc -e -aes256 -out test.tar.gz
+#详解：把当前文件夹下面的test文件夹打包（文件同理），打包的时候使用gzip压缩，数据随后传递给openssl，openssl把数据进行加密，输出到当前文件夹下的test.tar.gz
+
+openssl enc -d -aes256 -in test.tar.gz |tar -xz -C .
+#详解：openssl首先对当前文件夹下的test.tar.gz进行解密，随后数据传递给tar命令，tar命令对数据进行解包。并且写出到当前文件夹下
+
+##注意：
+两个命令合并生成的文件必须使用合并命令来获取，不能先openssl再tar，必须一个命令执行完
+如果文件夹内有同名文件或者文件夹，则写出失败

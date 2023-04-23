@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/clientexe.dir/src/client.cpp.o  -o clientexe -lpython3.6m -lpthread -lgtest -lpthread -lgtest 

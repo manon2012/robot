@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/server.dir/src/main.cpp.o  -o server -lpython3.6m -lpthread -lgtest -lpthread -lgtest 

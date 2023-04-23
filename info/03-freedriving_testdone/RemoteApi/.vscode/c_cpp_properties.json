@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "/usr/include/linux",
+                "/usr/include",
+                "/home/wupei/Sdk-x86_64-x64-linux/Sdk/Development_Env/include/BasicSdk",
+                "/home/wupei/Sdk-x86_64-x64-linux/Sdk/Development_Env/include/BasicSdk/OS",
+                "/home/wupei/Desktop/03-freedriving/RemoteApi/include",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include/c++/7/tr1",
+                "/usr/include/c++/7",
+                "/usr/include/x86_64-linux-gnu/c++/7"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/cpp",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

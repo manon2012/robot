@@ -1,0 +1,7 @@
+/home/wupei/Desktop/03-freedriving/RemoteApi/base_demo.cpp: In function ‘int main()’:
+/home/wupei/Desktop/03-freedriving/RemoteApi/base_demo.cpp:956:6: error: redeclaration of ‘int ret’
+  int ret = getMaxJointsAcc(dblMaxAcc, robot0);
+      ^~~
+/home/wupei/Desktop/03-freedriving/RemoteApi/base_demo.cpp:952:6: note: ‘int ret’ previously declared here
+  int ret = getMaxJointsVel(dblMaxVel, robot0);
+      ^~~

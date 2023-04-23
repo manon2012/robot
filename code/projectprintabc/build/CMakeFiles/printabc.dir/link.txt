@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/printabc.dir/src/main.cpp.o  -o printabc -lpthread 

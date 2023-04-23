@@ -1,0 +1,3 @@
+/opt/wupei/source/projectTransferFile_Client/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/source/projectTransferFile_Client/build/CMakeFiles/clientexe.dir
+/opt/wupei/source/projectTransferFile_Client/build/CMakeFiles/edit_cache.dir

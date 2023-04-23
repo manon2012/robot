@@ -1,0 +1,25 @@
+[100%] Linking CXX executable hello_cmake
+CMakeFiles/hello_cmake.dir/main.cpp.o: In function `std::thread::thread<void (&)()>(void (&)())':
+main.cpp:(.text._ZNSt6threadC2IRFvvEJEEEOT_DpOT0_[_ZNSt6threadC5IRFvvEJEEEOT_DpOT0_]+0x2f): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/hello_cmake.dir/build.make:94: recipe for target 'hello_cmake' failed
+make[2]: *** [hello_cmake] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/hello_cmake.dir/all' failed
+make[1]: *** [CMakeFiles/hello_cmake.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+wupei@wupei-robot:/opt/wupei/source/projectCmake/build$ g++ main.cpp -o cpphellothread.exe
+g++: error: main.cpp: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+wupei@wupei-robot:/opt/wupei/source/projectCmake/build$ cd ..
+wupei@wupei-robot:/opt/wupei/source/projectCmake$ g++ main.cpp -o cpphellothread.exe
+/tmp/ccD7D4gm.o: In function `std::thread::thread<void (&)()>(void (&)())':
+main.cpp:(.text._ZNSt6threadC2IRFvvEJEEEOT_DpOT0_[_ZNSt6threadC5IRFvvEJEEEOT_DpOT0_]+0x2f): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+wupei@wupei-robot:/opt/wupei/source/projectCmake$ g++ -std=c++11   main.cpp -o cpphellothread.exe 
+/tmp/cc4gS7Wk.o: In function `std::thread::thread<void (&)()>(void (&)())':
+main.cpp:(.text._ZNSt6threadC2IRFvvEJEEEOT_DpOT0_[_ZNSt6threadC5IRFvvEJEEEOT_DpOT0_]+0x2f): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+wupei@wupei-robot:/opt/wupei/source/projectCmake$ g++    main.cpp -o cpphellothread.exe  -lpthread
+wupei@wupei-robot:/opt/wupei/source/projectCmake$ ./cpphellothread.exe 

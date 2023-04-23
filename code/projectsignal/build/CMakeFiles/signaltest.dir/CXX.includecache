@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/opt/wupei/source/projectsignal/include/Apple.h
+Fruit.h
+/opt/wupei/source/projectsignal/include/Fruit.h
+
+/opt/wupei/source/projectsignal/include/Fruit.h
+
+/opt/wupei/source/projectsignal/src/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+string.h
+-
+../include/Apple.h
+/opt/wupei/source/projectsignal/include/Apple.h
+iostream
+-
+csignal
+-
+unistd.h
+-
+

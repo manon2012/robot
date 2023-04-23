@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/gtestdiana.dir/src/main.cpp.o CMakeFiles/gtestdiana.dir/src/init.cpp.o CMakeFiles/gtestdiana.dir/src/test_base.cpp.o CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o  -o gtestdiana -lgtest -lDianaApi -pthread 

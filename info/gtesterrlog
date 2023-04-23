@@ -1,0 +1,12 @@
+wupei@wupei-robot:~/googletest/googletest/build$ cmake ..
+CMake Error at CMakeLists.txt:127 (set_target_properties):
+  set_target_properties called with incorrect number of arguments.
+
+
+CMake Error at CMakeLists.txt:145 (set_target_properties):
+  set_target_properties called with incorrect number of arguments.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/wupei/googletest/googletest/build/CMakeFiles/CMakeOutput.log".
+

@@ -1,0 +1,52 @@
+wupei@wupei-robot:~/Desktop/03-freedriving/RemoteApi/build$ ./base_demo 
+find library libGenericAlgorithm.so
+ip [192.168.10.75] has been added.
+192.168.10.75's server port : 35042(ret=0)
+192.168.10.75's realtime server port : 42966 (ret=0)
+192.168.10.75's Heartbeat port : 45755 (ret=0)
+192.168.10.75's RobotState port : 36044 (ret=0)
+Joint count is:7
+连接成功：0
+打开抱闸成功！
+exit freeDriving succeeded!Return value = 0
+exit zeroSpaceFreeDriving succeeded!Return value = 0
+        [robot state]:idle
+        [robot state]:idle
+开启零空间自由驱动
+关闭零空间自由驱动成功!Return value = 0
+结束零空间自由驱动
+readDI di0的值：0
+readDI di1的值：0
+readDI di2的值：0
+readDI di3的值：0
+holdBrake= 0
+CHeartbeatSocket core thread stop running
+CRobotStateSocket core thread stop running
+destroySrv of ip 192.168.10.75 succeeded!
+wupei@wupei-robot:~/Desktop/03-freedriving/RemoteApi/build$ ./base_demo 
+find library libGenericAlgorithm.so
+ip [192.168.10.75] has been added.
+192.168.10.75's server port : 48185(ret=0)
+192.168.10.75's realtime server port : 35647 (ret=0)
+192.168.10.75's Heartbeat port : 38498 (ret=0)
+192.168.10.75's RobotState port : 52383 (ret=0)
+Joint count is:7
+连接成功：0
+打开抱闸成功！
+exit freeDriving succeeded!Return value = 0
+exit zeroSpaceFreeDriving succeeded!Return value = 0
+        [robot state]:idle
+        [robot state]:idle
+开启零空间自由驱动
+关闭零空间自由驱动成功!Return value = 0
+结束零空间自由驱动
+readDI di0的值：0
+readDI di1的值：0
+readDI di2的值：0
+readDI di3的值：0
+holdBrake= 0
+CHeartbeatSocket core thread stop running
+CRobotStateSocket core thread stop running
+destroySrv of ip 192.168.10.75 succeeded!
+
+wupei@wupei-robot:~/Desktop/03-freedriving/RemoteApi/build$ 

@@ -1,0 +1,3 @@
+/opt/wupei/source/projectTemplate/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/source/projectTemplate/build/CMakeFiles/template2023.dir
+/opt/wupei/source/projectTemplate/build/CMakeFiles/edit_cache.dir

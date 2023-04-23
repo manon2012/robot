@@ -1,0 +1,3 @@
+/opt/wupei/source/projectTest/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/source/projectTest/build/CMakeFiles/test2023.dir
+/opt/wupei/source/projectTest/build/CMakeFiles/edit_cache.dir
