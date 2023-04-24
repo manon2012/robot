@@ -18,6 +18,7 @@ using namespace std;
 class Complex
 {
    friend ostream &operator<<(ostream &cout, const Complex &other);
+   friend Complex DoAPL(const Complex&c1 , const Complex &c2);
 
 public:
    Complex(double x = 0, double y = 0) : m_real(x), m_imag(y)
@@ -43,6 +44,7 @@ public:
       return *this;
    }
 
+   
    ~Complex()
    {
    }
@@ -56,6 +58,16 @@ ostream &operator<<(ostream &cout, const Complex &other)
    cout << "other.real: " << other.m_real << ",other.imag: " << other.m_imag << std::endl;
    return cout;
 }
+
+Complex DoAPL(const Complex&c1 , const Complex &c2) 
+{
+   return Complex(c1.m_real + c2.m_real, c1.m_imag+c2.m_imag);
+}
+
+   Complex &operator+(const Complex &C1,const Complex &C2)
+   {
+         return DoAPL(C1,C2);
+   }
 
 void test01()
 {
