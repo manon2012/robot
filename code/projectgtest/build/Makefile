@@ -123,6 +123,60 @@ gtestdiana/fast:
 	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/build
 .PHONY : gtestdiana/fast
 
+src/SRZX/srzx6.o: src/SRZX/srzx6.cpp.o
+
+.PHONY : src/SRZX/srzx6.o
+
+# target to build an object file
+src/SRZX/srzx6.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o
+.PHONY : src/SRZX/srzx6.cpp.o
+
+src/SRZX/srzx6.i: src/SRZX/srzx6.cpp.i
+
+.PHONY : src/SRZX/srzx6.i
+
+# target to preprocess a source file
+src/SRZX/srzx6.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.i
+.PHONY : src/SRZX/srzx6.cpp.i
+
+src/SRZX/srzx6.s: src/SRZX/srzx6.cpp.s
+
+.PHONY : src/SRZX/srzx6.s
+
+# target to generate assembly for a file
+src/SRZX/srzx6.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.s
+.PHONY : src/SRZX/srzx6.cpp.s
+
+src/SRZX/srzx7.o: src/SRZX/srzx7.cpp.o
+
+.PHONY : src/SRZX/srzx7.o
+
+# target to build an object file
+src/SRZX/srzx7.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o
+.PHONY : src/SRZX/srzx7.cpp.o
+
+src/SRZX/srzx7.i: src/SRZX/srzx7.cpp.i
+
+.PHONY : src/SRZX/srzx7.i
+
+# target to preprocess a source file
+src/SRZX/srzx7.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.i
+.PHONY : src/SRZX/srzx7.cpp.i
+
+src/SRZX/srzx7.s: src/SRZX/srzx7.cpp.s
+
+.PHONY : src/SRZX/srzx7.s
+
+# target to generate assembly for a file
+src/SRZX/srzx7.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.s
+.PHONY : src/SRZX/srzx7.cpp.s
+
 src/fixturetest.o: src/fixturetest.cpp.o
 
 .PHONY : src/fixturetest.o
@@ -294,6 +348,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gtestdiana"
 	@echo "... edit_cache"
+	@echo "... src/SRZX/srzx6.o"
+	@echo "... src/SRZX/srzx6.i"
+	@echo "... src/SRZX/srzx6.s"
+	@echo "... src/SRZX/srzx7.o"
+	@echo "... src/SRZX/srzx7.i"
+	@echo "... src/SRZX/srzx7.s"
 	@echo "... src/fixturetest.o"
 	@echo "... src/fixturetest.i"
 	@echo "... src/fixturetest.s"
