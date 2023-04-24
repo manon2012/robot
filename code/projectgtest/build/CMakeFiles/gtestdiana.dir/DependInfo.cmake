@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/opt/wupei/git/code/projectgtest/src/SRZX/srzx6.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/SRZX/srzx7.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/fixturetest.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/init.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/init.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/main.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/main.cpp.o"
