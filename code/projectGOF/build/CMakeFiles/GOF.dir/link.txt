@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/GOF.dir/src/main.cpp.o  -o GOF -lpthread 
