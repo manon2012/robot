@@ -108,6 +108,34 @@ CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-string.h
  /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
  /opt/wupei/git/code/projectgtest/src/move3plus3.cpp
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o
+ .././include/DianaAPI.h
+ .././include/test_base.h
+ /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/DianaAPIDef.h
+ /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/Environment.h
+ /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/FunctionOptDef.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-assertion-result.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-death-test.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-matchers.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-message.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-param-test.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-printers.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-test-part.h
+ /home/wupei/gtest/googletest/include/gtest/gtest-typed-test.h
+ /home/wupei/gtest/googletest/include/gtest/gtest.h
+ /home/wupei/gtest/googletest/include/gtest/gtest_pred_impl.h
+ /home/wupei/gtest/googletest/include/gtest/gtest_prod.h
+ /home/wupei/gtest/googletest/include/gtest/internal/custom/gtest-port.h
+ /home/wupei/gtest/googletest/include/gtest/internal/custom/gtest-printers.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-filepath.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-internal.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-param-util.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-port-arch.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-port.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-string.h
+ /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
+ /opt/wupei/git/code/projectgtest/src/onlytest.cpp
 CMakeFiles/gtestdiana.dir/src/test_base.cpp.o
  .././include/DianaAPI.h
  .././include/test_base.h

@@ -231,6 +231,33 @@ src/move3plus3.cpp.s:
 	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.s
 .PHONY : src/move3plus3.cpp.s
 
+src/onlytest.o: src/onlytest.cpp.o
+
+.PHONY : src/onlytest.o
+
+# target to build an object file
+src/onlytest.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o
+.PHONY : src/onlytest.cpp.o
+
+src/onlytest.i: src/onlytest.cpp.i
+
+.PHONY : src/onlytest.i
+
+# target to preprocess a source file
+src/onlytest.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/onlytest.cpp.i
+.PHONY : src/onlytest.cpp.i
+
+src/onlytest.s: src/onlytest.cpp.s
+
+.PHONY : src/onlytest.s
+
+# target to generate assembly for a file
+src/onlytest.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/onlytest.cpp.s
+.PHONY : src/onlytest.cpp.s
+
 src/test_base.o: src/test_base.cpp.o
 
 .PHONY : src/test_base.o
@@ -279,6 +306,9 @@ help:
 	@echo "... src/move3plus3.o"
 	@echo "... src/move3plus3.i"
 	@echo "... src/move3plus3.s"
+	@echo "... src/onlytest.o"
+	@echo "... src/onlytest.i"
+	@echo "... src/onlytest.s"
 	@echo "... src/test_base.o"
 	@echo "... src/test_base.i"
 	@echo "... src/test_base.s"

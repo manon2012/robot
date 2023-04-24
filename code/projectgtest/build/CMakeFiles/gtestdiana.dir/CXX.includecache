@@ -480,6 +480,14 @@ test_base.h
 gtest/gtest.h
 -
 
+/opt/wupei/git/code/projectgtest/src/onlytest.cpp
+DianaAPI.h
+/opt/wupei/git/code/projectgtest/src/DianaAPI.h
+test_base.h
+/opt/wupei/git/code/projectgtest/src/test_base.h
+gtest/gtest.h
+-
+
 /opt/wupei/git/code/projectgtest/src/test_base.cpp
 test_base.h
 /opt/wupei/git/code/projectgtest/src/test_base.h

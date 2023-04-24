@@ -72,19 +72,3 @@ TEST(MoveTest, d0)
 
 }
 
-TEST(MoveTest, onlyprint)
-{
-    std::cout <<"agile " << std::endl;
-    std::cout <<"robot " << std::endl;
-
-    // int *abc = new int[100];
-    // std::cout <<*abc<<std::endl;
-    // std::cout <<abc<<std::endl;
-    // std::cout <<&(*abc)<<std::endl;
-    //sleep(2);
-
-    
-    int *a10 = new int[10000];
-    int *a11 = new int[10000];
-    //delete a10;
-}

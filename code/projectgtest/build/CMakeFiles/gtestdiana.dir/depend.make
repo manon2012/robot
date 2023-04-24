@@ -108,6 +108,34 @@ CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o: /home/wupei/gtest/googletest/inc
 CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o: ../src/move3plus3.cpp
 
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: .././include/DianaAPI.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: .././include/test_base.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/DianaAPIDef.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/Environment.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/FunctionOptDef.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-assertion-result.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-matchers.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-message.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-printers.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/gtest_prod.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: /home/wupei/gtest/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o: ../src/onlytest.cpp
+
 CMakeFiles/gtestdiana.dir/src/test_base.cpp.o: .././include/DianaAPI.h
 CMakeFiles/gtestdiana.dir/src/test_base.cpp.o: .././include/test_base.h
 CMakeFiles/gtestdiana.dir/src/test_base.cpp.o: /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/DianaAPIDef.h

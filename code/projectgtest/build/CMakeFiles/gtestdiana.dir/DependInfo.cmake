@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/opt/wupei/git/code/projectgtest/src/init.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/init.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/main.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/main.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/move3plus3.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/onlytest.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/test_base.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/test_base.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

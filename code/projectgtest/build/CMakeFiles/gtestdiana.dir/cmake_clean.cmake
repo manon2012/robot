@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gtestdiana.dir/src/test_base.cpp.o"
   "CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o"
   "CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o"
+  "CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o"
   "gtestdiana.pdb"
   "gtestdiana"
 )
