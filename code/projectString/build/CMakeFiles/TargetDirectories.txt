@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectString/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectString/build/CMakeFiles/ARstring.dir
+/opt/wupei/git/code/projectString/build/CMakeFiles/edit_cache.dir
