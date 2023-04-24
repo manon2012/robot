@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/opt/wupei/git/code/projectString/src/NewString.cpp" "/opt/wupei/git/code/projectString/build/CMakeFiles/ARstring.dir/src/NewString.cpp.o"
-  "/opt/wupei/git/code/projectString/src/main.cpp" "/opt/wupei/git/code/projectString/build/CMakeFiles/ARstring.dir/src/main.cpp.o"
+  "/opt/wupei/git/code/projectString/src/NewString.cpp" "/opt/wupei/git/code/projectString/build/CMakeFiles/NewString.dir/src/NewString.cpp.o"
+  "/opt/wupei/git/code/projectString/src/main.cpp" "/opt/wupei/git/code/projectString/build/CMakeFiles/NewString.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

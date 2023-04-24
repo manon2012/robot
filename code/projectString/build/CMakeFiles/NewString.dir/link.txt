@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/NewString.dir/src/main.cpp.o CMakeFiles/NewString.dir/src/NewString.cpp.o  -o NewString -lpthread 

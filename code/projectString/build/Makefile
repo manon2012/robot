@@ -111,17 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ARstring
+# Target rules for targets named NewString
 
 # Build rule for target.
-ARstring: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ARstring
-.PHONY : ARstring
+NewString: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NewString
+.PHONY : NewString
 
 # fast build rule for target.
-ARstring/fast:
-	$(MAKE) -f CMakeFiles/ARstring.dir/build.make CMakeFiles/ARstring.dir/build
-.PHONY : ARstring/fast
+NewString/fast:
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/build
+.PHONY : NewString/fast
+
+src/NewString.o: src/NewString.cpp.o
+
+.PHONY : src/NewString.o
+
+# target to build an object file
+src/NewString.cpp.o:
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/src/NewString.cpp.o
+.PHONY : src/NewString.cpp.o
+
+src/NewString.i: src/NewString.cpp.i
+
+.PHONY : src/NewString.i
+
+# target to preprocess a source file
+src/NewString.cpp.i:
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/src/NewString.cpp.i
+.PHONY : src/NewString.cpp.i
+
+src/NewString.s: src/NewString.cpp.s
+
+.PHONY : src/NewString.s
+
+# target to generate assembly for a file
+src/NewString.cpp.s:
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/src/NewString.cpp.s
+.PHONY : src/NewString.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -129,7 +156,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/ARstring.dir/build.make CMakeFiles/ARstring.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -138,7 +165,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/ARstring.dir/build.make CMakeFiles/ARstring.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -147,7 +174,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/ARstring.dir/build.make CMakeFiles/ARstring.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -157,8 +184,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... ARstring"
+	@echo "... NewString"
 	@echo "... edit_cache"
+	@echo "... src/NewString.o"
+	@echo "... src/NewString.i"
+	@echo "... src/NewString.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

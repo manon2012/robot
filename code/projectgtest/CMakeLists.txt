@@ -27,7 +27,7 @@ set(CMAKE_BUILD_TYPE "Debug")
 
 
 
-include_directories(./include)
+include_directories(${workspaceFolder}/include)
 include_directories(/home/wupei/gtest/googletest/include)
 
 include_directories(/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include)

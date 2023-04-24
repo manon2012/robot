@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ARstring.dir/src/main.cpp.o"
+  "CMakeFiles/ARstring.dir/src/NewString.cpp.o"
   "ARstring.pdb"
   "ARstring"
 )

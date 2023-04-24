@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /opt/wupei/git/code/projectString
 CMAKE_BINARY_DIR = /opt/wupei/git/code/projectString/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/ARstring.dir
+# Target rules for target CMakeFiles/NewString.dir
 
 # All Build rule for target.
-CMakeFiles/ARstring.dir/all:
-	$(MAKE) -f CMakeFiles/ARstring.dir/build.make CMakeFiles/ARstring.dir/depend
-	$(MAKE) -f CMakeFiles/ARstring.dir/build.make CMakeFiles/ARstring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/wupei/git/code/projectString/build/CMakeFiles --progress-num=1,2 "Built target ARstring"
-.PHONY : CMakeFiles/ARstring.dir/all
+CMakeFiles/NewString.dir/all:
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/depend
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/wupei/git/code/projectString/build/CMakeFiles --progress-num=1,2,3 "Built target NewString"
+.PHONY : CMakeFiles/NewString.dir/all
 
 # Include target in all.
-all: CMakeFiles/ARstring.dir/all
+all: CMakeFiles/NewString.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ARstring.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /opt/wupei/git/code/projectString/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ARstring.dir/all
+CMakeFiles/NewString.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/wupei/git/code/projectString/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NewString.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /opt/wupei/git/code/projectString/build/CMakeFiles 0
-.PHONY : CMakeFiles/ARstring.dir/rule
+.PHONY : CMakeFiles/NewString.dir/rule
 
 # Convenience name for target.
-ARstring: CMakeFiles/ARstring.dir/rule
+NewString: CMakeFiles/NewString.dir/rule
 
-.PHONY : ARstring
-
-# clean rule for target.
-CMakeFiles/ARstring.dir/clean:
-	$(MAKE) -f CMakeFiles/ARstring.dir/build.make CMakeFiles/ARstring.dir/clean
-.PHONY : CMakeFiles/ARstring.dir/clean
+.PHONY : NewString
 
 # clean rule for target.
-clean: CMakeFiles/ARstring.dir/clean
+CMakeFiles/NewString.dir/clean:
+	$(MAKE) -f CMakeFiles/NewString.dir/build.make CMakeFiles/NewString.dir/clean
+.PHONY : CMakeFiles/NewString.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/NewString.dir/clean
 
 .PHONY : clean
 

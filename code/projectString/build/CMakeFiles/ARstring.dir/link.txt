@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ARstring.dir/src/main.cpp.o  -o ARstring -lpthread 
+/usr/bin/c++  -g   CMakeFiles/ARstring.dir/src/main.cpp.o CMakeFiles/ARstring.dir/src/NewString.cpp.o  -o ARstring -lpthread 
