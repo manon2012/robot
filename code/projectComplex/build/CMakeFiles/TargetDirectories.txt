@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectComplex/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectComplex/build/CMakeFiles/Complex.dir
+/opt/wupei/git/code/projectComplex/build/CMakeFiles/edit_cache.dir
