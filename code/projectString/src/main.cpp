@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 #include <list>
-#include <string>
+#include <string.h>
 
 class ARstring
 {  
@@ -18,7 +18,7 @@ public:
             int len = sizeof(abc) + 1;
             m_data = new char[len];
             //invalid conversion from ‘const char*’ to ‘char*’
-            m_data = abc;
+            strcpy(m_data,abc);
         }
         else
         {
@@ -31,19 +31,19 @@ public:
     {
         int size = sizeof(p.m_data);
         m_data = new char[size + 1];
-        *m_data = *p.m_data;
+        strcpy(m_data,p.m_data);
     }
 
     ARstring &operator=(const ARstring &p)
     {
         if (this != &p)
         {
-            delete m_data;
+            delete[] m_data;
             int len = sizeof(p.m_data);
             m_data = new char[len + 1];
             //*m_data = *p.m_data;
             //m_data = p.m_data;
-            m_data = new char[*p.m_data];
+            strcpy(m_data,p.m_data);
         }
         return *this;
     }
@@ -53,7 +53,7 @@ public:
         if (m_data)
         {
             //free(): invalid pointer  exception has occur
-            delete m_data;
+            delete[] m_data;
             m_data = NULL;
         }
     }

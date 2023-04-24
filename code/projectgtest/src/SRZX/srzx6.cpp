@@ -417,12 +417,12 @@ TEST_F(SRZX, case6)
 
 }
 
-TEST(SRZX, case7)
+TEST_F(SRZX, case7)
 { 
      EXPECT_EQ(1,1);
 }
 
-TEST(SRZX, case8)
+TEST_F(SRZX, case8)
 { 
      EXPECT_EQ(1,1);
 }

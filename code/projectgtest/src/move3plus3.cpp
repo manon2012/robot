@@ -14,8 +14,8 @@ static double Targetjoints[7] = {0};
 
 static std::map<int, std::array<double, 7> > wobjmap;
 int wobjarr[3][3];
-int gnumber;
-int gcount1;
+int gnumber=0;
+int gcount1=0;
 
 
 void init_array() {
