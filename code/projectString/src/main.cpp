@@ -11,13 +11,14 @@ class ARstring
     friend ostream &operator<<(ostream &cout, const ARstring &p);
 public:
     
-    ARstring(const char *abc = 0)
+    ARstring( char *abc = 0)
     {
         if (abc)
         {
             int len = sizeof(abc) + 1;
             m_data = new char[len];
-            *m_data = *abc;
+            //invalid conversion from ‘const char*’ to ‘char*’
+            m_data = abc;
         }
         else
         {
@@ -40,7 +41,9 @@ public:
             delete m_data;
             int len = sizeof(p.m_data);
             m_data = new char[len + 1];
-            *m_data = *p.m_data;
+            //*m_data = *p.m_data;
+            //m_data = p.m_data;
+            m_data = new char[*p.m_data];
         }
         return *this;
     }
@@ -49,6 +52,7 @@ public:
     {
         if (m_data)
         {
+            //free(): invalid pointer  exception has occur
             delete m_data;
             m_data = NULL;
         }
