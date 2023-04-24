@@ -71,7 +71,7 @@ void test01()
     a1=a2;
 
     //a1.m_data is wrong!! ‘char* ARstring::m_data’ is private within this context
-    std::cout << a1 << std::endl;   
+    std::cout << a1 << std::endl;      //thi version only cout a
     std::cout << a2 << std::endl;
 
 
