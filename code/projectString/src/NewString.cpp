@@ -42,4 +42,6 @@ NewString::~NewString()
 }
 ostream &operator<<(ostream &cout, const NewString &other)
 {
+    std::cout<< other.m_data << std::endl;
+    return cout;
 }

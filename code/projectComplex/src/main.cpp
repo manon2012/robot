@@ -5,105 +5,87 @@
 #include "Apple.h"
 using namespace std;
 
-/*
-   modify
-   1. .vscode/launch.json
-   "program": "${workspaceFolder}/build/template2023",
-   2.CmakeLists.txt
-   add_executable(Template2023 src/main.cpp) #添加生成可执行文件
-   target_link_libraries(template2023 pthread)
-
-*/
-
 class Complex
 {
-   friend ostream &operator<<(ostream &cout, const Complex &other);
-   friend Complex& _doapl( Complex * ,const Complex &r);
-
-public:
-   Complex(double x = 0, double y = 0) : m_real(x), m_imag(y)
+   friend Complex& _doapl(Complex *obj, const Complex &p);
+   friend ostream & operator<<(ostream &, const Complex &p);
+   public:
+   Complex(double x = 0, double y = 0) : re(x), im(y) {}
+   Complex(const Complex &p)
    {
+      this->re = p.re;
+      this->im = p.im;
    }
 
-   Complex(const Complex &other)
+   Complex &operator=(const Complex &p)
    {
-      this->m_real = other.m_real;
-      this->m_imag = other.m_imag;
+      if (this != &p)
+      {
+         this->re = p.re;
+         this->im = p.im;
+      }
+      return *this;
    }
 
-   Complex operator=(const Complex &other)
+   Complex& operator+=(const Complex &p)
    {
-      this->m_real = other.m_real;
-      this->m_imag = other.m_imag;
+      return _doapl(this,p);
    }
 
-   Complex &operator+=(const Complex &r)
-   {
-      
-      return _doapl(this,r);
-   }
-   double real() const { return m_real;}
-   double imag() const { return m_imag; }
-   
-   ~Complex()
-   {
-   }
+   double Real() const { return re; }
+   double Img() const { return im; }
 
 private:
-   double m_real;
-   double m_imag;
-};
-ostream &operator<<(ostream &cout, const Complex &other)
-{
-   cout << "other.real: " << other.m_real << ",other.imag: " << other.m_imag << std::endl;
-   return cout;
-}
+   double re;
+   double im;
 
-Complex& _doapl(Complex * obj , const Complex &r) 
+};
+
+Complex& _doapl(Complex *obj, const Complex &p)
 {
-   obj->m_real += r.real();
-   obj->m_imag += r.imag();
+   obj->re += p.re;
+   obj->im += p.im;
    return *obj;
 }
 
-Complex operator +(const Complex &l,const Complex &r)
+Complex operator+(const Complex &p, const Complex &q)
 {
-      return Complex(l.real()+r.real(),l.imag()+r.imag());
+
+   return Complex(p.Real()+ q.Real(), p.Img()+q.Img());
 }
 
-Complex operator+(const Complex &r, double x)
+Complex operator+(const Complex &p, double x)
 {
-   return Complex(r.real()+x,r.imag());
+   return Complex(p.Real()+x, p.Img());
 }
 
-Complex operator+(double x , const Complex&r)
+ostream & operator<<(ostream &os, const Complex &p)
 {
-   return Complex(x+r.real(),r.imag());
+   cout<<p.re<<", "<<p.im<<endl;
+   return os;
 }
 
-
-void test01()
+int test01()
 {
-   Complex a;
-   Complex b(1.0, 2.0);
-   Complex c(b);
-   Complex d;
-   d = c;
-   std::cout << a << std::endl;
-   std::cout << b << std::endl;
-   std::cout << c << std::endl;
-   std::cout << d << std::endl;
+  Complex a;
+  Complex b(1.0,2.0);
+  Complex c;
+  c=b;
+  Complex d(c);
+  
+  std::cout<<a<<std::endl;
+   std::cout<<b<<std::endl;
+    std::cout<<c<<std::endl;
+     std::cout<<d<<std::endl;
 
-   d+=c;
-   std::cout << d << std::endl;
+  d+=c;
+  std::cout<<d<<std::endl;
+  
+  std::cout<<d+c<<std::endl;
+  std::cout<<d+2023<<std::endl;
 
-   std::cout<<d+2<<std::endl;
-   std::cout<<2+d<<std::endl;
-
-   cout << "test01" << endl;
 }
-
-int main()
+main()
 {
    test01();
    cout << "hello,world! tempalte2013" << endl;

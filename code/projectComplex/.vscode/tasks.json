@@ -8,10 +8,9 @@
             "type": "shell",
             "label": "cmake",
             "command": "cmake",
-            "args":[
+            "args": [
                 ".."
-		    ]
-                
+            ]
         },
         {
             "label": "make",
@@ -28,7 +27,13 @@
             "dependsOn": [
                 "cmake",
                 "make"
-			]
-        }
+            ]
+        },
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo ${workspaceFolder}"
+        },
+
     ],
 }

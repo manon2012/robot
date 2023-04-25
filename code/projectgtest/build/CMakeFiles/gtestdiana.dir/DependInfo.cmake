@@ -17,7 +17,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/include"
+  "../include"
   "/home/wupei/gtest/googletest/include"
   "/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include"
   )
