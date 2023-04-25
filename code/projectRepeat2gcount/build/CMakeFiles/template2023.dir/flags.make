@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/include -I/home/wupei/gtest/googletest/include -I/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include 
+CXX_INCLUDES = 
 

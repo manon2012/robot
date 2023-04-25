@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Apple.h
+Fruit.h
+../include/Fruit.h
+
+../include/Fruit.h
+
+../include/test01.h
+
+/opt/wupei/git/code/projectRepeat2/src/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+string.h
+-
+Apple.h
+/opt/wupei/git/code/projectRepeat2/src/Apple.h
+test01.h
+/opt/wupei/git/code/projectRepeat2/src/test01.h
+
+/opt/wupei/git/code/projectRepeat2/src/test01.cpp
+test01.h
+/opt/wupei/git/code/projectRepeat2/src/test01.h
+string
+-
+iostream
+-
+

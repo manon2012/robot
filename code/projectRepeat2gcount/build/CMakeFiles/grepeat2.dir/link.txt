@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/grepeat2.dir/src/main.cpp.o CMakeFiles/grepeat2.dir/src/test01.cpp.o  -o grepeat2 -lpthread 

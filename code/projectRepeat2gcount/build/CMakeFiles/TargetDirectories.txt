@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectRepeat2/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectRepeat2/build/CMakeFiles/grepeat2.dir
+/opt/wupei/git/code/projectRepeat2/build/CMakeFiles/edit_cache.dir

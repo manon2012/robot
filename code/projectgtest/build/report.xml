@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="3" failures="0" disabled="0" errors="0" time="73.376" timestamp="2023-04-24T16:20:00.256" name="AllTests">
-  <testsuite name="MoveTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="73.376" timestamp="2023-04-24T16:20:00.256">
-    <testcase name="d0" file="/opt/wupei/git/code/projectgtest/src/init.cpp" line="60" status="run" result="completed" time="0" timestamp="2023-04-24T16:20:00.256" classname="MoveTest" />
-    <testcase name="move3plus3" file="/opt/wupei/git/code/projectgtest/src/move3plus3.cpp" line="63" status="run" result="completed" time="73.376" timestamp="2023-04-24T16:20:00.256" classname="MoveTest" />
-    <testcase name="add100" file="/opt/wupei/git/code/projectgtest/src/move3plus3.cpp" line="180" status="run" result="completed" time="0" timestamp="2023-04-24T16:21:13.633" classname="MoveTest" />
+<testsuites tests="3" failures="0" disabled="0" errors="0" time="56.984" timestamp="2023-04-25T09:46:57.605" name="AllTests">
+  <testsuite name="MoveTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="56.984" timestamp="2023-04-25T09:46:57.605">
+    <testcase name="d0" file="/opt/wupei/git/code/projectgtest/src/init.cpp" line="60" status="run" result="completed" time="0" timestamp="2023-04-25T09:46:57.605" classname="MoveTest" />
+    <testcase name="move3plus3" file="/opt/wupei/git/code/projectgtest/src/move3plus3.cpp" line="63" status="run" result="completed" time="56.984" timestamp="2023-04-25T09:46:57.605" classname="MoveTest" />
+    <testcase name="add100" file="/opt/wupei/git/code/projectgtest/src/move3plus3.cpp" line="180" status="run" result="completed" time="0" timestamp="2023-04-25T09:47:54.590" classname="MoveTest" />
   </testsuite>
 </testsuites>

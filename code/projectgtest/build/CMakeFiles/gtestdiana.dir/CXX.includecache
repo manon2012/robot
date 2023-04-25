@@ -6,31 +6,13 @@
 
 #IncludeRegexTransform: 
 
-.././include/DianaAPI.h
+/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/DianaAPI.h
 DianaAPIDef.h
-.././include/DianaAPIDef.h
+/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/DianaAPIDef.h
 FunctionOptDef.h
-.././include/FunctionOptDef.h
+/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/FunctionOptDef.h
 Environment.h
-.././include/Environment.h
-
-.././include/test_base.h
-windows.h
-.././include/windows.h
-time.h
-.././include/time.h
-string.h
-.././include/string.h
-float.h
-.././include/float.h
-math.h
-.././include/math.h
-iostream
-.././include/iostream
-fstream
-.././include/fstream
-vector
--
+/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/Environment.h
 
 /home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include/DianaAPIDef.h
 stdint.h
