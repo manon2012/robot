@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/NewString.h
+iostream
+-
+list
+-
+string.h
+-
+
 /opt/wupei/git/code/projectString/src/NewString.cpp
 NewString.h
 /opt/wupei/git/code/projectString/src/NewString.h

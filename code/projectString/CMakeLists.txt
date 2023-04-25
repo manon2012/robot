@@ -5,7 +5,8 @@ add_executable(NewString src/main.cpp  src/NewString.cpp) #添加生成可执行
 
 set(CMAKE_BUILD_TYPE "Debug")
 
-include_directories(${workspaceFolder}/include)
+#include_directories(${workspaceFolder}/include)
+include_directories(include)
 
 target_link_libraries(NewString pthread)   
 

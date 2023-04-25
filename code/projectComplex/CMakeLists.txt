@@ -4,7 +4,7 @@ project(projectComplex VERSION 1.0) #项目名称及自定义版本号
 add_executable(Complex src/main.cpp) #添加生成可执行文件
 
 set(CMAKE_BUILD_TYPE "Debug")
-include_directories(${workspaceFolder}/include)
+include_directories(include)
 
 
 target_link_libraries(Complex pthread)    #make ok

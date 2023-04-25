@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/include 
+CXX_INCLUDES = -I/opt/wupei/git/code/projectComplex/include 
 

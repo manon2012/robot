@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/opt/wupei/git/code/projectComplex/include/Apple.h
+../include/Apple.h
 Fruit.h
-/opt/wupei/git/code/projectComplex/include/Fruit.h
+../include/Fruit.h
 
-/opt/wupei/git/code/projectComplex/include/Fruit.h
+../include/Fruit.h
 
 /opt/wupei/git/code/projectComplex/src/main.cpp
 iostream
@@ -21,6 +21,6 @@ mutex
 -
 string.h
 -
-../include/Apple.h
-/opt/wupei/git/code/projectComplex/include/Apple.h
+Apple.h
+/opt/wupei/git/code/projectComplex/src/Apple.h
 

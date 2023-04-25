@@ -2,7 +2,7 @@
 #include <thread>
 #include <mutex>
 #include <string.h>
-#include "../include/Apple.h"
+#include "Apple.h"
 using namespace std;
 
 /*
@@ -18,7 +18,7 @@ using namespace std;
 class Complex
 {
    friend ostream &operator<<(ostream &cout, const Complex &other);
-   friend Complex DoAPL(const Complex&c1 , const Complex &c2);
+   friend Complex& _doapl( Complex * ,const Complex &r);
 
 public:
    Complex(double x = 0, double y = 0) : m_real(x), m_imag(y)
@@ -37,13 +37,13 @@ public:
       this->m_imag = other.m_imag;
    }
 
-   Complex &operator+=(const Complex &other)
+   Complex &operator+=(const Complex &r)
    {
-      this->m_real += other.m_real;
-      this->m_imag += other.m_imag;
-      return *this;
+      
+      return _doapl(this,r);
    }
-
+   double real() const { return m_real;}
+   double imag() const { return m_imag; }
    
    ~Complex()
    {
@@ -59,15 +59,28 @@ ostream &operator<<(ostream &cout, const Complex &other)
    return cout;
 }
 
-Complex DoAPL(const Complex&c1 , const Complex &c2) 
+Complex& _doapl(Complex * obj , const Complex &r) 
 {
-   return Complex(c1.m_real + c2.m_real, c1.m_imag+c2.m_imag);
+   obj->m_real += r.real();
+   obj->m_imag += r.imag();
+   return *obj;
 }
 
-   Complex &operator+(const Complex &C1,const Complex &C2)
-   {
-         return DoAPL(C1,C2);
-   }
+Complex operator +(const Complex &l,const Complex &r)
+{
+      return Complex(l.real()+r.real(),l.imag()+r.imag());
+}
+
+Complex operator+(const Complex &r, double x)
+{
+   return Complex(r.real()+x,r.imag());
+}
+
+Complex operator+(double x , const Complex&r)
+{
+   return Complex(x+r.real(),r.imag());
+}
+
 
 void test01()
 {
@@ -80,6 +93,13 @@ void test01()
    std::cout << b << std::endl;
    std::cout << c << std::endl;
    std::cout << d << std::endl;
+
+   d+=c;
+   std::cout << d << std::endl;
+
+   std::cout<<d+2<<std::endl;
+   std::cout<<2+d<<std::endl;
+
    cout << "test01" << endl;
 }
 
