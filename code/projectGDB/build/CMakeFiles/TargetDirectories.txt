@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectGDB/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectGDB/build/CMakeFiles/projectgdb.dir
+/opt/wupei/git/code/projectGDB/build/CMakeFiles/edit_cache.dir

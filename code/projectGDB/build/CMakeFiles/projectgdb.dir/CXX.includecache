@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Apple.h
+Fruit.h
+../include/Fruit.h
+
+../include/Fruit.h
+
+/opt/wupei/git/code/projectGDB/src/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+string.h
+-
+Apple.h
+/opt/wupei/git/code/projectGDB/src/Apple.h
+vector
+-
+
