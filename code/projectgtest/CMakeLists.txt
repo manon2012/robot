@@ -15,9 +15,9 @@ set(SOURCE
 )
 
 file(GLOB SOURCES "src/*.cpp"
-                  "src/SRZX/*.cpp"
-                  "src/fixture/*.cpp"
-                  "src/homework/*.cpp"
+                  #"src/SRZX/*.cpp"
+                  #"src/fixture/*.cpp"
+                  #"src/homework/*.cpp"
                   "src/test/*.cpp"
 )
 #add_executable(${PROJECT_NAME} ${SOURCE})   notwork
