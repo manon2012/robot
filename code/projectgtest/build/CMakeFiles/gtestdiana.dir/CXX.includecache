@@ -470,41 +470,41 @@ test_base.h
 gtest/gtest.h
 -
 
-/opt/wupei/git/code/projectgtest/src/fixturetest.cpp
+/opt/wupei/git/code/projectgtest/src/fixture/fixturetest.cpp
 DianaAPI.h
-/opt/wupei/git/code/projectgtest/src/DianaAPI.h
+/opt/wupei/git/code/projectgtest/src/fixture/DianaAPI.h
 test_base.h
-/opt/wupei/git/code/projectgtest/src/test_base.h
+/opt/wupei/git/code/projectgtest/src/fixture/test_base.h
 gtest/gtest.h
 -
 
-/opt/wupei/git/code/projectgtest/src/init.cpp
+/opt/wupei/git/code/projectgtest/src/homework/move3plus3.cpp
 DianaAPI.h
-/opt/wupei/git/code/projectgtest/src/DianaAPI.h
+/opt/wupei/git/code/projectgtest/src/homework/DianaAPI.h
 test_base.h
-/opt/wupei/git/code/projectgtest/src/test_base.h
+/opt/wupei/git/code/projectgtest/src/homework/test_base.h
 gtest/gtest.h
--
-stdexcept
 -
 
 /opt/wupei/git/code/projectgtest/src/main.cpp
 gtest/gtest.h
 -
 
-/opt/wupei/git/code/projectgtest/src/move3plus3.cpp
+/opt/wupei/git/code/projectgtest/src/test/init.cpp
 DianaAPI.h
-/opt/wupei/git/code/projectgtest/src/DianaAPI.h
+/opt/wupei/git/code/projectgtest/src/test/DianaAPI.h
 test_base.h
-/opt/wupei/git/code/projectgtest/src/test_base.h
+/opt/wupei/git/code/projectgtest/src/test/test_base.h
 gtest/gtest.h
 -
+stdexcept
+-
 
-/opt/wupei/git/code/projectgtest/src/onlytest.cpp
+/opt/wupei/git/code/projectgtest/src/test/onlytest.cpp
 DianaAPI.h
-/opt/wupei/git/code/projectgtest/src/DianaAPI.h
+/opt/wupei/git/code/projectgtest/src/test/DianaAPI.h
 test_base.h
-/opt/wupei/git/code/projectgtest/src/test_base.h
+/opt/wupei/git/code/projectgtest/src/test/test_base.h
 gtest/gtest.h
 -
 

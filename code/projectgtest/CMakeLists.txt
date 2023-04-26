@@ -16,6 +16,9 @@ set(SOURCE
 
 file(GLOB SOURCES "src/*.cpp"
                   "src/SRZX/*.cpp"
+                  "src/fixture/*.cpp"
+                  "src/homework/*.cpp"
+                  "src/test/*.cpp"
 )
 #add_executable(${PROJECT_NAME} ${SOURCE})   notwork
 #add_executable(gtestdiana ${SOURCE})
@@ -26,8 +29,8 @@ set(CMAKE_BUILD_TYPE "Debug")
 
 
 
-
-include_directories(${workspaceFolder}/include)
+#include_directories(${workspaceFolder}/include) this not work, why?
+include_directories(include)
 include_directories(/home/wupei/gtest/googletest/include)
 
 include_directories(/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include)

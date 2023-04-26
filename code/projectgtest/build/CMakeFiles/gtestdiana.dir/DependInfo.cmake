@@ -6,11 +6,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/opt/wupei/git/code/projectgtest/src/SRZX/srzx6.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/SRZX/srzx7.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o"
-  "/opt/wupei/git/code/projectgtest/src/fixturetest.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o"
-  "/opt/wupei/git/code/projectgtest/src/init.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/init.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/fixture/fixturetest.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/homework/move3plus3.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/main.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/main.cpp.o"
-  "/opt/wupei/git/code/projectgtest/src/move3plus3.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o"
-  "/opt/wupei/git/code/projectgtest/src/onlytest.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/test/init.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/test/init.cpp.o"
+  "/opt/wupei/git/code/projectgtest/src/test/onlytest.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o"
   "/opt/wupei/git/code/projectgtest/src/test_base.cpp" "/opt/wupei/git/code/projectgtest/build/CMakeFiles/gtestdiana.dir/src/test_base.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

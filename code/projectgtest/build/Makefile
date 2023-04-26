@@ -177,59 +177,59 @@ src/SRZX/srzx7.cpp.s:
 	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.s
 .PHONY : src/SRZX/srzx7.cpp.s
 
-src/fixturetest.o: src/fixturetest.cpp.o
+src/fixture/fixturetest.o: src/fixture/fixturetest.cpp.o
 
-.PHONY : src/fixturetest.o
-
-# target to build an object file
-src/fixturetest.cpp.o:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.o
-.PHONY : src/fixturetest.cpp.o
-
-src/fixturetest.i: src/fixturetest.cpp.i
-
-.PHONY : src/fixturetest.i
-
-# target to preprocess a source file
-src/fixturetest.cpp.i:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.i
-.PHONY : src/fixturetest.cpp.i
-
-src/fixturetest.s: src/fixturetest.cpp.s
-
-.PHONY : src/fixturetest.s
-
-# target to generate assembly for a file
-src/fixturetest.cpp.s:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixturetest.cpp.s
-.PHONY : src/fixturetest.cpp.s
-
-src/init.o: src/init.cpp.o
-
-.PHONY : src/init.o
+.PHONY : src/fixture/fixturetest.o
 
 # target to build an object file
-src/init.cpp.o:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/init.cpp.o
-.PHONY : src/init.cpp.o
+src/fixture/fixturetest.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o
+.PHONY : src/fixture/fixturetest.cpp.o
 
-src/init.i: src/init.cpp.i
+src/fixture/fixturetest.i: src/fixture/fixturetest.cpp.i
 
-.PHONY : src/init.i
+.PHONY : src/fixture/fixturetest.i
 
 # target to preprocess a source file
-src/init.cpp.i:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/init.cpp.i
-.PHONY : src/init.cpp.i
+src/fixture/fixturetest.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.i
+.PHONY : src/fixture/fixturetest.cpp.i
 
-src/init.s: src/init.cpp.s
+src/fixture/fixturetest.s: src/fixture/fixturetest.cpp.s
 
-.PHONY : src/init.s
+.PHONY : src/fixture/fixturetest.s
 
 # target to generate assembly for a file
-src/init.cpp.s:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/init.cpp.s
-.PHONY : src/init.cpp.s
+src/fixture/fixturetest.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.s
+.PHONY : src/fixture/fixturetest.cpp.s
+
+src/homework/move3plus3.o: src/homework/move3plus3.cpp.o
+
+.PHONY : src/homework/move3plus3.o
+
+# target to build an object file
+src/homework/move3plus3.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o
+.PHONY : src/homework/move3plus3.cpp.o
+
+src/homework/move3plus3.i: src/homework/move3plus3.cpp.i
+
+.PHONY : src/homework/move3plus3.i
+
+# target to preprocess a source file
+src/homework/move3plus3.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.i
+.PHONY : src/homework/move3plus3.cpp.i
+
+src/homework/move3plus3.s: src/homework/move3plus3.cpp.s
+
+.PHONY : src/homework/move3plus3.s
+
+# target to generate assembly for a file
+src/homework/move3plus3.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.s
+.PHONY : src/homework/move3plus3.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -258,59 +258,59 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/move3plus3.o: src/move3plus3.cpp.o
+src/test/init.o: src/test/init.cpp.o
 
-.PHONY : src/move3plus3.o
-
-# target to build an object file
-src/move3plus3.cpp.o:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.o
-.PHONY : src/move3plus3.cpp.o
-
-src/move3plus3.i: src/move3plus3.cpp.i
-
-.PHONY : src/move3plus3.i
-
-# target to preprocess a source file
-src/move3plus3.cpp.i:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.i
-.PHONY : src/move3plus3.cpp.i
-
-src/move3plus3.s: src/move3plus3.cpp.s
-
-.PHONY : src/move3plus3.s
-
-# target to generate assembly for a file
-src/move3plus3.cpp.s:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/move3plus3.cpp.s
-.PHONY : src/move3plus3.cpp.s
-
-src/onlytest.o: src/onlytest.cpp.o
-
-.PHONY : src/onlytest.o
+.PHONY : src/test/init.o
 
 # target to build an object file
-src/onlytest.cpp.o:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/onlytest.cpp.o
-.PHONY : src/onlytest.cpp.o
+src/test/init.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/test/init.cpp.o
+.PHONY : src/test/init.cpp.o
 
-src/onlytest.i: src/onlytest.cpp.i
+src/test/init.i: src/test/init.cpp.i
 
-.PHONY : src/onlytest.i
+.PHONY : src/test/init.i
 
 # target to preprocess a source file
-src/onlytest.cpp.i:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/onlytest.cpp.i
-.PHONY : src/onlytest.cpp.i
+src/test/init.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/test/init.cpp.i
+.PHONY : src/test/init.cpp.i
 
-src/onlytest.s: src/onlytest.cpp.s
+src/test/init.s: src/test/init.cpp.s
 
-.PHONY : src/onlytest.s
+.PHONY : src/test/init.s
 
 # target to generate assembly for a file
-src/onlytest.cpp.s:
-	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/onlytest.cpp.s
-.PHONY : src/onlytest.cpp.s
+src/test/init.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/test/init.cpp.s
+.PHONY : src/test/init.cpp.s
+
+src/test/onlytest.o: src/test/onlytest.cpp.o
+
+.PHONY : src/test/onlytest.o
+
+# target to build an object file
+src/test/onlytest.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o
+.PHONY : src/test/onlytest.cpp.o
+
+src/test/onlytest.i: src/test/onlytest.cpp.i
+
+.PHONY : src/test/onlytest.i
+
+# target to preprocess a source file
+src/test/onlytest.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.i
+.PHONY : src/test/onlytest.cpp.i
+
+src/test/onlytest.s: src/test/onlytest.cpp.s
+
+.PHONY : src/test/onlytest.s
+
+# target to generate assembly for a file
+src/test/onlytest.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.s
+.PHONY : src/test/onlytest.cpp.s
 
 src/test_base.o: src/test_base.cpp.o
 
@@ -354,21 +354,21 @@ help:
 	@echo "... src/SRZX/srzx7.o"
 	@echo "... src/SRZX/srzx7.i"
 	@echo "... src/SRZX/srzx7.s"
-	@echo "... src/fixturetest.o"
-	@echo "... src/fixturetest.i"
-	@echo "... src/fixturetest.s"
-	@echo "... src/init.o"
-	@echo "... src/init.i"
-	@echo "... src/init.s"
+	@echo "... src/fixture/fixturetest.o"
+	@echo "... src/fixture/fixturetest.i"
+	@echo "... src/fixture/fixturetest.s"
+	@echo "... src/homework/move3plus3.o"
+	@echo "... src/homework/move3plus3.i"
+	@echo "... src/homework/move3plus3.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/move3plus3.o"
-	@echo "... src/move3plus3.i"
-	@echo "... src/move3plus3.s"
-	@echo "... src/onlytest.o"
-	@echo "... src/onlytest.i"
-	@echo "... src/onlytest.s"
+	@echo "... src/test/init.o"
+	@echo "... src/test/init.i"
+	@echo "... src/test/init.s"
+	@echo "... src/test/onlytest.o"
+	@echo "... src/test/onlytest.i"
+	@echo "... src/test/onlytest.s"
 	@echo "... src/test_base.o"
 	@echo "... src/test_base.i"
 	@echo "... src/test_base.s"
