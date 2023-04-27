@@ -105,9 +105,105 @@ CMakeFiles/gtestdiana.dir/src/test_base.cpp.o.provides: CMakeFiles/gtestdiana.di
 CMakeFiles/gtestdiana.dir/src/test_base.cpp.o.provides.build: CMakeFiles/gtestdiana.dir/src/test_base.cpp.o
 
 
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o: CMakeFiles/gtestdiana.dir/flags.make
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o: ../src/SRZX/srzx6.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o -c /opt/wupei/git/code/projectgtest/src/SRZX/srzx6.cpp
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/git/code/projectgtest/src/SRZX/srzx6.cpp > CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.i
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/git/code/projectgtest/src/SRZX/srzx6.cpp -o CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.s
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.requires:
+
+.PHONY : CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.requires
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.provides: CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.requires
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.provides.build
+.PHONY : CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.provides
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.provides.build: CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o
+
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o: CMakeFiles/gtestdiana.dir/flags.make
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o: ../src/SRZX/srzx7.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o -c /opt/wupei/git/code/projectgtest/src/SRZX/srzx7.cpp
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/git/code/projectgtest/src/SRZX/srzx7.cpp > CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.i
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/git/code/projectgtest/src/SRZX/srzx7.cpp -o CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.s
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.requires:
+
+.PHONY : CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.requires
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.provides: CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.requires
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.provides.build
+.PHONY : CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.provides
+
+CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.provides.build: CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o
+
+
+CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o: CMakeFiles/gtestdiana.dir/flags.make
+CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o: ../src/fixture/fixturetest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o -c /opt/wupei/git/code/projectgtest/src/fixture/fixturetest.cpp
+
+CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/git/code/projectgtest/src/fixture/fixturetest.cpp > CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.i
+
+CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/git/code/projectgtest/src/fixture/fixturetest.cpp -o CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.s
+
+CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.requires:
+
+.PHONY : CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.requires
+
+CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.provides: CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.provides.build
+.PHONY : CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.provides
+
+CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.provides.build: CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o
+
+
+CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o: CMakeFiles/gtestdiana.dir/flags.make
+CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o: ../src/homework/move3plus3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o -c /opt/wupei/git/code/projectgtest/src/homework/move3plus3.cpp
+
+CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/git/code/projectgtest/src/homework/move3plus3.cpp > CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.i
+
+CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/git/code/projectgtest/src/homework/move3plus3.cpp -o CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.s
+
+CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.requires:
+
+.PHONY : CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.requires
+
+CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.provides: CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.requires
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.provides.build
+.PHONY : CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.provides
+
+CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.provides.build: CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o
+
+
 CMakeFiles/gtestdiana.dir/src/test/init.cpp.o: CMakeFiles/gtestdiana.dir/flags.make
 CMakeFiles/gtestdiana.dir/src/test/init.cpp.o: ../src/test/init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gtestdiana.dir/src/test/init.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gtestdiana.dir/src/test/init.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestdiana.dir/src/test/init.cpp.o -c /opt/wupei/git/code/projectgtest/src/test/init.cpp
 
 CMakeFiles/gtestdiana.dir/src/test/init.cpp.i: cmake_force
@@ -131,7 +227,7 @@ CMakeFiles/gtestdiana.dir/src/test/init.cpp.o.provides.build: CMakeFiles/gtestdi
 
 CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o: CMakeFiles/gtestdiana.dir/flags.make
 CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o: ../src/test/onlytest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o -c /opt/wupei/git/code/projectgtest/src/test/onlytest.cpp
 
 CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.i: cmake_force
@@ -157,6 +253,10 @@ CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o.provides.build: CMakeFiles/gte
 gtestdiana_OBJECTS = \
 "CMakeFiles/gtestdiana.dir/src/main.cpp.o" \
 "CMakeFiles/gtestdiana.dir/src/test_base.cpp.o" \
+"CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o" \
+"CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o" \
+"CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o" \
+"CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o" \
 "CMakeFiles/gtestdiana.dir/src/test/init.cpp.o" \
 "CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o"
 
@@ -165,11 +265,15 @@ gtestdiana_EXTERNAL_OBJECTS =
 
 gtestdiana: CMakeFiles/gtestdiana.dir/src/main.cpp.o
 gtestdiana: CMakeFiles/gtestdiana.dir/src/test_base.cpp.o
+gtestdiana: CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o
+gtestdiana: CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o
+gtestdiana: CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o
+gtestdiana: CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o
 gtestdiana: CMakeFiles/gtestdiana.dir/src/test/init.cpp.o
 gtestdiana: CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o
 gtestdiana: CMakeFiles/gtestdiana.dir/build.make
 gtestdiana: CMakeFiles/gtestdiana.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable gtestdiana"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/opt/wupei/git/code/projectgtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable gtestdiana"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtestdiana.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -179,6 +283,10 @@ CMakeFiles/gtestdiana.dir/build: gtestdiana
 
 CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/main.cpp.o.requires
 CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/test_base.cpp.o.requires
+CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o.requires
+CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o.requires
+CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o.requires
+CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o.requires
 CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/test/init.cpp.o.requires
 CMakeFiles/gtestdiana.dir/requires: CMakeFiles/gtestdiana.dir/src/test/onlytest.cpp.o.requires
 

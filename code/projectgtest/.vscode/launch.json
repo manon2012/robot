@@ -10,7 +10,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/gtestdiana",
-            "args": [],
+            "args": ["--gtest_filter=SRZX*"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

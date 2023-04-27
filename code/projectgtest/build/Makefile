@@ -123,6 +123,114 @@ gtestdiana/fast:
 	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/build
 .PHONY : gtestdiana/fast
 
+src/SRZX/srzx6.o: src/SRZX/srzx6.cpp.o
+
+.PHONY : src/SRZX/srzx6.o
+
+# target to build an object file
+src/SRZX/srzx6.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.o
+.PHONY : src/SRZX/srzx6.cpp.o
+
+src/SRZX/srzx6.i: src/SRZX/srzx6.cpp.i
+
+.PHONY : src/SRZX/srzx6.i
+
+# target to preprocess a source file
+src/SRZX/srzx6.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.i
+.PHONY : src/SRZX/srzx6.cpp.i
+
+src/SRZX/srzx6.s: src/SRZX/srzx6.cpp.s
+
+.PHONY : src/SRZX/srzx6.s
+
+# target to generate assembly for a file
+src/SRZX/srzx6.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx6.cpp.s
+.PHONY : src/SRZX/srzx6.cpp.s
+
+src/SRZX/srzx7.o: src/SRZX/srzx7.cpp.o
+
+.PHONY : src/SRZX/srzx7.o
+
+# target to build an object file
+src/SRZX/srzx7.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.o
+.PHONY : src/SRZX/srzx7.cpp.o
+
+src/SRZX/srzx7.i: src/SRZX/srzx7.cpp.i
+
+.PHONY : src/SRZX/srzx7.i
+
+# target to preprocess a source file
+src/SRZX/srzx7.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.i
+.PHONY : src/SRZX/srzx7.cpp.i
+
+src/SRZX/srzx7.s: src/SRZX/srzx7.cpp.s
+
+.PHONY : src/SRZX/srzx7.s
+
+# target to generate assembly for a file
+src/SRZX/srzx7.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/SRZX/srzx7.cpp.s
+.PHONY : src/SRZX/srzx7.cpp.s
+
+src/fixture/fixturetest.o: src/fixture/fixturetest.cpp.o
+
+.PHONY : src/fixture/fixturetest.o
+
+# target to build an object file
+src/fixture/fixturetest.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.o
+.PHONY : src/fixture/fixturetest.cpp.o
+
+src/fixture/fixturetest.i: src/fixture/fixturetest.cpp.i
+
+.PHONY : src/fixture/fixturetest.i
+
+# target to preprocess a source file
+src/fixture/fixturetest.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.i
+.PHONY : src/fixture/fixturetest.cpp.i
+
+src/fixture/fixturetest.s: src/fixture/fixturetest.cpp.s
+
+.PHONY : src/fixture/fixturetest.s
+
+# target to generate assembly for a file
+src/fixture/fixturetest.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/fixture/fixturetest.cpp.s
+.PHONY : src/fixture/fixturetest.cpp.s
+
+src/homework/move3plus3.o: src/homework/move3plus3.cpp.o
+
+.PHONY : src/homework/move3plus3.o
+
+# target to build an object file
+src/homework/move3plus3.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.o
+.PHONY : src/homework/move3plus3.cpp.o
+
+src/homework/move3plus3.i: src/homework/move3plus3.cpp.i
+
+.PHONY : src/homework/move3plus3.i
+
+# target to preprocess a source file
+src/homework/move3plus3.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.i
+.PHONY : src/homework/move3plus3.cpp.i
+
+src/homework/move3plus3.s: src/homework/move3plus3.cpp.s
+
+.PHONY : src/homework/move3plus3.s
+
+# target to generate assembly for a file
+src/homework/move3plus3.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestdiana.dir/build.make CMakeFiles/gtestdiana.dir/src/homework/move3plus3.cpp.s
+.PHONY : src/homework/move3plus3.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -240,6 +348,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gtestdiana"
 	@echo "... edit_cache"
+	@echo "... src/SRZX/srzx6.o"
+	@echo "... src/SRZX/srzx6.i"
+	@echo "... src/SRZX/srzx6.s"
+	@echo "... src/SRZX/srzx7.o"
+	@echo "... src/SRZX/srzx7.i"
+	@echo "... src/SRZX/srzx7.s"
+	@echo "... src/fixture/fixturetest.o"
+	@echo "... src/fixture/fixturetest.i"
+	@echo "... src/fixture/fixturetest.s"
+	@echo "... src/homework/move3plus3.o"
+	@echo "... src/homework/move3plus3.i"
+	@echo "... src/homework/move3plus3.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

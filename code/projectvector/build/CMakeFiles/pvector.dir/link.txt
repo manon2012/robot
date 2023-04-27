@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/pvector.dir/src/main.cpp.o  -o pvector -lpthread 

@@ -1,9 +1,9 @@
  [Info] [CRobotApiSystem::createRobotApi]create ok:192.168.10.75,initRef:1
- [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-56070,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-35115,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-41834,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-50530,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-39107,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-37076,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-47545,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-41897,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-36522,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-60058,remoteipPort:-0
  [Info] [CThreadProcessorBase::start] start thread processor
  [Info] [CThreadProcessorBase::start] start thread processor
  [Info] [CRobotApiImp::requestJointCount] joint cout is  7
