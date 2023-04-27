@@ -4,6 +4,8 @@
 #include <string.h>
 #include "../include/Apple.h"
 using namespace std;
+#include <map>
+#include <Line>
 
 /*
    modify
@@ -56,6 +58,26 @@ void test02()
    {
       delete MyInstance[i];
    }
+}
+
+
+void test03()
+{
+
+   #include <map>
+
+std::map<string, Line> lines;
+
+Line line = Line(A,B,C)
+string name = "lineName";
+lines[name] = line;
+...
+std::map<string,Line>::iterator it = lines.find(name);
+if (it != lines.end())
+{
+  const Line& line = it->second;
+  ..
+}
 }
 
 int main()

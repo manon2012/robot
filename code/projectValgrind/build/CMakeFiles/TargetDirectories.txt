@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectValgrind/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectValgrind/build/CMakeFiles/pvalgrind.dir
+/opt/wupei/git/code/projectValgrind/build/CMakeFiles/edit_cache.dir

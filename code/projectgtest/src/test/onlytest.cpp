@@ -38,6 +38,7 @@ TEST(onlytest, print)
     // std::cout <<&(*abc)<<std::endl;
     //sleep(2);
 
+    char *p;
     
     int *a10 = new int[10000];
     int *a11 = new int[10000];
