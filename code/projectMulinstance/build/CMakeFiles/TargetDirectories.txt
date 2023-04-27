@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectMulinstance/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectMulinstance/build/CMakeFiles/mulinstance.dir
+/opt/wupei/git/code/projectMulinstance/build/CMakeFiles/edit_cache.dir

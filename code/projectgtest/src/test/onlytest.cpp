@@ -14,6 +14,14 @@ public:
         this->m_data=new int(*p.m_data);
 
     }
+    // ~Test2023()
+    // {
+    //     if(m_data)
+    //     {
+    //         delete[] m_data;
+    //         m_data = nullptr;
+    //     }
+    // }
 private:
     int *m_data;
 
@@ -34,5 +42,6 @@ TEST(onlytest, print)
     int *a10 = new int[10000];
     int *a11 = new int[10000];
     Test2023 t(new int(10000));
-    //delete a10;
+    delete[] a10; a10 = nullptr;
+    delete[] a11; a11 = nullptr;
 }

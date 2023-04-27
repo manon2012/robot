@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/mulinstance.dir/src/main.cpp.o  -o mulinstance -lpthread 

@@ -1,0 +1,186 @@
+==4876== Memcheck, a memory error detector
+==4876== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4876== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==4876== Command: ./gtestdiana --gtest_filter=onlytest*
+==4876== 
+--4876-- Valgrind options:
+--4876--    --leak-check=yes
+--4876--    --track-origins=yes
+--4876--    --show-leak-kinds=all
+--4876--    -v
+--4876-- Contents of /proc/version:
+--4876--   Linux version 5.4.0-147-generic (buildd@lcy02-amd64-043) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #164~18.04.1-Ubuntu SMP Tue Apr 4 00:20:20 UTC 2023
+--4876-- 
+--4876-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
+--4876-- Page sizes: currently 4096, max supported 4096
+--4876-- Valgrind library directory: /usr/lib/valgrind
+--4876-- Reading syms from /opt/wupei/git/code/projectgtest/build/gtestdiana
+--4876-- Reading syms from /lib/x86_64-linux-gnu/ld-2.27.so
+--4876--   Considering /lib/x86_64-linux-gnu/ld-2.27.so ..
+--4876--   .. CRC mismatch (computed 2977d8b2 wanted c64f09ed)
+--4876--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.27.so ..
+--4876--   .. CRC is valid
+--4876-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--4876--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--4876--   .. CRC mismatch (computed 41ddb025 wanted 9972f546)
+--4876--    object doesn't have a symbol table
+--4876--    object doesn't have a dynamic symbol table
+--4876-- Scheduler: using generic scheduler lock implementation.
+--4876-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==4876== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-4876-by-wupei-on-???
+==4876== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-4876-by-wupei-on-???
+==4876== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-4876-by-wupei-on-???
+==4876== 
+==4876== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==4876== don't want to do, unless you know exactly what you're doing,
+==4876== or are doing some strange experiment):
+==4876==   /usr/lib/valgrind/../../bin/vgdb --pid=4876 ...command...
+==4876== 
+==4876== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==4876==   /path/to/gdb ./gtestdiana
+==4876== and then give GDB the following command
+==4876==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=4876
+==4876== --pid is optional if only one valgrind process is running
+==4876== 
+--4876-- REDIR: 0x4020d20 (ld-linux-x86-64.so.2:strlen) redirected to 0x580608c1 (???)
+--4876-- REDIR: 0x4020b00 (ld-linux-x86-64.so.2:index) redirected to 0x580608db (???)
+--4876-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--4876--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--4876--   .. CRC mismatch (computed 50df1b30 wanted 4800a4cf)
+--4876--    object doesn't have a symbol table
+--4876-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--4876--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--4876--   .. CRC mismatch (computed f893b962 wanted 95ee359e)
+--4876--    object doesn't have a symbol table
+==4876== WARNING: new redirection conflicts with existing -- ignoring it
+--4876--     old: 0x04020d20 (strlen              ) R-> (0000.0) 0x580608c1 ???
+--4876--     new: 0x04020d20 (strlen              ) R-> (2007.0) 0x04c34db0 strlen
+--4876-- REDIR: 0x401d540 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c35ee0 (strcmp)
+--4876-- REDIR: 0x4021260 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c394f0 (mempcpy)
+--4876-- Reading syms from /home/wupei/work/industry-v2.13.0.230323/发货U盘/用户Api/DianaApi-x86_64-x64-linux/DianaApi/bin/libDianaApi.so
+--4876-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+--4876--    object doesn't have a symbol table
+--4876-- Reading syms from /lib/x86_64-linux-gnu/libm-2.27.so
+--4876--   Considering /lib/x86_64-linux-gnu/libm-2.27.so ..
+--4876--   .. CRC mismatch (computed 4e7cf542 wanted 8d27f134)
+--4876--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.27.so ..
+--4876--   .. CRC is valid
+--4876-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--4876--    object doesn't have a symbol table
+--4876-- Reading syms from /lib/x86_64-linux-gnu/libpthread-2.27.so
+--4876--   Considering /usr/lib/debug/.build-id/1f/06001733b9be9478b105faf0dac6bdf36c85de.debug ..
+--4876--   .. build-id is valid
+--4876-- Reading syms from /lib/x86_64-linux-gnu/libc-2.27.so
+--4876--   Considering /lib/x86_64-linux-gnu/libc-2.27.so ..
+--4876--   .. CRC mismatch (computed f250d419 wanted 4aacab51)
+--4876--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.27.so ..
+--4876--   .. CRC is valid
+--4876-- Reading syms from /home/wupei/Sdk-x86_64-x64-linux/Sdk/Runtime_Env/linux/x86_64/x64/libToolSdk.so
+--4876-- Reading syms from /home/wupei/Sdk-x86_64-x64-linux/Sdk/Runtime_Env/linux/x86_64/x64/libBasicSdk.so
+--4876-- Reading syms from /home/wupei/Sdk-x86_64-x64-linux/Sdk/Runtime_Env/linux/x86_64/x64/libxml2.so
+--4876-- Reading syms from /lib/x86_64-linux-gnu/libz.so.1.2.11
+--4876--    object doesn't have a symbol table
+--4876-- Reading syms from /lib/x86_64-linux-gnu/libdl-2.27.so
+--4876--   Considering /lib/x86_64-linux-gnu/libdl-2.27.so ..
+--4876--   .. CRC mismatch (computed 56b0b30d wanted 7867693f)
+--4876--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libdl-2.27.so ..
+--4876--   .. CRC is valid
+--4876-- Reading syms from /lib/x86_64-linux-gnu/librt-2.27.so
+--4876--   Considering /lib/x86_64-linux-gnu/librt-2.27.so ..
+--4876--   .. CRC mismatch (computed 9e680b7a wanted 1ab05bd9)
+--4876--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/librt-2.27.so ..
+--4876--   .. CRC is valid
+--4876-- REDIR: 0x5cfea50 (libc.so.6:memmove) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfdd60 (libc.so.6:strncpy) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfed30 (libc.so.6:strcasecmp) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfd7b0 (libc.so.6:strcat) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfdd90 (libc.so.6:rindex) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5d00480 (libc.so.6:rawmemchr) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfebc0 (libc.so.6:mempcpy) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfe9f0 (libc.so.6:bcmp) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfdd20 (libc.so.6:strncmp) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfd820 (libc.so.6:strcmp) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfeb20 (libc.so.6:memset) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5d1bdb0 (libc.so.6:wcschr) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfdcc0 (libc.so.6:strnlen) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfd890 (libc.so.6:strcspn) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfed80 (libc.so.6:strncasecmp) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfd860 (libc.so.6:strcpy) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfeec0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfddc0 (libc.so.6:strpbrk) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfd7e0 (libc.so.6:index) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfdc90 (libc.so.6:strlen) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5d08380 (libc.so.6:memrchr) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfedd0 (libc.so.6:strcasecmp_l) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfe9c0 (libc.so.6:memchr) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5d1cb70 (libc.so.6:wcslen) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfe070 (libc.so.6:strspn) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfed00 (libc.so.6:stpncpy) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfecd0 (libc.so.6:stpcpy) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5d004b0 (libc.so.6:strchrnul) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfee20 (libc.so.6:strncasecmp_l) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5cfe900 (libc.so.6:strstr) redirected to 0x4a2c6e0 (_vgnU_ifunc_wrapper)
+--4876-- REDIR: 0x5dee280 (libc.so.6:__strrchr_avx2) redirected to 0x4c34730 (rindex)
+--4876-- REDIR: 0x5cf7020 (libc.so.6:malloc) redirected to 0x4c31aa0 (malloc)
+--4876-- REDIR: 0x5dee450 (libc.so.6:__strlen_avx2) redirected to 0x4c34cf0 (strlen)
+--4876-- REDIR: 0x5deaa60 (libc.so.6:__memcmp_avx2_movbe) redirected to 0x4c37e00 (bcmp)
+--4876-- REDIR: 0x5d09b30 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c35da0 (strcmp)
+--4876-- REDIR: 0x5195280 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c32110 (operator new(unsigned long))
+--4876-- REDIR: 0x5dee990 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x4c386e0 (memmove)
+--4876-- REDIR: 0x5193390 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c331d0 (operator delete(void*))
+--4876-- REDIR: 0x5cfa050 (libc.so.6:calloc) redirected to 0x4c33a70 (calloc)
+--4876-- REDIR: 0x5dea2e0 (libc.so.6:__memchr_avx2) redirected to 0x4c35f80 (memchr)
+--4876-- REDIR: 0x5deee10 (libc.so.6:__memset_avx2_unaligned_erms) redirected to 0x4c385d0 (memset)
+--4876-- REDIR: 0x5de53d0 (libc.so.6:__strncmp_sse42) redirected to 0x4c35570 (__strncmp_sse42)
+--4876-- REDIR: 0x5dede60 (libc.so.6:__strchr_avx2) redirected to 0x4c34950 (index)
+--4876-- REDIR: 0x5deae40 (libc.so.6:__strcasecmp_avx) redirected to 0x4c355f0 (strcasecmp)
+--4876-- REDIR: 0x5dee090 (libc.so.6:__strchrnul_avx2) redirected to 0x4c39020 (strchrnul)
+--4876-- REDIR: 0x5dee970 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4c39130 (mempcpy)
+Note: Google Test filter = onlytest*
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from onlytest
+[ RUN      ] onlytest.print
+agile 
+robot 
+--4876-- REDIR: 0x5195330 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c32830 (operator new[](unsigned long))
+init
+--4876-- REDIR: 0x51933c0 (libstdc++.so.6:operator delete[](void*)) redirected to 0x4c336d0 (operator delete[](void*))
+[       OK ] onlytest.print (14 ms)
+[----------] 1 test from onlytest (24 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (76 ms total)
+[  PASSED  ] 1 test.
+--4876-- REDIR: 0x5cf7910 (libc.so.6:free) redirected to 0x4c32cd0 (free)
+==4876== 
+==4876== HEAP SUMMARY:
+==4876==     in use at exit: 4 bytes in 1 blocks
+==4876==   total heap usage: 649 allocs, 648 frees, 222,450 bytes allocated
+==4876== 
+==4876== Searching for pointers to 1 not-freed blocks
+==4876== Checked 198,008 bytes
+==4876== 
+==4876== 4 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==4876==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4876==    by 0x120A1A: onlytest_print_Test::TestBody() (onlytest.cpp:44)
+==4876==    by 0x15CD59: void testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x155F58: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x1331DD: testing::Test::Run() (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x133C48: testing::TestInfo::Run() (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x134533: testing::TestSuite::Run() (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x143A69: testing::internal::UnitTestImpl::RunAllTests() (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x15DFCC: bool testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x156EE6: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x142147: testing::UnitTest::Run() (in /opt/wupei/git/code/projectgtest/build/gtestdiana)
+==4876==    by 0x113681: RUN_ALL_TESTS() (gtest.h:2314)
+==4876== 
+==4876== LEAK SUMMARY:
+==4876==    definitely lost: 4 bytes in 1 blocks
+==4876==    indirectly lost: 0 bytes in 0 blocks
+==4876==      possibly lost: 0 bytes in 0 blocks
+==4876==    still reachable: 0 bytes in 0 blocks
+==4876==         suppressed: 0 bytes in 0 blocks
+==4876== 
+==4876== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==4876== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
