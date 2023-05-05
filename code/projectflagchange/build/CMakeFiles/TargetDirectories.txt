@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectflagchange/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectflagchange/build/CMakeFiles/flagchange.dir
+/opt/wupei/git/code/projectflagchange/build/CMakeFiles/edit_cache.dir

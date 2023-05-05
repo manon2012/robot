@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/projectarray.dir/src/main.cpp.o  -o projectarray -lpthread 

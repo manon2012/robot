@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectArray/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectArray/build/CMakeFiles/projectarray.dir
+/opt/wupei/git/code/projectArray/build/CMakeFiles/edit_cache.dir
