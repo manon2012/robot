@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/opt/wupei/source/projectprintabc/src/main.cpp" "/opt/wupei/source/projectprintabc/build/CMakeFiles/printabc.dir/src/main.cpp.o"
+  "/opt/wupei/git/code/projectprintabc/src/main.cpp" "/opt/wupei/git/code/projectprintabc/build/CMakeFiles/printabc.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

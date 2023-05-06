@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/notifyoneall.dir/src/main.cpp.o  -o notifyoneall -lpthread 

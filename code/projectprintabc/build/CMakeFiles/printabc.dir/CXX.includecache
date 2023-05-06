@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/opt/wupei/source/projectprintabc/include/Apple.h
+/opt/wupei/git/code/projectprintabc/include/Apple.h
 Fruit.h
-/opt/wupei/source/projectprintabc/include/Fruit.h
+/opt/wupei/git/code/projectprintabc/include/Fruit.h
 
-/opt/wupei/source/projectprintabc/include/Fruit.h
+/opt/wupei/git/code/projectprintabc/include/Fruit.h
 
-/opt/wupei/source/projectprintabc/src/main.cpp
+/opt/wupei/git/code/projectprintabc/src/main.cpp
 iostream
 -
 thread
@@ -22,7 +22,7 @@ mutex
 string.h
 -
 ../include/Apple.h
-/opt/wupei/source/projectprintabc/include/Apple.h
+/opt/wupei/git/code/projectprintabc/include/Apple.h
 condition_variable
 -
 

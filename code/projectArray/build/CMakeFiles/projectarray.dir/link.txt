@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/projectarray.dir/src/main.cpp.o  -o projectarray -lpthread 
+/usr/bin/c++  -g   CMakeFiles/projectarray.dir/src/main.cpp.o CMakeFiles/projectarray.dir/src/Apple.cpp.o  -o projectarray -lpthread 

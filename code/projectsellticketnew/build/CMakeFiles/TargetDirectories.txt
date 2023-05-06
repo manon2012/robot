@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectsellticketnew/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectsellticketnew/build/CMakeFiles/sellticket.dir
+/opt/wupei/git/code/projectsellticketnew/build/CMakeFiles/edit_cache.dir

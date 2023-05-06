@@ -1,3 +1,3 @@
-/opt/wupei/source/projectprintabc/build/CMakeFiles/rebuild_cache.dir
-/opt/wupei/source/projectprintabc/build/CMakeFiles/printabc.dir
-/opt/wupei/source/projectprintabc/build/CMakeFiles/edit_cache.dir
+/opt/wupei/git/code/projectprintabc/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectprintabc/build/CMakeFiles/printabc.dir
+/opt/wupei/git/code/projectprintabc/build/CMakeFiles/edit_cache.dir

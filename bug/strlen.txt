@@ -1,0 +1,5 @@
+ 'strlen' was not declared in this scope
+
+#include <string.h>  ok
+#include <string> not ok
+#include <cstring> ok

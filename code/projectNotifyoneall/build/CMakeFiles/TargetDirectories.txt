@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectNotifyoneall/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectNotifyoneall/build/CMakeFiles/notifyoneall.dir
+/opt/wupei/git/code/projectNotifyoneall/build/CMakeFiles/edit_cache.dir

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/projectarray.dir/src/main.cpp.o"
+  "CMakeFiles/projectarray.dir/src/Apple.cpp.o"
   "projectarray.pdb"
   "projectarray"
 )

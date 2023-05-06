@@ -12,6 +12,12 @@ Fruit.h
 
 /opt/wupei/git/code/projectArray/include/Fruit.h
 
+/opt/wupei/git/code/projectArray/src/Apple.cpp
+../include/Apple.h
+/opt/wupei/git/code/projectArray/include/Apple.h
+iostream
+-
+
 /opt/wupei/git/code/projectArray/src/main.cpp
 iostream
 -
