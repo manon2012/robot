@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projecttest/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projecttest/build/CMakeFiles/test0509.dir
+/opt/wupei/git/code/projecttest/build/CMakeFiles/edit_cache.dir
