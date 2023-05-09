@@ -30,9 +30,29 @@ def test01():
         sum += i
     print (sum)
 
+def IsPreme(x):
+    for i in range(2,x):
+        if x%i == 0:
+            return False
+    return  True
+
+def add100Preme():
+    sum = 0
+    premelist = []
+    for i in range(2,100):
+        if(IsPreme(i)):
+            sum += i
+            premelist.append(i)
+    print("all prime in 100 sum is: "+str(sum))
+    print (premelist)
+    print (len(premelist))
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #print_hi('PyCharm')
     #findmp3()
-    test01()
+    #test01()
+    #print(IsPreme(97))
+    #print(IsPreme(99))
+    add100Preme()
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
