@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sellticket.dir/src/main.cpp.o"
+  "CMakeFiles/sellticket.dir/src/Apple.cpp.o"
   "sellticket.pdb"
   "sellticket"
 )

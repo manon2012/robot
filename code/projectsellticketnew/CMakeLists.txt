@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.9) #最低版本
 
 project(sellticket VERSION 1.0) #项目名称及自定义版本号
-add_executable(sellticket src/main.cpp) #添加生成可执行文件
+add_executable(sellticket src/main.cpp src/Apple.cpp) #添加生成可执行文件
 
 set(CMAKE_BUILD_TYPE "Debug")
 

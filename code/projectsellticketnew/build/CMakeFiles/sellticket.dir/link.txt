@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/sellticket.dir/src/main.cpp.o  -o sellticket -lpthread 
+/usr/bin/c++  -g   CMakeFiles/sellticket.dir/src/main.cpp.o CMakeFiles/sellticket.dir/src/Apple.cpp.o  -o sellticket -lpthread 

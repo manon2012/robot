@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectautofor/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectautofor/build/CMakeFiles/autofor.dir
+/opt/wupei/git/code/projectautofor/build/CMakeFiles/edit_cache.dir

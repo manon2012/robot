@@ -5,4 +5,5 @@ using namespace std;
 void Apple::show()
 {
     cout<<"Apple come"<<endl;
+    cout<<__PRETTY_FUNCTION__<<endl;
 }

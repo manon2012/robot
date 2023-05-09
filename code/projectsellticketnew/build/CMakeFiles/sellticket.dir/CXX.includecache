@@ -12,6 +12,12 @@ Fruit.h
 
 /opt/wupei/git/code/projectsellticketnew/include/Fruit.h
 
+/opt/wupei/git/code/projectsellticketnew/src/Apple.cpp
+../include/Apple.h
+/opt/wupei/git/code/projectsellticketnew/include/Apple.h
+iostream
+-
+
 /opt/wupei/git/code/projectsellticketnew/src/main.cpp
 iostream
 -

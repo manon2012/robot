@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/autofor.dir/src/main.cpp.o  -o autofor -lpthread 
