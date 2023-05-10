@@ -30,7 +30,9 @@ void f() {
     LOG_SCOPE; 
 } 
 
-int main() { 
+
+
+int main1() { 
     LOG_SCOPE; 
     f(); 
 } 

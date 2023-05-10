@@ -6,7 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/opt/wupei/git/code/project100/src/main.cpp
+/opt/wupei/git/code/project100/include/Apple.h
+Fruit.h
+/opt/wupei/git/code/project100/include/Fruit.h
+
+/opt/wupei/git/code/project100/include/Fruit.h
+
+/opt/wupei/git/code/project100/src/Apple.cpp
+../include/Apple.h
+/opt/wupei/git/code/project100/include/Apple.h
+iostream
+-
+
+/opt/wupei/git/code/project100/src/LogScope.cpp
+iostream
+-
+
+/opt/wupei/git/code/project100/src/mainori.cpp
+iostream
+-
+thread
+-
+mutex
+-
+string.h
+-
+../include/Apple.h
+/opt/wupei/git/code/project100/include/Apple.h
+
+/opt/wupei/git/code/project100/src/nullpointer.cpp
+iostream
+-
+
+/opt/wupei/git/code/project100/src/samename.cpp
 iostream
 -
 

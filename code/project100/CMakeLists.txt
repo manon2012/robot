@@ -1,7 +1,14 @@
 cmake_minimum_required(VERSION 3.9) #最低版本
 
 project(projecttemplate VERSION 1.0) #项目名称及自定义版本号
-add_executable(p100 src/main.cpp) #添加生成可执行文件
+#add_executable(p100 src/main.cpp) #添加生成可执行文件
+
+file(GLOB SOURCES "src/*.cpp"
+     
+)
+add_executable(p100 ${SOURCES})
+
+
 
 set(CMAKE_BUILD_TYPE "Debug")
 

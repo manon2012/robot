@@ -6,6 +6,7 @@
 using namespace std;
 
 
+//#include "LogScope.cpp"
 
 /*
    modify
@@ -17,9 +18,17 @@ using namespace std;
         
 */
 
-int main()
+void test01()
+{
+//  logscope::LOG_SCOPE; 
+//  logscope::f(); 
+}
+
+
+int main0()
 {
 
+   test01();
    cout<<"hello,world! tempalte2013"<<endl;
 
    return 0;

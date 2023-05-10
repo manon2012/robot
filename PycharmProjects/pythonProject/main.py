@@ -47,6 +47,18 @@ def add100Preme():
     print (premelist)
     print (len(premelist))
 
+class elephant():
+    def __init__(self,name):
+        self.name = name
+    def talk(self):
+        print("i am elephant "+self.name)
+
+def test02():
+    #elephant e1("e1")
+    obj1 = elephant("obj1")
+    obj1.talk()
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #print_hi('PyCharm')
@@ -54,5 +66,6 @@ if __name__ == '__main__':
     #test01()
     #print(IsPreme(97))
     #print(IsPreme(99))
-    add100Preme()
+    #add100Preme()
+    test02()
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

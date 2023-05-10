@@ -123,32 +123,140 @@ p100/fast:
 	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/build
 .PHONY : p100/fast
 
-src/main.o: src/main.cpp.o
+src/Apple.o: src/Apple.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/Apple.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/Apple.cpp.o:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/Apple.cpp.o
+.PHONY : src/Apple.cpp.o
 
-src/main.i: src/main.cpp.i
+src/Apple.i: src/Apple.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/Apple.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/Apple.cpp.i:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/Apple.cpp.i
+.PHONY : src/Apple.cpp.i
 
-src/main.s: src/main.cpp.s
+src/Apple.s: src/Apple.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/Apple.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/Apple.cpp.s:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/Apple.cpp.s
+.PHONY : src/Apple.cpp.s
+
+src/LogScope.o: src/LogScope.cpp.o
+
+.PHONY : src/LogScope.o
+
+# target to build an object file
+src/LogScope.cpp.o:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/LogScope.cpp.o
+.PHONY : src/LogScope.cpp.o
+
+src/LogScope.i: src/LogScope.cpp.i
+
+.PHONY : src/LogScope.i
+
+# target to preprocess a source file
+src/LogScope.cpp.i:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/LogScope.cpp.i
+.PHONY : src/LogScope.cpp.i
+
+src/LogScope.s: src/LogScope.cpp.s
+
+.PHONY : src/LogScope.s
+
+# target to generate assembly for a file
+src/LogScope.cpp.s:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/LogScope.cpp.s
+.PHONY : src/LogScope.cpp.s
+
+src/mainori.o: src/mainori.cpp.o
+
+.PHONY : src/mainori.o
+
+# target to build an object file
+src/mainori.cpp.o:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/mainori.cpp.o
+.PHONY : src/mainori.cpp.o
+
+src/mainori.i: src/mainori.cpp.i
+
+.PHONY : src/mainori.i
+
+# target to preprocess a source file
+src/mainori.cpp.i:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/mainori.cpp.i
+.PHONY : src/mainori.cpp.i
+
+src/mainori.s: src/mainori.cpp.s
+
+.PHONY : src/mainori.s
+
+# target to generate assembly for a file
+src/mainori.cpp.s:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/mainori.cpp.s
+.PHONY : src/mainori.cpp.s
+
+src/nullpointer.o: src/nullpointer.cpp.o
+
+.PHONY : src/nullpointer.o
+
+# target to build an object file
+src/nullpointer.cpp.o:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/nullpointer.cpp.o
+.PHONY : src/nullpointer.cpp.o
+
+src/nullpointer.i: src/nullpointer.cpp.i
+
+.PHONY : src/nullpointer.i
+
+# target to preprocess a source file
+src/nullpointer.cpp.i:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/nullpointer.cpp.i
+.PHONY : src/nullpointer.cpp.i
+
+src/nullpointer.s: src/nullpointer.cpp.s
+
+.PHONY : src/nullpointer.s
+
+# target to generate assembly for a file
+src/nullpointer.cpp.s:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/nullpointer.cpp.s
+.PHONY : src/nullpointer.cpp.s
+
+src/samename.o: src/samename.cpp.o
+
+.PHONY : src/samename.o
+
+# target to build an object file
+src/samename.cpp.o:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/samename.cpp.o
+.PHONY : src/samename.cpp.o
+
+src/samename.i: src/samename.cpp.i
+
+.PHONY : src/samename.i
+
+# target to preprocess a source file
+src/samename.cpp.i:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/samename.cpp.i
+.PHONY : src/samename.cpp.i
+
+src/samename.s: src/samename.cpp.s
+
+.PHONY : src/samename.s
+
+# target to generate assembly for a file
+src/samename.cpp.s:
+	$(MAKE) -f CMakeFiles/p100.dir/build.make CMakeFiles/p100.dir/src/samename.cpp.s
+.PHONY : src/samename.cpp.s
 
 # Help Target
 help:
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... p100"
 	@echo "... edit_cache"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/Apple.o"
+	@echo "... src/Apple.i"
+	@echo "... src/Apple.s"
+	@echo "... src/LogScope.o"
+	@echo "... src/LogScope.i"
+	@echo "... src/LogScope.s"
+	@echo "... src/mainori.o"
+	@echo "... src/mainori.i"
+	@echo "... src/mainori.s"
+	@echo "... src/nullpointer.o"
+	@echo "... src/nullpointer.i"
+	@echo "... src/nullpointer.s"
+	@echo "... src/samename.o"
+	@echo "... src/samename.i"
+	@echo "... src/samename.s"
 .PHONY : help
 
 
