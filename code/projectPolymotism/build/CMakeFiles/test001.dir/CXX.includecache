@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/opt/wupei/git/code/projectPolymotism/include/Apple.h
+Fruit.h
+/opt/wupei/git/code/projectPolymotism/include/Fruit.h
+
+/opt/wupei/git/code/projectPolymotism/include/Fruit.h
+
+/opt/wupei/git/code/projectPolymotism/src/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+string.h
+-
+../include/Apple.h
+/opt/wupei/git/code/projectPolymotism/include/Apple.h
+

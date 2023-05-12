@@ -59,6 +59,26 @@ def test02():
     obj1.talk()
 
 
+
+#method1, 3 steps
+
+icebox icebox1
+
+
+def move_elephant_to_icebox():
+    openicebox()
+    putelephanttoicebox()
+    closeicebox()
+
+def openicebox():
+    print("icebox open")
+    //how to
+    return icebox
+def closeicebox():
+    print("icebox close")
+def putelephanttoicebox():
+    print("put a small elephant to icebox")
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #print_hi('PyCharm')
@@ -67,5 +87,6 @@ if __name__ == '__main__':
     #print(IsPreme(97))
     #print(IsPreme(99))
     #add100Preme()
-    test02()
+    #test02()
+    move_elephant_to_icebox()
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
