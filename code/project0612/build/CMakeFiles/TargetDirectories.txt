@@ -1,0 +1,3 @@
+/opt/wupei/git/code/project0612/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/project0612/build/CMakeFiles/p0612.dir
+/opt/wupei/git/code/project0612/build/CMakeFiles/edit_cache.dir

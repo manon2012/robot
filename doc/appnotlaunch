@@ -1,0 +1,992 @@
+
+sending term_signal 15 - will send SIGKILL after 2.0s
+
+process with pid 1587 terminated by signal SIGTERM with status: 15  (no core dumped)
+
+process servant/teachpendant started with pid 2017
+
+DianaApplication: no process found
+设置本地UTF-8编码失败!
+当前采用编码为:"C"!
+LanguageSupport Loaded!
+
+component instance created:LanguageSupport::LanguageSupport
+ModuleVersionManager Loaded!
+
+component instance created:ModuleVersionManager::ModuleVersionManager
+LogSupport Loaded!
+
+component instance created:LogSupport::LogSupport
+FrameworkCore Loaded!
+
+component instance created:FrameworkCore::FrameworkCore
+UserManager Loaded!
+
+component instance created:UserManager::UserManager
+EventService Loaded!
+
+component instance created:EventService::EventService
+HardwareManager Loaded!
+
+component instance created:HardwareManager::HardwareManager
+Install factory:CommHardware, version:1.0.0  BUILDTIME : May  8 2023 13:53:34
+Factory[InternetHardware] is created
+Install factory:InternetHardware, version:1.0.0  BUILDTIME : May  8 2023 13:53:34
+RpcService Loaded!
+
+component instance created:RpcService::RpcService
+InternetHardware is created
+Framework(ID equals 16) register to service succeed!
+
+UserAuthorizationManager Loaded!
+
+UserAuthorizationManager-xml file path: /home/diana/Config/Software/UserAuthData.xmlcomponent instance created:UserAuthorizationManager::UserAuthorizationManager
+UserAuthorizationManager(ID equals 32992) register to service succeed!
+
+RemoteFileService Loaded!
+
+component instance created:RemoteFileService::RemoteFileService
+RemoteFileService(ID equals 48) register to service succeed!
+
+ParameterService Loaded!
+
+component instance created:ParameterService::ParameterService
+ParameterService(ID equals 32) register to service succeed!
+
+VariantTableSupport Loaded!
+
+component instance created:VariantTableSupport::VariantTableSupport
+VariantTableSupport(ID equals 16400) register to service succeed!
+
+ExpressionSupport Loaded!
+
+component instance created:ExpressionSupport::ExpressionSupport
+ExpressionSupport(ID equals 16416) register to service succeed!
+
+InstructionManager Loaded!
+
+component instance created:InstructionManager::InstructionManager
+InstructionManager(ID equals 16432) register to service succeed!
+
+InteractiveService Loaded!
+
+component instance created:InteractiveService::InteractiveService
+InteractiveService(ID equals 16512) register to service succeed!
+
+AssemblerManager Loaded!
+
+component instance created:AssemblerManager::AssemblerManager
+AssemblerManager(ID equals 16448) register to service succeed!
+
+PythonScriptSupport Loaded!
+
+component instance created:PythonScriptSupport::PythonScriptSupport
+AssemblerStrategy Loaded!
+
+component instance created:AssemblerStrategy::AssemblerStrategy
+Plugin(DianaStatementsProxy) is loaded!
+
+AdvancedLanguage Loaded!
+
+component instance created:AdvancedLanguage::AdvancedLanguage
+AdvancedLanguage(ID equals 16480) register to service succeed!
+
+LNSupport Loaded!
+
+component instance created:LNSupport::LNSupport
+ProjectSupport Loaded!
+
+component instance created:ProjectSupport::ProjectSupport
+ProjectSupport(ID equals 32800) register to service succeed!
+
+IOSupport Loaded!
+
+component instance created:IOSupport::IOSupport
+IOSupport(ID equals 32848) register to service succeed!
+
+SerialPortSupport Loaded!
+
+component instance created:SerialPortSupport::SerialPortSupport
+[14:03:58.634 SerialPort Info] callback init
+SocketSupport Loaded!
+
+component instance created:SocketSupport::SocketSupport
+[14:03:58.634 SocketSupport] callback init
+RobotSupport Loaded!
+
+component instance created:RobotSupport::RobotSupport
+RobotSupport(ID equals 32784) register to service succeed!
+
+LineNumberSupport Loaded!
+
+component instance created:LineNumberSupport::LineNumberSupport
+LineNumberSupport(ID equals 33152) register to service succeed!
+
+WayPointManager Loaded!
+
+component instance created:WayPointManager::WayPointManager
+WayPointManager(ID equals 32880) register to service succeed!
+
+DianaValidator Loaded!
+
+component instance created:DianaValidator::DianaValidator
+DianaValidator(ID equals 32832) register to service succeed!
+
+CoordinateManager Loaded!
+
+component instance created:CoordinateManager::CoordinateManager
+CoordinateManager(ID equals 32816) register to service succeed!
+
+PowerIOSupport Loaded!
+
+component instance created:PowerIOSupport::PowerIOSupport
+PowerIOSupport(ID equals 33184) register to service succeed!
+
+SubSystemManager Loaded!
+
+component instance created:SubSystemManager::SubSystemManager
+SubSystemManager(ID equals 32944) register to service succeed!
+
+SystemState Loaded!
+
+DISABLE_FORCE_FUNCTION:0
+component instance created:SystemState::SystemState
+SystemState(ID equals 33072) register to service succeed!
+
+BasicControl Loaded!
+
+component instance created:BasicControl::BasicControl
+BasicControl(ID equals 33248) register to service succeed!
+
+SystemParameter Loaded!
+
+component instance created:SystemParameter::SystemParameter
+SystemParameter(ID equals 33088) register to service succeed!
+
+DynamicMoveSupport Loaded!
+
+component instance created:DynamicMoveSupport::DynamicMoveSupport
+DynamicMoveSupport(ID equals 33120) register to service succeed!
+
+KinematicsBase Loaded!
+
+component instance created:KinematicsBase::KinematicsBase
+KinematicsBase(ID equals 33216) register to service succeed!
+
+KinematicsMoveSupport Loaded!
+
+component instance created:KinematicsMoveSupport::KinematicsMoveSupport
+KinematicsMoveSupport(ID equals 33104) register to service succeed!
+
+SystemControl Loaded!
+
+component instance created:SystemControl::SystemControl
+SystemControl(ID equals 33232) register to service succeed!
+
+ConveyorSupport Loaded!
+
+component instance created:ConveyorSupport::ConveyorSupport
+ConveyorSupport(ID equals 33296) register to service succeed!
+
+DianaPreAndPostProcessor Loaded!
+
+component instance created:DianaPreAndPostProcessor::DianaPreAndPostProcessor
+IOFunction Loaded!
+
+component instance created:IOFunction::IOFunction
+IOFunction(ID equals 32912) register to service succeed!
+
+ToolSupport Loaded!
+
+component instance created:ToolSupport::ToolSupport
+ToolSupport(ID equals 32864) register to service succeed!
+
+CleanErrorSupport Loaded!
+
+component instance created:CleanErrorSupport::CleanErrorSupport
+CleanErrorSupport(ID equals 33024) register to service succeed!
+
+PayloadIdentifySupport Loaded!
+
+component instance created:PayloadIdentifySupport::PayloadIdentifySupport
+PayloadIdentifySupport(ID equals 33136) register to service succeed!
+
+WarningSupport Loaded!
+
+component instance created:WarningSupport::WarningSupport
+WarningSupport(ID equals 33424) register to service succeed!
+
+[WarningSupport Project support]Init done
+RobotApiSupport Loaded!
+
+component instance created:RobotApiSupport::RobotApiSupport
+Use algorithm library:/opt/Algorithm/Runtime_Env/linux/x86_64/x64/algorithms/libDianaAlgorithm.so
+min-stiff in cart impedance mode is invalid, it will be changed.
+CRTCSystem [Error] file /home/diana/Config/Algorithm/forceControl.xml doesn't exist
+CRTCSystem [Error] file /home/diana/Config/Algorithm/robotFricParameter.xml doesn't exist
+CRTCSystem [Warning] file /home/diana/Config/Algorithm/robotInputLimit.xml doesn't exist, default value will be used
+HomePointManager Loaded!
+
+component instance created:HomePointManager::HomePointManager
+HomePointManager(ID equals 33056) register to service succeed!
+
+MemoryVariantSupport Loaded!
+
+component instance created:MemoryVariantSupport::MemoryVariantSupport
+MemoryVariantSupport(ID equals 33264) register to service succeed!
+
+VariantPublisher Loaded!
+
+component instance created:VariantPublisher::VariantPublisher
+VariantPublisher(ID equals 32896) register to service succeed!
+
+PLCService Loaded!
+
+component instance created:PLCService::PLCService
+PLCService(ID equals 33616) register to service succeed!
+
+SystemNetworkManager Loaded!
+
+running in platform : Ubuntu
+component instance created:SystemNetworkManager::SystemNetworkManager
+SystemNetworkManager(ID equals 33040) register to service succeed!
+
+ProfinetSupport Loaded!
+
+component instance created:ProfinetSupport::ProfinetSupport
+ProfinetSupport(ID equals 33168) register to service succeed!
+
+EndpointSupport Loaded!
+
+component instance created:EndpointSupport::EndpointSupport
+EndpointSupport(ID equals 33344) register to service succeed!
+
+ModbusSupport Loaded!
+
+component instance created:ModbusSupport::ModbusSupport
+ModbusSupport(ID equals 33328) register to service succeed!
+
+[2023-06-12 14:03:59.236] [ModbusSupport...]read config file success: /home/diana/Config/Modbus/modbusService.xml
+Open file error,the file maybe not exist:/home/diana/Config/Software/modbusConnection.xml
+[2023-06-12 14:03:59.237] [ModbusSupport***]Read connection config file failed, use default config values. /home/diana/Config/Modbus/modbusService.xml
+TorqueSensorCalibration Loaded!
+
+===========================Torque Sensor Calibration Config path: /home/diana/Config/Algorithm/calibrationZero.xml
+component instance created:TorqueSensorCalibration::TorqueSensorCalibration
+TorqueSensorCalibration(ID equals 33632) register to service succeed!
+
+RobotStatePublisher Loaded!
+
+component instance created:RobotStatePublisher::RobotStatePublisher
+ProgramLoadSupport Loaded!
+
+component instance created:ProgramLoadSupport::ProgramLoadSupport
+ProgramLoadSupport(ID equals 33280) register to service succeed!
+
+DianaVersionSupport Loaded!
+
+component instance created:DianaVersionSupport::DianaVersionSupport
+DianaVersionSupport(ID equals 33360) register to service succeed!
+
+TimerVariantSupport Loaded!
+
+component instance created:TimerVariantSupport::TimerVariantSupport
+DianaXSupport Loaded!
+
+component instance created:DianaXSupport::DianaXSupport
+DianaXSupport(ID equals 33392) register to service succeed!
+
+[DianaXSupport Project support]Init done
+ParamsStorageDevice Loaded!
+
+component instance created:ParamsStorageDevice::ParamsStorageDevice
+ParamsStorageDevice(ID equals 33408) register to service succeed!
+
+BackendServiceSupport Loaded!
+
+component instance created:BackendServiceSupport::BackendServiceSupport
+CoordinateCalibration Loaded!
+
+component instance created:CoordinateCalibration::CoordinateCalibration
+CoordinateCalibration(ID equals 33200) register to service succeed!
+
+ProjectPartner Loaded!
+
+component instance created:ProjectPartner::ProjectPartner
+[2023-06-12 14:03:59.343] [project support...]Open recent project, /user_data/Servant/TeachPendant/workspace, TESTio
+
+Use generic algorithm library:/opt/Algorithm/Runtime_Env/linux/x86_64/x64/algorithms/libGenericAlgorithm.so
+=============================start calling CDianaRobot::initRobotController.==============================
+=============================end CDianaRobot::initRobotController.======================================
+[2023-06-12 14:04:02.790] Diana Robot Systerm Error[-2207]:Robot is emergency stop.
+
+
+sending term_signal 15 - will send SIGKILL after 2.0s
+
+process with pid 2017 terminated by signal SIGTERM with status: 15  (no core dumped)
+
+process servant/teachpendant started with pid 2088
+
+DianaApplication: no process found
+设置本地UTF-8编码失败!
+当前采用编码为:"C"!
+LanguageSupport Loaded!
+
+component instance created:LanguageSupport::LanguageSupport
+ModuleVersionManager Loaded!
+
+component instance created:ModuleVersionManager::ModuleVersionManager
+LogSupport Loaded!
+
+component instance created:LogSupport::LogSupport
+FrameworkCore Loaded!
+
+component instance created:FrameworkCore::FrameworkCore
+UserManager Loaded!
+
+component instance created:UserManager::UserManager
+EventService Loaded!
+
+component instance created:EventService::EventService
+HardwareManager Loaded!
+
+component instance created:HardwareManager::HardwareManager
+Install factory:CommHardware, version:1.0.0  BUILDTIME : May  8 2023 13:53:34
+Factory[InternetHardware] is created
+Install factory:InternetHardware, version:1.0.0  BUILDTIME : May  8 2023 13:53:34
+RpcService Loaded!
+
+component instance created:RpcService::RpcService
+InternetHardware is created
+Framework(ID equals 16) register to service succeed!
+
+UserAuthorizationManager Loaded!
+
+UserAuthorizationManager-xml file path: /home/diana/Config/Software/UserAuthData.xmlcomponent instance created:UserAuthorizationManager::UserAuthorizationManager
+UserAuthorizationManager(ID equals 32992) register to service succeed!
+
+RemoteFileService Loaded!
+
+component instance created:RemoteFileService::RemoteFileService
+RemoteFileService(ID equals 48) register to service succeed!
+
+ParameterService Loaded!
+
+component instance created:ParameterService::ParameterService
+ParameterService(ID equals 32) register to service succeed!
+
+VariantTableSupport Loaded!
+
+component instance created:VariantTableSupport::VariantTableSupport
+VariantTableSupport(ID equals 16400) register to service succeed!
+
+ExpressionSupport Loaded!
+
+component instance created:ExpressionSupport::ExpressionSupport
+ExpressionSupport(ID equals 16416) register to service succeed!
+
+InstructionManager Loaded!
+
+component instance created:InstructionManager::InstructionManager
+InstructionManager(ID equals 16432) register to service succeed!
+
+InteractiveService Loaded!
+
+component instance created:InteractiveService::InteractiveService
+InteractiveService(ID equals 16512) register to service succeed!
+
+AssemblerManager Loaded!
+
+component instance created:AssemblerManager::AssemblerManager
+AssemblerManager(ID equals 16448) register to service succeed!
+
+PythonScriptSupport Loaded!
+
+component instance created:PythonScriptSupport::PythonScriptSupport
+AssemblerStrategy Loaded!
+
+component instance created:AssemblerStrategy::AssemblerStrategy
+Plugin(DianaStatementsProxy) is loaded!
+
+AdvancedLanguage Loaded!
+
+component instance created:AdvancedLanguage::AdvancedLanguage
+AdvancedLanguage(ID equals 16480) register to service succeed!
+
+LNSupport Loaded!
+
+component instance created:LNSupport::LNSupport
+ProjectSupport Loaded!
+
+component instance created:ProjectSupport::ProjectSupport
+ProjectSupport(ID equals 32800) register to service succeed!
+
+IOSupport Loaded!
+
+component instance created:IOSupport::IOSupport
+IOSupport(ID equals 32848) register to service succeed!
+
+SerialPortSupport Loaded!
+
+component instance created:SerialPortSupport::SerialPortSupport
+[14:04:16.642 SerialPort Info] callback init
+SocketSupport Loaded!
+
+component instance created:SocketSupport::SocketSupport
+[14:04:16.642 SocketSupport] callback init
+RobotSupport Loaded!
+
+component instance created:RobotSupport::RobotSupport
+RobotSupport(ID equals 32784) register to service succeed!
+
+LineNumberSupport Loaded!
+
+component instance created:LineNumberSupport::LineNumberSupport
+LineNumberSupport(ID equals 33152) register to service succeed!
+
+WayPointManager Loaded!
+
+component instance created:WayPointManager::WayPointManager
+WayPointManager(ID equals 32880) register to service succeed!
+
+DianaValidator Loaded!
+
+component instance created:DianaValidator::DianaValidator
+DianaValidator(ID equals 32832) register to service succeed!
+
+CoordinateManager Loaded!
+
+component instance created:CoordinateManager::CoordinateManager
+CoordinateManager(ID equals 32816) register to service succeed!
+
+PowerIOSupport Loaded!
+
+component instance created:PowerIOSupport::PowerIOSupport
+PowerIOSupport(ID equals 33184) register to service succeed!
+
+SubSystemManager Loaded!
+
+component instance created:SubSystemManager::SubSystemManager
+SubSystemManager(ID equals 32944) register to service succeed!
+
+SystemState Loaded!
+
+DISABLE_FORCE_FUNCTION:0
+component instance created:SystemState::SystemState
+SystemState(ID equals 33072) register to service succeed!
+
+BasicControl Loaded!
+
+component instance created:BasicControl::BasicControl
+BasicControl(ID equals 33248) register to service succeed!
+
+SystemParameter Loaded!
+
+component instance created:SystemParameter::SystemParameter
+SystemParameter(ID equals 33088) register to service succeed!
+
+DynamicMoveSupport Loaded!
+
+component instance created:DynamicMoveSupport::DynamicMoveSupport
+DynamicMoveSupport(ID equals 33120) register to service succeed!
+
+KinematicsBase Loaded!
+
+component instance created:KinematicsBase::KinematicsBase
+KinematicsBase(ID equals 33216) register to service succeed!
+
+KinematicsMoveSupport Loaded!
+
+component instance created:KinematicsMoveSupport::KinematicsMoveSupport
+KinematicsMoveSupport(ID equals 33104) register to service succeed!
+
+SystemControl Loaded!
+
+component instance created:SystemControl::SystemControl
+SystemControl(ID equals 33232) register to service succeed!
+
+ConveyorSupport Loaded!
+
+component instance created:ConveyorSupport::ConveyorSupport
+ConveyorSupport(ID equals 33296) register to service succeed!
+
+DianaPreAndPostProcessor Loaded!
+
+component instance created:DianaPreAndPostProcessor::DianaPreAndPostProcessor
+IOFunction Loaded!
+
+component instance created:IOFunction::IOFunction
+IOFunction(ID equals 32912) register to service succeed!
+
+ToolSupport Loaded!
+
+component instance created:ToolSupport::ToolSupport
+ToolSupport(ID equals 32864) register to service succeed!
+
+CleanErrorSupport Loaded!
+
+component instance created:CleanErrorSupport::CleanErrorSupport
+CleanErrorSupport(ID equals 33024) register to service succeed!
+
+PayloadIdentifySupport Loaded!
+
+component instance created:PayloadIdentifySupport::PayloadIdentifySupport
+PayloadIdentifySupport(ID equals 33136) register to service succeed!
+
+WarningSupport Loaded!
+
+component instance created:WarningSupport::WarningSupport
+WarningSupport(ID equals 33424) register to service succeed!
+
+[WarningSupport Project support]Init done
+RobotApiSupport Loaded!
+
+component instance created:RobotApiSupport::RobotApiSupport
+Use algorithm library:/opt/Algorithm/Runtime_Env/linux/x86_64/x64/algorithms/libDianaAlgorithm.so
+min-stiff in cart impedance mode is invalid, it will be changed.
+CRTCSystem [Error] file /home/diana/Config/Algorithm/forceControl.xml doesn't exist
+CRTCSystem [Error] file /home/diana/Config/Algorithm/robotFricParameter.xml doesn't exist
+CRTCSystem [Warning] file /home/diana/Config/Algorithm/robotInputLimit.xml doesn't exist, default value will be used
+HomePointManager Loaded!
+
+component instance created:HomePointManager::HomePointManager
+HomePointManager(ID equals 33056) register to service succeed!
+
+MemoryVariantSupport Loaded!
+
+component instance created:MemoryVariantSupport::MemoryVariantSupport
+MemoryVariantSupport(ID equals 33264) register to service succeed!
+
+VariantPublisher Loaded!
+
+component instance created:VariantPublisher::VariantPublisher
+VariantPublisher(ID equals 32896) register to service succeed!
+
+PLCService Loaded!
+
+component instance created:PLCService::PLCService
+PLCService(ID equals 33616) register to service succeed!
+
+SystemNetworkManager Loaded!
+
+running in platform : Ubuntu
+component instance created:SystemNetworkManager::SystemNetworkManager
+SystemNetworkManager(ID equals 33040) register to service succeed!
+
+ProfinetSupport Loaded!
+
+component instance created:ProfinetSupport::ProfinetSupport
+ProfinetSupport(ID equals 33168) register to service succeed!
+
+EndpointSupport Loaded!
+
+component instance created:EndpointSupport::EndpointSupport
+EndpointSupport(ID equals 33344) register to service succeed!
+
+ModbusSupport Loaded!
+
+component instance created:ModbusSupport::ModbusSupport
+ModbusSupport(ID equals 33328) register to service succeed!
+
+[2023-06-12 14:04:17.252] [ModbusSupport...]read config file success: /home/diana/Config/Modbus/modbusService.xml
+Open file error,the file maybe not exist:/home/diana/Config/Software/modbusConnection.xml
+[2023-06-12 14:04:17.252] [ModbusSupport***]Read connection config file failed, use default config values. /home/diana/Config/Modbus/modbusService.xml
+TorqueSensorCalibration Loaded!
+
+===========================Torque Sensor Calibration Config path: /home/diana/Config/Algorithm/calibrationZero.xml
+component instance created:TorqueSensorCalibration::TorqueSensorCalibration
+TorqueSensorCalibration(ID equals 33632) register to service succeed!
+
+RobotStatePublisher Loaded!
+
+component instance created:RobotStatePublisher::RobotStatePublisher
+ProgramLoadSupport Loaded!
+
+component instance created:ProgramLoadSupport::ProgramLoadSupport
+ProgramLoadSupport(ID equals 33280) register to service succeed!
+
+DianaVersionSupport Loaded!
+
+component instance created:DianaVersionSupport::DianaVersionSupport
+DianaVersionSupport(ID equals 33360) register to service succeed!
+
+TimerVariantSupport Loaded!
+
+component instance created:TimerVariantSupport::TimerVariantSupport
+DianaXSupport Loaded!
+
+component instance created:DianaXSupport::DianaXSupport
+DianaXSupport(ID equals 33392) register to service succeed!
+
+[DianaXSupport Project support]Init done
+ParamsStorageDevice Loaded!
+
+component instance created:ParamsStorageDevice::ParamsStorageDevice
+ParamsStorageDevice(ID equals 33408) register to service succeed!
+
+BackendServiceSupport Loaded!
+
+component instance created:BackendServiceSupport::BackendServiceSupport
+CoordinateCalibration Loaded!
+
+component instance created:CoordinateCalibration::CoordinateCalibration
+CoordinateCalibration(ID equals 33200) register to service succeed!
+
+ProjectPartner Loaded!
+
+component instance created:ProjectPartner::ProjectPartner
+[2023-06-12 14:04:17.377] [project support...]Open recent project, /user_data/Servant/TeachPendant/workspace, TESTio
+
+Use generic algorithm library:/opt/Algorithm/Runtime_Env/linux/x86_64/x64/algorithms/libGenericAlgorithm.so
+=============================start calling CDianaRobot::initRobotController.==============================
+=============================end CDianaRobot::initRobotController.======================================
+
+sending term_signal 15 - will send SIGKILL after 2.0s
+
+process with pid 2088 terminated by signal SIGTERM with status: 15  (no core dumped)
+
+process servant/teachpendant started with pid 2279
+
+DianaApplication: no process found
+设置本地UTF-8编码失败!
+当前采用编码为:"C"!
+LanguageSupport Loaded!
+
+component instance created:LanguageSupport::LanguageSupport
+ModuleVersionManager Loaded!
+
+component instance created:ModuleVersionManager::ModuleVersionManager
+LogSupport Loaded!
+
+component instance created:LogSupport::LogSupport
+FrameworkCore Loaded!
+
+component instance created:FrameworkCore::FrameworkCore
+UserManager Loaded!
+
+component instance created:UserManager::UserManager
+EventService Loaded!
+
+component instance created:EventService::EventService
+HardwareManager Loaded!
+
+component instance created:HardwareManager::HardwareManager
+Install factory:CommHardware, version:1.0.0  BUILDTIME : May  8 2023 13:53:34
+Factory[InternetHardware] is created
+Install factory:InternetHardware, version:1.0.0  BUILDTIME : May  8 2023 13:53:34
+RpcService Loaded!
+
+component instance created:RpcService::RpcService
+InternetHardware is created
+Framework(ID equals 16) register to service succeed!
+
+UserAuthorizationManager Loaded!
+
+UserAuthorizationManager-xml file path: /home/diana/Config/Software/UserAuthData.xmlcomponent instance created:UserAuthorizationManager::UserAuthorizationManager
+UserAuthorizationManager(ID equals 32992) register to service succeed!
+
+RemoteFileService Loaded!
+
+component instance created:RemoteFileService::RemoteFileService
+RemoteFileService(ID equals 48) register to service succeed!
+
+ParameterService Loaded!
+
+component instance created:ParameterService::ParameterService
+ParameterService(ID equals 32) register to service succeed!
+
+VariantTableSupport Loaded!
+
+component instance created:VariantTableSupport::VariantTableSupport
+VariantTableSupport(ID equals 16400) register to service succeed!
+
+ExpressionSupport Loaded!
+
+component instance created:ExpressionSupport::ExpressionSupport
+ExpressionSupport(ID equals 16416) register to service succeed!
+
+InstructionManager Loaded!
+
+component instance created:InstructionManager::InstructionManager
+InstructionManager(ID equals 16432) register to service succeed!
+
+InteractiveService Loaded!
+
+component instance created:InteractiveService::InteractiveService
+InteractiveService(ID equals 16512) register to service succeed!
+
+AssemblerManager Loaded!
+
+component instance created:AssemblerManager::AssemblerManager
+AssemblerManager(ID equals 16448) register to service succeed!
+
+PythonScriptSupport Loaded!
+
+component instance created:PythonScriptSupport::PythonScriptSupport
+AssemblerStrategy Loaded!
+
+component instance created:AssemblerStrategy::AssemblerStrategy
+Plugin(DianaStatementsProxy) is loaded!
+
+AdvancedLanguage Loaded!
+
+component instance created:AdvancedLanguage::AdvancedLanguage
+AdvancedLanguage(ID equals 16480) register to service succeed!
+
+LNSupport Loaded!
+
+component instance created:LNSupport::LNSupport
+ProjectSupport Loaded!
+
+component instance created:ProjectSupport::ProjectSupport
+ProjectSupport(ID equals 32800) register to service succeed!
+
+IOSupport Loaded!
+
+component instance created:IOSupport::IOSupport
+IOSupport(ID equals 32848) register to service succeed!
+
+SerialPortSupport Loaded!
+
+component instance created:SerialPortSupport::SerialPortSupport
+[14:08:13.281 SerialPort Info] callback init
+SocketSupport Loaded!
+
+component instance created:SocketSupport::SocketSupport
+[14:08:13.281 SocketSupport] callback init
+RobotSupport Loaded!
+
+component instance created:RobotSupport::RobotSupport
+RobotSupport(ID equals 32784) register to service succeed!
+
+LineNumberSupport Loaded!
+
+component instance created:LineNumberSupport::LineNumberSupport
+LineNumberSupport(ID equals 33152) register to service succeed!
+
+WayPointManager Loaded!
+
+component instance created:WayPointManager::WayPointManager
+WayPointManager(ID equals 32880) register to service succeed!
+
+DianaValidator Loaded!
+
+component instance created:DianaValidator::DianaValidator
+DianaValidator(ID equals 32832) register to service succeed!
+
+CoordinateManager Loaded!
+
+component instance created:CoordinateManager::CoordinateManager
+CoordinateManager(ID equals 32816) register to service succeed!
+
+PowerIOSupport Loaded!
+
+component instance created:PowerIOSupport::PowerIOSupport
+PowerIOSupport(ID equals 33184) register to service succeed!
+
+SubSystemManager Loaded!
+
+component instance created:SubSystemManager::SubSystemManager
+SubSystemManager(ID equals 32944) register to service succeed!
+
+SystemState Loaded!
+
+DISABLE_FORCE_FUNCTION:0
+component instance created:SystemState::SystemState
+SystemState(ID equals 33072) register to service succeed!
+
+BasicControl Loaded!
+
+component instance created:BasicControl::BasicControl
+BasicControl(ID equals 33248) register to service succeed!
+
+SystemParameter Loaded!
+
+component instance created:SystemParameter::SystemParameter
+SystemParameter(ID equals 33088) register to service succeed!
+
+DynamicMoveSupport Loaded!
+
+component instance created:DynamicMoveSupport::DynamicMoveSupport
+DynamicMoveSupport(ID equals 33120) register to service succeed!
+
+KinematicsBase Loaded!
+
+component instance created:KinematicsBase::KinematicsBase
+KinematicsBase(ID equals 33216) register to service succeed!
+
+KinematicsMoveSupport Loaded!
+
+component instance created:KinematicsMoveSupport::KinematicsMoveSupport
+KinematicsMoveSupport(ID equals 33104) register to service succeed!
+
+SystemControl Loaded!
+
+component instance created:SystemControl::SystemControl
+SystemControl(ID equals 33232) register to service succeed!
+
+ConveyorSupport Loaded!
+
+component instance created:ConveyorSupport::ConveyorSupport
+ConveyorSupport(ID equals 33296) register to service succeed!
+
+DianaPreAndPostProcessor Loaded!
+
+component instance created:DianaPreAndPostProcessor::DianaPreAndPostProcessor
+IOFunction Loaded!
+
+component instance created:IOFunction::IOFunction
+IOFunction(ID equals 32912) register to service succeed!
+
+ToolSupport Loaded!
+
+component instance created:ToolSupport::ToolSupport
+ToolSupport(ID equals 32864) register to service succeed!
+
+CleanErrorSupport Loaded!
+
+component instance created:CleanErrorSupport::CleanErrorSupport
+CleanErrorSupport(ID equals 33024) register to service succeed!
+
+PayloadIdentifySupport Loaded!
+
+component instance created:PayloadIdentifySupport::PayloadIdentifySupport
+PayloadIdentifySupport(ID equals 33136) register to service succeed!
+
+WarningSupport Loaded!
+
+component instance created:WarningSupport::WarningSupport
+WarningSupport(ID equals 33424) register to service succeed!
+
+[WarningSupport Project support]Init done
+RobotApiSupport Loaded!
+
+component instance created:RobotApiSupport::RobotApiSupport
+Use algorithm library:/opt/Algorithm/Runtime_Env/linux/x86_64/x64/algorithms/libDianaAlgorithm.so
+min-stiff in cart impedance mode is invalid, it will be changed.
+CRTCSystem [Error] file /home/diana/Config/Algorithm/forceControl.xml doesn't exist
+CRTCSystem [Error] file /home/diana/Config/Algorithm/robotFricParameter.xml doesn't exist
+CRTCSystem [Warning] file /home/diana/Config/Algorithm/robotInputLimit.xml doesn't exist, default value will be used
+HomePointManager Loaded!
+
+component instance created:HomePointManager::HomePointManager
+HomePointManager(ID equals 33056) register to service succeed!
+
+MemoryVariantSupport Loaded!
+
+component instance created:MemoryVariantSupport::MemoryVariantSupport
+MemoryVariantSupport(ID equals 33264) register to service succeed!
+
+VariantPublisher Loaded!
+
+component instance created:VariantPublisher::VariantPublisher
+VariantPublisher(ID equals 32896) register to service succeed!
+
+PLCService Loaded!
+
+component instance created:PLCService::PLCService
+PLCService(ID equals 33616) register to service succeed!
+
+SystemNetworkManager Loaded!
+
+running in platform : Ubuntu
+component instance created:SystemNetworkManager::SystemNetworkManager
+SystemNetworkManager(ID equals 33040) register to service succeed!
+
+ProfinetSupport Loaded!
+
+component instance created:ProfinetSupport::ProfinetSupport
+ProfinetSupport(ID equals 33168) register to service succeed!
+
+EndpointSupport Loaded!
+
+component instance created:EndpointSupport::EndpointSupport
+EndpointSupport(ID equals 33344) register to service succeed!
+
+ModbusSupport Loaded!
+
+component instance created:ModbusSupport::ModbusSupport
+ModbusSupport(ID equals 33328) register to service succeed!
+
+[2023-06-12 14:08:13.889] [ModbusSupport...]read config file success: /home/diana/Config/Modbus/modbusService.xml
+Open file error,the file maybe not exist:/home/diana/Config/Software/modbusConnection.xml
+[2023-06-12 14:08:13.889] [ModbusSupport***]Read connection config file failed, use default config values. /home/diana/Config/Modbus/modbusService.xml
+TorqueSensorCalibration Loaded!
+
+===========================Torque Sensor Calibration Config path: /home/diana/Config/Algorithm/calibrationZero.xml
+component instance created:TorqueSensorCalibration::TorqueSensorCalibration
+TorqueSensorCalibration(ID equals 33632) register to service succeed!
+
+RobotStatePublisher Loaded!
+
+component instance created:RobotStatePublisher::RobotStatePublisher
+ProgramLoadSupport Loaded!
+
+component instance created:ProgramLoadSupport::ProgramLoadSupport
+ProgramLoadSupport(ID equals 33280) register to service succeed!
+
+DianaVersionSupport Loaded!
+
+component instance created:DianaVersionSupport::DianaVersionSupport
+DianaVersionSupport(ID equals 33360) register to service succeed!
+
+TimerVariantSupport Loaded!
+
+component instance created:TimerVariantSupport::TimerVariantSupport
+DianaXSupport Loaded!
+
+component instance created:DianaXSupport::DianaXSupport
+DianaXSupport(ID equals 33392) register to service succeed!
+
+[DianaXSupport Project support]Init done
+ParamsStorageDevice Loaded!
+
+component instance created:ParamsStorageDevice::ParamsStorageDevice
+ParamsStorageDevice(ID equals 33408) register to service succeed!
+
+BackendServiceSupport Loaded!
+
+component instance created:BackendServiceSupport::BackendServiceSupport
+CoordinateCalibration Loaded!
+
+component instance created:CoordinateCalibration::CoordinateCalibration
+CoordinateCalibration(ID equals 33200) register to service succeed!
+
+ProjectPartner Loaded!
+
+component instance created:ProjectPartner::ProjectPartner
+[2023-06-12 14:08:14.034] [project support...]Open exist project, /user_data/Servant/TeachPendant/workspace, Untitled 1
+
+[2023-06-12 14:08:14.197] Instruction is not regist, will be auto registed:SetConveyor
+
+Use generic algorithm library:/opt/Algorithm/Runtime_Env/linux/x86_64/x64/algorithms/libGenericAlgorithm.so
+=============================start calling CDianaRobot::initRobotController.==============================
+=============================end CDianaRobot::initRobotController.======================================
+CRobotApiSupport release robot
+CRobotApiSupport release robot
+[2023-06-12 14:08:18.032] [ProfinetSupport]System parameter enable_profinet value is false
+[2023-06-12 14:08:18.032] [ModbusSupport...]IO data array length is 2 (board, ai)
+[2023-06-12 14:08:18.032] [ModbusSupport...]IO data array length is 2 (board, aimode)
+[2023-06-12 14:08:18.032] [ModbusSupport...]IO data array length is 2 (board, ao)
+[2023-06-12 14:08:18.032] [ModbusSupport...]IO data array length is 2 (board, aomode)
+[2023-06-12 14:08:18.032] [ModbusSupport...]IO data array length is 32 (board, di)
+[2023-06-12 14:08:18.032] [ModbusSupport...]IO data array length is 16 (board, do)
+[2023-06-12 14:08:18.032] [ModbusSupport...]Check IO data properties success, took time 0 ms
+[2023-06-12 14:08:18.032] [ModbusSupport...]Joint count read from robotSupport is 7
+[2023-06-12 14:08:18.032] [ModbusSupport...]Read joint count success, took time 0 ms
+[2023-06-12 14:08:18.042] [ModbusSupport...]Enable RTU master success
+[2023-06-12 14:08:18.042] [ModbusSupport...]Enable TCP master ignored, it is disabled by config
+[2023-06-12 14:08:18.042] [ModbusSupport...]Enable TCP slave ignored, it is disabled by config
+[2023-06-12 14:08:18.042] [ModbusSupport...]Resource ready, set system data source
+[2023-06-12 14:08:18.043] [project support...]Open project done, root '/user_data/Servant/TeachPendant/workspace' name 'Untitled 1'
+
+[2023-06-12 14:08:18.043] [project partner...]init componenet done
+
+DynamicRefreshSupport Loaded!
+
+component instance created:DynamicRefreshSupport::DynamicRefreshSupport
+DynamicRefreshSupport(ID equals 49232) register to service succeed!
+
+ load file LoadIdentificationWaypoint.xml
+[2023-06-12 14:09:00.984] [ModbusSupport...]Tcp master config to UI done, data size 0
+[2023-06-12 14:09:00.984] [ModbusSupport...]Tcp slave config to UI done
