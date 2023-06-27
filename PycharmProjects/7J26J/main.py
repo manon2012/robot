@@ -42,6 +42,7 @@ def normal(csvfilename):
     newstringlist = []
     for i in range(len(newlist)):
         data = " ".join(newlist[i])
+        data = data[:-2]
         newstringlist.append(data)
 
     # with open('./test2023new.csv', 'w') as f:

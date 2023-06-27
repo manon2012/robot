@@ -1,0 +1,8 @@
+Complex& operator+=(const Complex, double value)
+{
+   return Complex(this->real + value, this->imag);
+}
+
+/opt/wupei/git/code/project0627/src/main.cpp: In function ‘Complex& operator+=(Complex, double)’:
+/opt/wupei/git/code/project0627/src/main.cpp:118:19: error: invalid use of ‘this’ in non-member function
+    return Complex(this->real + value, this->imag);
