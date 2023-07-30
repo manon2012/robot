@@ -110,6 +110,10 @@ void printABC(int index)
 }
 int main()
 {
+   Apple us;
+   us.show();
+
+   return 0;
    thread t[3];
    for (int i = 0; i < 3; i++)
    {
@@ -143,3 +147,13 @@ int main()
 
    return 0;
 }
+
+
+
+
+
+
+//TODO: test1
+//TODO: test2
+
+

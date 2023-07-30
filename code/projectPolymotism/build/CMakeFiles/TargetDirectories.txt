@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectPolymotism/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectPolymotism/build/CMakeFiles/test001.dir
+/opt/wupei/git/code/projectPolymotism/build/CMakeFiles/edit_cache.dir

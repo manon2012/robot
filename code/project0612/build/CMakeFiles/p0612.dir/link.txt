@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/p0612.dir/src/main.cpp.o  -o p0612 -lpthread 

@@ -123,6 +123,33 @@ sellticket/fast:
 	$(MAKE) -f CMakeFiles/sellticket.dir/build.make CMakeFiles/sellticket.dir/build
 .PHONY : sellticket/fast
 
+src/Apple.o: src/Apple.cpp.o
+
+.PHONY : src/Apple.o
+
+# target to build an object file
+src/Apple.cpp.o:
+	$(MAKE) -f CMakeFiles/sellticket.dir/build.make CMakeFiles/sellticket.dir/src/Apple.cpp.o
+.PHONY : src/Apple.cpp.o
+
+src/Apple.i: src/Apple.cpp.i
+
+.PHONY : src/Apple.i
+
+# target to preprocess a source file
+src/Apple.cpp.i:
+	$(MAKE) -f CMakeFiles/sellticket.dir/build.make CMakeFiles/sellticket.dir/src/Apple.cpp.i
+.PHONY : src/Apple.cpp.i
+
+src/Apple.s: src/Apple.cpp.s
+
+.PHONY : src/Apple.s
+
+# target to generate assembly for a file
+src/Apple.cpp.s:
+	$(MAKE) -f CMakeFiles/sellticket.dir/build.make CMakeFiles/sellticket.dir/src/Apple.cpp.s
+.PHONY : src/Apple.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... sellticket"
 	@echo "... edit_cache"
+	@echo "... src/Apple.o"
+	@echo "... src/Apple.i"
+	@echo "... src/Apple.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
