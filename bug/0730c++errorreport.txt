@@ -1,0 +1,71 @@
+Build started...
+1>------ Build started: Project: ConsoleApplication3, Configuration: Debug Win32 ------
+1>ConsoleApplication3.cpp
+1>ConsoleApplication3.obj : error LNK2001: unresolved external symbol "public: static class Fruit * SimpleFactory::p" (?p@SimpleFactory@@2PAVFruit@@A)
+1>C:\Users\Administrator\source\repos\ConsoleApplication3\Debug\ConsoleApplication3.exe : fatal error LNK1120: 1 unresolved externals
+1>Done building project "ConsoleApplication3.vcxproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+
+Fruit* SimpleFactory::p = nullptr;
+vs2019
+静态变量需要类外初始化
+
+
+
+
+class LazySingleton {}
+
+HungrySingleton* HungrySingleton::s = nullptr;  //这里类型写错了123
+
+class HungrySingleton {}
+
+HungrySingleton* HungrySingleton::s = new HungrySingleton;
+
+123行报错：。。。
+error C2143: syntax error: missing ';' before '*'
+missing type specifier - int assumed. Note: C++ does not support default-int'HungrySingleton': must be a class or namespace when followed by '::'
+
+
+
+            if (m_cmcc == nullptr)   //飘红，m_cmcc没定义
+            {
+                m_cmcc = new cmcc;
+                m_cmcc->docharge(x);
+            }
+        }
+    }
+private:
+    CMCC* m_cmcc；//是这个分号不对！！！
+}; 这个}飘红
+
+error C2143: syntax error: missing ';' before '}'
+ 'm_cmcc': undeclared identifier
+
+
+
+
+    void notify()
+    {
+        for (auto &x: m_list)
+        {
+            x->update(this, this->x);  use of undefined type 'Subject'
+        }
+Observer和Subject的内容也反了！！！
+
+
+
+
+
+    virtual void doprocess()
+    {
+        //cout << "doprocess in " << name << endl;
+        for (auto x: m_list)
+        {
+            cout << "doprocess in " << name << endl;
+            x->doprocess();
+        }
+    }
+cout在2个地方效果完全不同！！！
+
+
+cmd模式还不能默写
