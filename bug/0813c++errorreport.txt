@@ -1,0 +1,24 @@
+static Fruit* f;  if not init outside, will error
+
+1>ConsoleApplication4.obj : error LNK2001: unresolved external symbol "public: static class Fruit * SimpleFactoy::f" (?f@SimpleFactoy@@2PAVFruit@@A)
+1>C:\Users\Administrator\source\repos\ConsoleApplication4\Debug\ConsoleApplication4.exe : fatal error LNK1120: 1 unresolved externals
+1>Done building project "ConsoleApplication4.vcxproj" -- FAILED.
+
+
+这里不加变量名
+list< component* c > m_list;
+error C2146: syntax error: missing '>' before identifier 'c'
+
+
+component  AbsBoss 下加protest list？
+
+
+进到这里了 导致m_list为0
+
+mlist是2？？
+class component
+{
+public:
+    void addNode(component * c){}   //进到这里了 导致m_list为0
+    void delNode(component* c){}
+    virtual void doprocess() = 0;
