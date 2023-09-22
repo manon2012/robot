@@ -1,0 +1,8 @@
+
+#!/bin/bash 
+#`` can list cmd result
+
+for i in `ls`
+ do
+   echo $i
+ done

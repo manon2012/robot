@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectRobot/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectRobot/build/CMakeFiles/robot.dir
+/opt/wupei/git/code/projectRobot/build/CMakeFiles/edit_cache.dir

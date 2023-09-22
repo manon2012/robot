@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testmemory.dir/src/main.cpp.o  -o testmemory -lpthread 

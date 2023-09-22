@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/robotinit.dir/src/main.cpp.o  -o robotinit -lpthread -lDianaApi 

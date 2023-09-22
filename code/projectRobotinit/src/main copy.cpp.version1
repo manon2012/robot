@@ -1,0 +1,96 @@
+#include <DianaAPI.h>
+
+#include <chrono>
+#include <cstring>
+#include <iostream>
+#include <thread>
+#include <math.h>
+
+#define JOINT_NUM 6
+#define IP "192.168.10.75"
+
+using namespace std::chrono_literals;
+using duration_in_s = ::std::chrono::duration<float>;
+using steady_clock = ::std::chrono::steady_clock;
+
+auto t_started = steady_clock::now();
+auto tm1_last_command = steady_clock::now();  // time last command was sent
+double command[JOINT_NUM];
+
+void stateCallback(StrRobotStateInfo* pinfo, const char* strIpAddress) {
+    // give some time to connection setup
+    if(steady_clock::now() - t_started < 1s){
+        tm1_last_command = steady_clock::now();
+        return;
+    }
+
+    // print time elapsed between now and the last command sent
+    auto t_now = steady_clock::now();
+    auto t_diff      = t_now - tm1_last_command;
+    tm1_last_command = t_now;  // save time for next cycle
+    if (t_diff > 1ms + 200us) {
+        std::cout << "time elapsed between current and last command " << ::std::chrono::duration_cast<::std::chrono::duration<float, ::std::milli>>(t_diff).count() << std::endl;
+    }
+
+    // copy current state as command
+    for(int i=0; i<JOINT_NUM; ++i){
+        command[i] = pinfo->jointPos[i];
+    }
+
+    // move first joint alternating in positive and negative direction
+    float second = ::std::chrono::duration_cast<duration_in_s>(steady_clock::now().time_since_epoch()).count();
+    if (sin(second) >= 0){
+        command[0] +=  0.01;
+    }
+    else{
+        command[0] +=  -0.01;   
+    }
+
+    if(pinfo->errorInfo.errorCode != 0){
+        printf("ERROR FIELD: error code (%d):%s\n", pinfo->errorInfo.errorCode, pinfo->errorInfo.errorMsg);
+    }
+
+    /**
+     * Switch reliable flag between true and false and observe the different behavior
+     **/
+    bool reliable = false;
+    //std::this_thread::sleep_for(1ms);
+    servoJ_ex(&command[0], 0.005, 0.1, 300, reliable);
+}
+
+void errorCallback(int e, const char* strIpAddress)
+{
+    const char* strError = formatError(e);
+    printf("ERROR CALLBACK: error code (%d):%s\n", e, strError);
+}
+
+auto main() -> int
+{
+    // connect to the robot
+    srv_net_st* pinfo = new srv_net_st();
+    memset(pinfo->SrvIp, 0x00, sizeof(pinfo->SrvIp));
+    memcpy(pinfo->SrvIp, IP, strlen(IP));
+
+    pinfo->LocHeartbeatPort = 0;
+    pinfo->LocRobotStatePort = 0;
+    pinfo->LocSrvPort = 0;
+    pinfo->LocRealtimeSrvPort = 0;
+    pinfo->LocPassThroughSrvPort = 0;
+
+    if (initSrv(errorCallback, stateCallback, pinfo) < 0) {
+        printf("initSrv failed");
+    }
+    releaseBrake();
+    const char* strIpAddress = IP;
+
+    std::this_thread::sleep_for(60000ms);
+
+    // disconnect
+    if (pinfo) {
+        delete pinfo;
+        pinfo = nullptr;
+    }
+    destroySrv(strIpAddress);
+
+    return 0;
+}
