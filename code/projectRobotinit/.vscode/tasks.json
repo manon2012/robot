@@ -29,6 +29,11 @@
                 "cmake",
                 "make"
 			]
+        },
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo ${workspaceFolder}"
         }
     ],
 }

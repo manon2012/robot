@@ -1,0 +1,43 @@
+// {
+//     "configurations": [
+//         {
+//             "type": "lua",
+//             "request": "launch",
+//             "name": "Debug",
+//             "program": "${workspaceFolder}/call_mymod.lua",
+//             "path": "${workspaceFolder}/?.lua"
+//         }
+//     ],
+//     "todo-tree.tree.scanMode": "workspace",
+//     "git.ignoreLimitWarning": true,
+//     "editor.formatOnType": true,
+//     "editor.formatOnSave": true,
+//     "editor.formatOnPaste": true
+// }
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "call_mymod",
+            "type": "lua-local",
+            "request": "launch",
+            "stopOnEntry": true,
+            "cpath": "/usr/local/lib/lua/5.4/?.so",
+            "cwd": "${workspaceFolder}/testlua/",
+            "program": {
+                "lua": "lua",
+                "file": "${workspaceFolder}/testlua/?.lua"
+            },
+            "env": {
+                "LUA_PATH": "./?.lua"
+            },
+        }
+    ],
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+}

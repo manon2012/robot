@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /opt/wupei/source/projectThread
+CMAKE_SOURCE_DIR = /opt/wupei/git/code/projectThread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /opt/wupei/source/projectThread/build
+CMAKE_BINARY_DIR = /opt/wupei/git/code/projectThread/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/hello_cmake.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /opt/wupei/source/projectThread/build
 CMakeFiles/hello_cmake.dir/all:
 	$(MAKE) -f CMakeFiles/hello_cmake.dir/build.make CMakeFiles/hello_cmake.dir/depend
 	$(MAKE) -f CMakeFiles/hello_cmake.dir/build.make CMakeFiles/hello_cmake.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/wupei/source/projectThread/build/CMakeFiles --progress-num=1,2 "Built target hello_cmake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/wupei/git/code/projectThread/build/CMakeFiles --progress-num=1,2 "Built target hello_cmake"
 .PHONY : CMakeFiles/hello_cmake.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/hello_cmake.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello_cmake.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /opt/wupei/source/projectThread/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/wupei/git/code/projectThread/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello_cmake.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /opt/wupei/source/projectThread/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/wupei/git/code/projectThread/build/CMakeFiles 0
 .PHONY : CMakeFiles/hello_cmake.dir/rule
 
 # Convenience name for target.

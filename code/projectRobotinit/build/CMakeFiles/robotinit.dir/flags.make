@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include -I/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/base 
+CXX_INCLUDES = -I/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/2.14/include -I/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/2.14/base 
 

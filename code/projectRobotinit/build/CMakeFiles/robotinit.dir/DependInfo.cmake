@@ -10,8 +10,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include"
-  "/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/base"
+  "/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/2.14/include"
+  "/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/2.14/base"
   )
 
 # Targets to which this target links.

@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include",
+                "/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/base",
+                "/home/wupei/Sdk-x86_64-x64-linux/Sdk/Development_Env/include/BasicSdk",
+                "/home/wupei/Sdk-x86_64-x64-linux/Sdk/Development_Env/include/BasicSdk/OS",
+                "${workspaceFolder}/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

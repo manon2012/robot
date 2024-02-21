@@ -1,0 +1,145 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "main"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"TARGET_LINK_LIBRARIES",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu++11"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/gao/Documents/test/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "main::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/gao/Documents/test/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../lib/libBasicSdk.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../lib/libDianaApi.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../lib/libGenericAlgorithm.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../lib/libToolSdk.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../lib/libxml2.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "main",
+	"nameOnDisk" : "main",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

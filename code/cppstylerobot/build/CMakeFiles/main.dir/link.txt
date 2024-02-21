@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/main.dir/src/main.cpp.o  -o main -Wl,-rpath,/opt/wupei/git/code/cppstylerobot/lib ../lib/libBasicSdk.so ../lib/libDianaApi.so ../lib/libGenericAlgorithm.so ../lib/libToolSdk.so ../lib/libxml2.so -lpthread 

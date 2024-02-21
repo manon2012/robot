@@ -1,15 +1,29 @@
  [Info] [CRobotApiSystem::createRobotApi]create ok:192.168.10.75,initRef:1
- [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-55966,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-39433,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-37603,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-45343,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-46083,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-59319,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-35139,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-59041,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-38107,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-38111,remoteipPort:-0
  [Info] [CThreadProcessorBase::start] start thread processor
  [Info] [CThreadProcessorBase::start] start thread processor
  [Info] [CRobotApiImp::requestJointCount] joint cout is  7
  [Info] [CRobotApiSystem::initRobotApi]init default ip:192.168.10.75
- [Info] [CRobotApiSystem::destroyRobotApi]192.168.10.75, refCount:1, InitRef:0
- [Info] [CRobotStatusThreadProcessor::run] robot status thread stop
+ [Error] [getWayPoint] WayPoint  is  not exist! name = apix_5
 
- [Info] [CHeartbeatThreadProcessor::run] heartbeat thread stop
- 
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!
+ [Error] [setWayPoint] WayPoint is  not exist!

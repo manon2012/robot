@@ -50,5 +50,8 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    //"git.ignoreLimitWarning": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
 }

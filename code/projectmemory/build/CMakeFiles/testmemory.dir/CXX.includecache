@@ -7,20 +7,10 @@
 #IncludeRegexTransform: 
 
 /opt/wupei/git/code/projectmemory/src/main.cpp
-iostream
+string
 -
-thread
--
-mutex
--
-string.h
+vector
 -
 iostream
--
-stdio.h
--
-string.h
--
-list
 -
 

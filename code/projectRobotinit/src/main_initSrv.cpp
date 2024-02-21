@@ -29,7 +29,7 @@ void errorControl(int e, const char *strIpAddress)
     printf("error code (%d):%s\n", e, strError);
 }
 
-int main()
+int main0()
 {
 
     srv_net_st *pinfo = new srv_net_st();

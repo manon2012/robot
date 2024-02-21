@@ -12,10 +12,10 @@ target_link_libraries(robotinit pthread DianaApi)    #make ok
 #target_link_libraries( hello_cmake  Threads::Threads) 
 
 
-include_directories(/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include)
-include_directories(/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/base)
+include_directories(/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/2.14/include)
+include_directories(/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/2.14/base)
 
-
+#message(${workspaceFolder})
 # include_directories(
 #     "/opt/wupei/git/code/projectRobot/include"
 # )
