@@ -1,0 +1,3 @@
+/opt/wupei/git/code/projectMQ/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/code/projectMQ/build/CMakeFiles/mqtest.dir
+/opt/wupei/git/code/projectMQ/build/CMakeFiles/edit_cache.dir
