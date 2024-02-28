@@ -123,32 +123,32 @@ mqtest/fast:
 	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/build
 .PHONY : mqtest/fast
 
-src/main.o: src/main.cpp.o
+src/maincallback.o: src/maincallback.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/maincallback.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/maincallback.cpp.o:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/maincallback.cpp.o
+.PHONY : src/maincallback.cpp.o
 
-src/main.i: src/main.cpp.i
+src/maincallback.i: src/maincallback.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/maincallback.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/maincallback.cpp.i:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/maincallback.cpp.i
+.PHONY : src/maincallback.cpp.i
 
-src/main.s: src/main.cpp.s
+src/maincallback.s: src/maincallback.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/maincallback.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/maincallback.cpp.s:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/maincallback.cpp.s
+.PHONY : src/maincallback.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... mqtest"
 	@echo "... edit_cache"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/maincallback.o"
+	@echo "... src/maincallback.i"
+	@echo "... src/maincallback.s"
 .PHONY : help
 
 

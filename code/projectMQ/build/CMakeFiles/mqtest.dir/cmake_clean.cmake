@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mqtest.dir/src/main.cpp.o"
+  "CMakeFiles/mqtest.dir/src/maincallback.cpp.o"
   "mqtest.pdb"
   "mqtest"
 )

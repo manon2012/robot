@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/opt/wupei/git/code/projectMQ/src/main.cpp" "/opt/wupei/git/code/projectMQ/build/CMakeFiles/mqtest.dir/src/main.cpp.o"
+  "/opt/wupei/git/code/projectMQ/src/maincallback.cpp" "/opt/wupei/git/code/projectMQ/build/CMakeFiles/mqtest.dir/src/maincallback.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
