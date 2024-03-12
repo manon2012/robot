@@ -76,6 +76,7 @@ int main()
     {
         printf("initSrv failed!Return value = %d\n", connect_ret);
     }
+    std::cout << "connect done." << std::endl;
     int n = 0;
     while (true)
     {

@@ -44,7 +44,10 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "thread": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "iterator": "cpp"
     },
     "todo-tree.tree.scanMode": "workspace",
     "git.ignoreLimitWarning": true,

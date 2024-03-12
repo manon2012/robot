@@ -6,23 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/opt/wupei/git/code/projectMQ/include/Apple.h
-Fruit.h
-/opt/wupei/git/code/projectMQ/include/Fruit.h
-
-/opt/wupei/git/code/projectMQ/include/Fruit.h
-
-/opt/wupei/git/code/projectMQ/src/maincallback.cpp
-iostream
+/opt/wupei/git/code/projectMQ/src/0312sellticket.cpp
+string
 -
-thread
+iostream
 -
 mutex
 -
-string.h
+thread
 -
-../include/Apple.h
-/opt/wupei/git/code/projectMQ/include/Apple.h
+condition_variable
+-
 unistd.h
 -
 

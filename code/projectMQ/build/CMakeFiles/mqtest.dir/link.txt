@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/mqtest.dir/src/maincallback.cpp.o  -o mqtest -lpthread 
+/usr/bin/c++  -g   CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o  -o mqtest -lpthread 

@@ -123,32 +123,32 @@ mqtest/fast:
 	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/build
 .PHONY : mqtest/fast
 
-src/maincallback.o: src/maincallback.cpp.o
+src/0312sellticket.o: src/0312sellticket.cpp.o
 
-.PHONY : src/maincallback.o
+.PHONY : src/0312sellticket.o
 
 # target to build an object file
-src/maincallback.cpp.o:
-	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/maincallback.cpp.o
-.PHONY : src/maincallback.cpp.o
+src/0312sellticket.cpp.o:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o
+.PHONY : src/0312sellticket.cpp.o
 
-src/maincallback.i: src/maincallback.cpp.i
+src/0312sellticket.i: src/0312sellticket.cpp.i
 
-.PHONY : src/maincallback.i
+.PHONY : src/0312sellticket.i
 
 # target to preprocess a source file
-src/maincallback.cpp.i:
-	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/maincallback.cpp.i
-.PHONY : src/maincallback.cpp.i
+src/0312sellticket.cpp.i:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/0312sellticket.cpp.i
+.PHONY : src/0312sellticket.cpp.i
 
-src/maincallback.s: src/maincallback.cpp.s
+src/0312sellticket.s: src/0312sellticket.cpp.s
 
-.PHONY : src/maincallback.s
+.PHONY : src/0312sellticket.s
 
 # target to generate assembly for a file
-src/maincallback.cpp.s:
-	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/maincallback.cpp.s
-.PHONY : src/maincallback.cpp.s
+src/0312sellticket.cpp.s:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/0312sellticket.cpp.s
+.PHONY : src/0312sellticket.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... mqtest"
 	@echo "... edit_cache"
-	@echo "... src/maincallback.o"
-	@echo "... src/maincallback.i"
-	@echo "... src/maincallback.s"
+	@echo "... src/0312sellticket.o"
+	@echo "... src/0312sellticket.i"
+	@echo "... src/0312sellticket.s"
 .PHONY : help
 
 

@@ -1,10 +1,11 @@
  [Info] [CRobotApiSystem::createRobotApi]create ok:192.168.10.75,initRef:1
- [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-44339,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-58376,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-56604,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-38764,remoteipPort:-0
- [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-52679,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-49846,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-51883,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-41750,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-40595,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-49050,remoteipPort:-0
  [Info] [CThreadProcessorBase::start] start thread processor
  [Info] [CThreadProcessorBase::start] start thread processor
+ [Warning] -10001:on_enter_force_mode_service has been declined!
  [Info] [CRobotApiImp::requestJointCount] joint cout is  7
  [Info] [CRobotApiSystem::initRobotApi]init default ip:192.168.10.75

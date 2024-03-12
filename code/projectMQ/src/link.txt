@@ -1,0 +1,30 @@
+some links need to read
+
+https://mp.weixin.qq.com/s?__biz=MzI0ODU0NDI1Mg==&mid=2247559511&idx=2&sn=a3a48e356777dea9bbce4d510ca3ec4e&chksm=e863b6458246f90b90e198f2d5f4b163a005c9ddf2c66e8f9863e41643f6292d315cf31096c2&scene=132&exptype=timeline_recommend_article_extendread_samebiz&show_related_article=1&subscene=0&scene=132#wechat_redirect
+https://zhuanlan.zhihu.com/p/161356621
+https://www.cnblogs.com/bugfly/p/11594192.html
+https://zhuanlan.zhihu.com/p/533176124
+https://zhuanlan.zhihu.com/p/346086457
+https://blog.csdn.net/princeteng/article/details/103943451
+https://blog.csdn.net/y396397735/article/details/51785596
+https://mp.weixin.qq.com/s?src=11&timestamp=1709254145&ver=5111&signature=9C*EYAAU9yG9aFyTkox5A9xVkU5JruVT7A55-7rC*z1TBMqDRCm8G1FSd7YwXeuLk1OH6C*Bq1sa57*FDbxR-XF8CJhhbGz-fgWX9ZUVEqkSaXUyNzDxY0WWJ4wm*3lM&new=1
+https://zhuanlan.zhihu.com/p/585656776
+https://baike.sogou.com/v25538.htm?ch=frombaikevr&fromTitle=%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0
+https://zhuanlan.zhihu.com/p/295102090
+https://www.cnblogs.com/warmlight/p/12427891.html
+https://zhuanlan.zhihu.com/p/97588758
+https://huaweicloud.csdn.net/633572c5d3efff3090b571b1.html?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Eactivity-1-121570862-blog-1801998.235%5Ev43%5Econtrol&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Eactivity-1-121570862-blog-1801998.235%5Ev43%5Econtrol&utm_relevant_index=2
+https://blog.csdn.net/XiaoH0_0/article/details/103465934?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-103465934-blog-51168209.235%5Ev43%5Econtrol&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-103465934-blog-51168209.235%5Ev43%5Econtrol&utm_relevant_index=1
+C++ 设计模式 —— 控制器设计模式（实现功能模块间通信）
+
+在构建更复杂的程序时，你需要创建多个算法来协同工作，以实现一些高级功能。更合理地构建程序并让所有的类能互相通信，程序将会变得越来越复杂。因此一个类中（即为控制器类）集中对程序进行控制，是十分有益的。这正是控制器背后的思想。
+
+控制器（Controller）是一个特殊的对象，充当着程序中心的角色。
+
+原文链接：https://blog.csdn.net/lanchunhui/article/details/51168209
+
+https://blog.csdn.net/qq446293528/article/details/103936124?spm=1001.2101.3001.6650.13&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-13-103936124-blog-1801998.235%5Ev43%5Econtrol&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-13-103936124-blog-1801998.235%5Ev43%5Econtrol&utm_relevant_index=14
+https://blog.csdn.net/wishfly/article/details/1801998
+
+https://www.cnblogs.com/hshy/p/11050021.html
+https://blog.csdn.net/wishfly/article/details/1801998

@@ -182,12 +182,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-mqtest_BINARY_DIR:STATIC=/opt/wupei/git/code/projectMQ/build
-
-//Value Computed by CMake
-mqtest_SOURCE_DIR:STATIC=/opt/wupei/git/code/projectMQ
-
-//Value Computed by CMake
 projectMQ_BINARY_DIR:STATIC=/opt/wupei/git/code/projectMQ/build
 
 //Value Computed by CMake
