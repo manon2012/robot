@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/qtcmake.dir/main.cpp.o  -o qtcmake  -L/opt/wupei/git/qtproject/qtcmake/Environment/lib  -L/opt/wupei/git/qtproject/qtcmake/Environment/bin -Wl,-rpath,/opt/wupei/git/qtproject/qtcmake/Environment/lib:/opt/wupei/git/qtproject/qtcmake/Environment/bin -lDianaApi -lToolSdk -lBasicSdk -lQt5::Core 

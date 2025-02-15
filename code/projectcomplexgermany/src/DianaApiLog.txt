@@ -1,0 +1,15 @@
+ [Info] [CRobotApiSystem::createRobotApi]create ok:192.168.10.75,initRef:1
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-49866,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-52555,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-60145,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-42454,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-57994,remoteipPort:-0
+ [Info] [CThreadProcessorBase::start] start thread processor
+ [Info] [CThreadProcessorBase::start] start thread processor
+ [Warning] -10001:on_run_taskid_service has been declined!
+ [Info] [CRobotApiImp::requestJointCount] joint count is  6
+ [Info] [CRobotApiSystem::initRobotApi]init default ip:192.168.10.75
+ [Info] [CRobotStatusThreadProcessor::run] robot status thread stop
+
+ [Info] [CHeartbeatThreadProcessor::run] heartbeat thread stop
+ 

@@ -57,38 +57,38 @@ include CMakeFiles/mqtest.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mqtest.dir/flags.make
 
-CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o: CMakeFiles/mqtest.dir/flags.make
-CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o: ../src/0312sellticket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectMQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o -c /opt/wupei/git/code/projectMQ/src/0312sellticket.cpp
+CMakeFiles/mqtest.dir/src/testfuture1.cpp.o: CMakeFiles/mqtest.dir/flags.make
+CMakeFiles/mqtest.dir/src/testfuture1.cpp.o: ../src/testfuture1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/wupei/git/code/projectMQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mqtest.dir/src/testfuture1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mqtest.dir/src/testfuture1.cpp.o -c /opt/wupei/git/code/projectMQ/src/testfuture1.cpp
 
-CMakeFiles/mqtest.dir/src/0312sellticket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mqtest.dir/src/0312sellticket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/git/code/projectMQ/src/0312sellticket.cpp > CMakeFiles/mqtest.dir/src/0312sellticket.cpp.i
+CMakeFiles/mqtest.dir/src/testfuture1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mqtest.dir/src/testfuture1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/wupei/git/code/projectMQ/src/testfuture1.cpp > CMakeFiles/mqtest.dir/src/testfuture1.cpp.i
 
-CMakeFiles/mqtest.dir/src/0312sellticket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mqtest.dir/src/0312sellticket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/git/code/projectMQ/src/0312sellticket.cpp -o CMakeFiles/mqtest.dir/src/0312sellticket.cpp.s
+CMakeFiles/mqtest.dir/src/testfuture1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mqtest.dir/src/testfuture1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/wupei/git/code/projectMQ/src/testfuture1.cpp -o CMakeFiles/mqtest.dir/src/testfuture1.cpp.s
 
-CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.requires:
+CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.requires:
 
-.PHONY : CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.requires
+.PHONY : CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.requires
 
-CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.provides: CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.provides.build
-.PHONY : CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.provides
+CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.provides: CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.provides.build
+.PHONY : CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.provides
 
-CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.provides.build: CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o
+CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.provides.build: CMakeFiles/mqtest.dir/src/testfuture1.cpp.o
 
 
 # Object files for target mqtest
 mqtest_OBJECTS = \
-"CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o"
+"CMakeFiles/mqtest.dir/src/testfuture1.cpp.o"
 
 # External object files for target mqtest
 mqtest_EXTERNAL_OBJECTS =
 
-mqtest: CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o
+mqtest: CMakeFiles/mqtest.dir/src/testfuture1.cpp.o
 mqtest: CMakeFiles/mqtest.dir/build.make
 mqtest: CMakeFiles/mqtest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/opt/wupei/git/code/projectMQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mqtest"
@@ -99,7 +99,7 @@ CMakeFiles/mqtest.dir/build: mqtest
 
 .PHONY : CMakeFiles/mqtest.dir/build
 
-CMakeFiles/mqtest.dir/requires: CMakeFiles/mqtest.dir/src/0312sellticket.cpp.o.requires
+CMakeFiles/mqtest.dir/requires: CMakeFiles/mqtest.dir/src/testfuture1.cpp.o.requires
 
 .PHONY : CMakeFiles/mqtest.dir/requires
 

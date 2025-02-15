@@ -122,20 +122,6 @@ private:
     bool m_needStop; // 停止的标志
 };
 
-void TestStealPoolSort()
-{
-    std::list<int> nlist = {6, 1, 0, 5, 2, 9, 11};
-
-    auto sortlist = steal_thread_quick_sort<int>(nlist);
-
-    for (auto &value : sortlist)
-    {
-        std::cout << value << " ";
-    }
-
-    std::cout << std::endl;
-}
-
 int main()
 {
 

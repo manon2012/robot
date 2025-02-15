@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpolym.a  CMakeFiles/polym.dir/src/Msg.cpp.o CMakeFiles/polym.dir/src/Queue.cpp.o
+/usr/bin/ranlib libpolym.a

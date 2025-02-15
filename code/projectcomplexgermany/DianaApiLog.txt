@@ -1,0 +1,15 @@
+ [Info] [CRobotApiSystem::createRobotApi]create ok:192.168.10.75,initRef:1
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 0 local ip-port: 0.0.0.0-35808,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 1 local ip-port: 0.0.0.0-37719,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 2 local ip-port: 0.0.0.0-44196,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 3 local ip-port: 0.0.0.0-42966,remoteipPort:-0
+ [Info] [CSessionUDP::initSession] ret： 1 session type: 4 local ip-port: 0.0.0.0-38032,remoteipPort:-0
+ [Error] [recvPacket]timeout, sessionId:0
+ [Error] [sendPacket]error , type:16, serviceid:0, sessionId:0, ret:-1005
+ [Error] [IRobotApi::sendPacketV1SynBlock] send buff failed. error code:  -1006
+ [Error] [CRobotApiImp::requestConnect] request connect to service failed. error code: 2
+ [Error] [recvPacket]timeout, sessionId:1
+ [Error] [sendPacket]error , type:66, serviceid:0, sessionId:1, ret:-1005
+ [Error] [IRobotApi::sendPacketV1SynBlock] send buff failed. error code:  -1006
+ [Error] [CRobotApiSystem::createRobotApi]ip:192.168.10.75 Init Error Ret:2
+ [Info] [CRobotApiSystem::destroyRobotApi]192.168.10.75, refCount:1, InitRef:0

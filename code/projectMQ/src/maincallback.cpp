@@ -115,6 +115,7 @@ private:
 
 int main()
 {
+
    Call2 c2;
    c2.setfun(Test2);
    c2.letrun(3, "test");

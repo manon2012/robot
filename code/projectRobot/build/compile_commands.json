@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/opt/wupei/git/code/projectRobot/build",
+  "command": "/usr/bin/c++   -I/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/include -I/home/wupei/Desktop/CASE_REPO/repository/test-general/Environment/base  -g   -o CMakeFiles/robot.dir/src/main.cpp.o -c /opt/wupei/git/code/projectRobot/src/main.cpp",
+  "file": "/opt/wupei/git/code/projectRobot/src/main.cpp"
+}
+]

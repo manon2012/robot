@@ -88,8 +88,6 @@ private:
 
 int main()
 {
-    ThreadPool tp1;
-    tp1.AddTask
 
-        return 0;
+    return 0;
 }

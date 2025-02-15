@@ -47,7 +47,12 @@
         "typeinfo": "cpp",
         "functional": "cpp",
         "list": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "map": "cpp",
+        "future": "cpp",
+        "cstring": "cpp",
+        "numeric": "cpp",
+        "random": "cpp"
     },
     "todo-tree.tree.scanMode": "workspace",
     "git.ignoreLimitWarning": true,

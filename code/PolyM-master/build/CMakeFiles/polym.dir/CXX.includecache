@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/polym/Msg.hpp
+memory
+-
+utility
+-
+
+../include/polym/Queue.hpp
+Msg.hpp
+../include/polym/Msg.hpp
+memory
+-
+
+/opt/wupei/git/code/PolyM-master/src/Msg.cpp
+polym/Msg.hpp
+/opt/wupei/git/code/PolyM-master/src/polym/Msg.hpp
+atomic
+-
+
+/opt/wupei/git/code/PolyM-master/src/Queue.cpp
+polym/Queue.hpp
+/opt/wupei/git/code/PolyM-master/src/polym/Queue.hpp
+chrono
+-
+condition_variable
+-
+queue
+-
+map
+-
+mutex
+-
+utility
+-
+

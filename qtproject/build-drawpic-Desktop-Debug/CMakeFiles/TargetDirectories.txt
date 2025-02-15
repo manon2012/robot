@@ -1,0 +1,3 @@
+/opt/wupei/git/qtproject/build-drawpic-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/qtproject/build-drawpic-Desktop-Debug/CMakeFiles/drawpic.dir
+/opt/wupei/git/qtproject/build-drawpic-Desktop-Debug/CMakeFiles/edit_cache.dir

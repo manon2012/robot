@@ -1,0 +1,3 @@
+/opt/wupei/git/qtproject/qtcmake/build/CMakeFiles/rebuild_cache.dir
+/opt/wupei/git/qtproject/qtcmake/build/CMakeFiles/qtcmake.dir
+/opt/wupei/git/qtproject/qtcmake/build/CMakeFiles/edit_cache.dir

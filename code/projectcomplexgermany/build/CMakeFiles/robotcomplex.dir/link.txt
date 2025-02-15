@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/robotcomplex.dir/src/main.cpp.o  -o robotcomplex -lDianaApi 

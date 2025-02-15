@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/drawpic.dir/main.cpp.o  -o drawpic 
