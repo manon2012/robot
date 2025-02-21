@@ -123,6 +123,33 @@ mqtest/fast:
 	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/build
 .PHONY : mqtest/fast
 
+src/gof2025.o: src/gof2025.cpp.o
+
+.PHONY : src/gof2025.o
+
+# target to build an object file
+src/gof2025.cpp.o:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/gof2025.cpp.o
+.PHONY : src/gof2025.cpp.o
+
+src/gof2025.i: src/gof2025.cpp.i
+
+.PHONY : src/gof2025.i
+
+# target to preprocess a source file
+src/gof2025.cpp.i:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/gof2025.cpp.i
+.PHONY : src/gof2025.cpp.i
+
+src/gof2025.s: src/gof2025.cpp.s
+
+.PHONY : src/gof2025.s
+
+# target to generate assembly for a file
+src/gof2025.cpp.s:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/gof2025.cpp.s
+.PHONY : src/gof2025.cpp.s
+
 src/testfuture1.o: src/testfuture1.cpp.o
 
 .PHONY : src/testfuture1.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... mqtest"
 	@echo "... edit_cache"
+	@echo "... src/gof2025.o"
+	@echo "... src/gof2025.i"
+	@echo "... src/gof2025.s"
 	@echo "... src/testfuture1.o"
 	@echo "... src/testfuture1.i"
 	@echo "... src/testfuture1.s"

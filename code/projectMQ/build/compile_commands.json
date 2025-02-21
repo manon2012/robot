@@ -3,5 +3,10 @@
   "directory": "/opt/wupei/git/code/projectMQ/build",
   "command": "/usr/bin/c++    -g   -o CMakeFiles/mqtest.dir/src/testfuture1.cpp.o -c /opt/wupei/git/code/projectMQ/src/testfuture1.cpp",
   "file": "/opt/wupei/git/code/projectMQ/src/testfuture1.cpp"
+},
+{
+  "directory": "/opt/wupei/git/code/projectMQ/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/mqtest.dir/src/gof2025.cpp.o -c /opt/wupei/git/code/projectMQ/src/gof2025.cpp",
+  "file": "/opt/wupei/git/code/projectMQ/src/gof2025.cpp"
 }
 ]

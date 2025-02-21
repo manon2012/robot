@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/opt/wupei/git/code/projectMQ/src/gof2025.cpp
+iostream
+-
+string
+-
+
 /opt/wupei/git/code/projectMQ/src/testfuture1.cpp
 iostream
 -
@@ -22,7 +28,5 @@ queue
 vector
 -
 iostream
--
-string.h
 -
 

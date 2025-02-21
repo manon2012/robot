@@ -7105,74 +7105,74 @@ void sellticketold()
 //     return 0;
 // }
 
-#include <string.h>
-class CATString
-{
-public:
-    CATString(const char *str = 0)
-    {
-        if (str)
-        {
-            m_data = new char[strlen(str) + 1];
-            strcpy(m_data, str);
-        }
-        else
-        {
-            m_data = new char[1];
-            *m_data = '\0';
-        }
-    }
-    CATString(const CATString &obj)
-    {
-        m_data = new char[strlen(obj.m_data) + 1];
-        strcpy(m_data, obj.m_data);
-    }
-    CATString &operator=(const CATString &obj)
-    {
-        if (this != &obj)
-        {
-            delete[] m_data;
-            m_data = new char[strlen(obj.m_data) + 1];
-            strcpy(m_data, obj.m_data);
-        }
-        return *this;
-    }
-    ~CATString()
-    {
-        if (m_data)
-        {
-            delete[] m_data;
-            m_data = nullptr;
-        }
-    }
+// #include <string.h>
+// class CATString
+// {
+// public:
+//     CATString(const char *str = 0)
+//     {
+//         if (str)
+//         {
+//             m_data = new char[strlen(str) + 1];
+//             strcpy(m_data, str);
+//         }
+//         else
+//         {
+//             m_data = new char[1];
+//             *m_data = '\0';
+//         }
+//     }
+//     CATString(const CATString &obj)
+//     {
+//         m_data = new char[strlen(obj.m_data) + 1];
+//         strcpy(m_data, obj.m_data);
+//     }
+//     CATString &operator=(const CATString &obj)
+//     {
+//         if (this != &obj)
+//         {
+//             delete[] m_data;
+//             m_data = new char[strlen(obj.m_data) + 1];
+//             strcpy(m_data, obj.m_data);
+//         }
+//         return *this;
+//     }
+//     ~CATString()
+//     {
+//         if (m_data)
+//         {
+//             delete[] m_data;
+//             m_data = nullptr;
+//         }
+//     }
 
-private:
-    char *m_data;
-    friend ostream &operator<<(ostream &os, const CATString &obj);
-};
+// private:
+//     char *m_data;
+//     friend ostream &operator<<(ostream &os, const CATString &obj);
+// };
 
-ostream &operator<<(ostream &os, const CATString &obj)
-{
-    os << obj.m_data;
-    return os;
-}
+// ostream &operator<<(ostream &os, const CATString &obj)
+// {
+//     os << obj.m_data;
+//     return os;
+// }
 
-int main(int argc, char const *argv[])
-{
-    /* code */
-    CATString c1;
-    CATString c2("hello");
-    CATString c3(c2);
-    CATString c4;
-    c4 = c3;
+// int main(int argc, char const *argv[])
+// {
+//     /* code */
+//     CATString c1;
+//     CATString c2("hello");
+//     CATString c3(c2);
+//     CATString c4;
+//     c4 = c3;
 
-    std::cout << c1 << std::endl;
+//     std::cout << c1 << std::endl;
 
-    std::cout << c2 << std::endl;
+//     std::cout << c2 << std::endl;
 
-    std::cout << c3 << std::endl;
+//     std::cout << c3 << std::endl;
 
-    std::cout << c4 << std::endl;
+//     std::cout << c4 << std::endl;
 
-    return 0;
-}
+//     return 0;
+// }

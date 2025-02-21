@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.9) # 最低版本
 
 project(projectMQ VERSION 1.0) # 项目名称及自定义版本号
-add_executable(mqtest src/testfuture1.cpp src/SyncQueue.hpp src/ThreadPool.hpp) # 添加生成可执行文件
+add_executable(mqtest src/testfuture1.cpp src/SyncQueue.hpp src/ThreadPool.hpp src/gof2025.cpp) # 添加生成可执行文件
 
 set(CMAKE_BUILD_TYPE "Debug")
 

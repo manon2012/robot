@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/opt/wupei/git/code/projectMQ/src/gof2025.cpp" "/opt/wupei/git/code/projectMQ/build/CMakeFiles/mqtest.dir/src/gof2025.cpp.o"
   "/opt/wupei/git/code/projectMQ/src/testfuture1.cpp" "/opt/wupei/git/code/projectMQ/build/CMakeFiles/mqtest.dir/src/testfuture1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
