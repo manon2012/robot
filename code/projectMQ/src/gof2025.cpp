@@ -2014,6 +2014,8 @@ using namespace std;
 //     CMCC *m_cmcc;
 // }; // here need ;
 
+// add line 1
+
 main(int argc, char const *argv[])
 {
     // Business *business = new CMCCProxy;
