@@ -1931,9 +1931,98 @@ using namespace std;
 //     context->m_pState = new ConcreteStateA;
 // }
 
+// class ITarget
+// {
+// public:
+//     virtual void process() = 0;
+// };
+
+// class Iadaptee
+// {
+// public:
+//     virtual ~Iadaptee() {}
+//     virtual int foo() = 0;
+//     virtual void bar(int x) = 0;
+// };
+
+// class oldclass : public Iadaptee
+// {
+// public:
+//     int foo()
+//     {
+//         cout << "foo in oldclass" << endl;
+//         return 2025;
+//     }
+//     void bar(int x)
+//     {
+//         cout << "bar in oldclass " << x << endl;
+//     }
+// };
+
+// class Adapter : public ITarget
+// {
+// public:
+//     Adapter(Iadaptee *ada) : adaptee(ada) {}
+
+//     void process()
+//     {
+//         int x = adaptee->foo();
+//         adaptee->bar(x);
+//     }
+
+// private:
+//     Iadaptee *adaptee;
+// };
+
+// class Business
+// {
+// public:
+//     virtual ~Business() {}
+//     virtual void charge(int x) = 0;
+// };
+
+// class CMCC : public Business
+// {
+// public:
+//     void charge(int x)
+//     {
+//         cout << "Charge " << x << endl;
+//     }
+// };
+
+// class CMCCProxy : public Business
+// {
+// public:
+//     void charge(int x)
+//     {
+//         if (x < 100)
+//         {
+//             cout << "Charge need big than 100." << x << endl;
+//         }
+//         else
+//         {
+//             if (m_cmcc == nullptr)
+//             {
+//                 m_cmcc = new CMCC;
+//                 m_cmcc->charge(x);
+//                 delete m_cmcc;
+//             }
+//         }
+//     }
+
+// private:
+//     CMCC *m_cmcc;
+// }; // here need ;
+
 main(int argc, char const *argv[])
 {
+    // Business *business = new CMCCProxy;
+    // business->charge(10);
+    // business->charge(100);
 
+    // Iadaptee *adaptee = new oldclass;
+    // ITarget *ada = new Adapter(adaptee);
+    // ada->process();
     // Context *context = new Context(new ConcreteStateA());
     // context->Request();
     // context->Request();
