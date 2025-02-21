@@ -1933,6 +1933,7 @@ using namespace std;
 
 main(int argc, char const *argv[])
 {
+
     // Context *context = new Context(new ConcreteStateA());
     // context->Request();
     // context->Request();
