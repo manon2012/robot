@@ -1,0 +1,134 @@
+﻿<?xml version = "1.0" encoding = "utf-8" ?>
+<!-- 目前warning_class有：CStringWarning、CNormalWarning -->
+<WarningInfo>
+<!-- 软件中的solution，warning_type为-10000，需要产品自己确认，并进行补充 -->
+	<Warning index="0">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10001"/>
+		<!-- WCODE_CALLING_CONFLICT_WARNING call servicename  while paused./ while doing SafetyFreeDriving./...  -->
+		<Attribute name="warning_msg" value=""/>
+		<Attribute name="warning_solution" value="待补充"/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="1">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10002"/>
+		<Attribute name="warning_msg" value="The load detected does not match the theoretical value!"/>
+		<Attribute name="warning_solution" value="待补充"/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="2">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10003"/>
+		<!-- WCODE_CANNOT_MOVE_WHILE_FREE_DRIVING call servicename  while existing free driving./ while doing free driving. -->
+		<Attribute name="warning_msg" value=""/>
+		<Attribute name="warning_solution" value="待补充"/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="3">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10004"/>
+		<!-- WCODE_CANNOT_MOVE_WHILE_ZERO_SPACE_FREE_DRIVING call servicename while zero space free driving.  -->
+		<Attribute name="warning_msg" value=""/>
+		<Attribute name="warning_solution" value="待补充"/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="4">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10005"/>
+		<Attribute name="warning_msg" value="The robot is in the virtual wall!"/>
+		<Attribute name="warning_solution" value="Please go back to the range of virtual wall."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="5">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10006"/>
+		<!-- WCODE_CONFLICT_TASK_RUNNING Other task is running,can not execute enterNormalFreeDriving!/Other task is running,can not execute enterForceFreeDriving! -->
+		<Attribute name="warning_msg" value=""/>
+		<Attribute name="warning_solution" value="Please stop other tasks before entering free driving."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="6">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10007"/>
+		<Attribute name="warning_msg" value="Joints position is out of soft range!"/>
+		<Attribute name="warning_solution" value="Please go back to the soft range."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="7">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10008"/>
+		<Attribute name="warning_msg" value="calling on_joints_plan_service while conveyor is being tracked."/>
+		<Attribute name="warning_solution" value="Make sure conveyor is untracked before calling joints_plan."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="8">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10009"/>
+		<Attribute name="warning_msg" value="The Conveyor that being tracked is not be enabled!"/>
+		<Attribute name="warning_solution" value="Make sure conveyor is enabled while tracking."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="9">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10010"/>
+		<Attribute name="warning_msg" value="Unsupported free driving mode.The request was denied."/>
+		<Attribute name="warning_solution" value="待补充"/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="10">
+		<Attribute name="warning_type" value="-10000"/>
+		<Attribute name="warning_code" value="-10011"/>
+		<Attribute name="warning_msg" value="Unsupported null space free driving mode.The request was denied."/>
+		<Attribute name="warning_solution" value="待补充"/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="11">
+		<Attribute name="warning_type" value="-20000"/>
+		<Attribute name="warning_code" value="-20001"/>
+		<!-- 对应算法警告码 WARN_SPD_LIMIT_TRAJ -20001 -->
+		<Attribute name="warning_msg" value="Unable to reach the specified trajectory speed."/>
+		<Attribute name="warning_solution" value="Trajectory speed is reduced automatically."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="12">
+		<Attribute name="warning_type" value="-20000"/>
+		<Attribute name="warning_code" value="-20002"/>
+		<!-- 对应算法警告码 WARN_ACC_LIMIT_TRAJ -20002 -->
+		<Attribute name="warning_msg" value="Unable to reach the specified trajectory acceleration."/>
+		<Attribute name="warning_solution" value="Trajectory acceleration is reduced automatically."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="13">
+		<Attribute name="warning_type" value="-20000"/>
+		<Attribute name="warning_code" value="-20003"/>
+		<!-- 对应算法警告码 WARN_POS_LIMIT_JNT -20003 -->
+		<Attribute name="warning_msg" value="Joint position limit reached."/>
+		<Attribute name="warning_solution" value="Move the joint back into its allowable range."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="14">
+		<Attribute name="warning_type" value="-20000"/>
+		<Attribute name="warning_code" value="-20004"/>
+		<!-- 对应算法警告码 WARN_POS_LIMIT_TCP -20004 -->
+		<Attribute name="warning_msg" value="TCP position limit reached."/>
+		<Attribute name="warning_solution" value="Move the tcp back into its allowable range."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="15">
+		<Attribute name="warning_type" value="-20000"/>
+		<Attribute name="warning_code" value="-20005"/>
+		<!-- 对应算法警告码 WARN_POS_LIMIT_ELBOW -20005 -->
+		<Attribute name="warning_msg" value="Elbow position limit reached."/>
+		<Attribute name="warning_solution" value="Move the elbow back into its allowable range."/>
+		<Attribute name="warning_class" value="CStringWarning"/>
+	</Warning>
+	<Warning index="16">
+		<Attribute name="warning_type" value="-20000"/>
+		<Attribute name="warning_code" value="-20000"/>
+		<!-- ALGORITHM_WARNING _interpolaterPosition warning:UNKNOWN(%d). stCurrentStateParam.trajWarningCode -->
+		<Attribute name="warning_msg" value=""/>
+		<Attribute name="warning_solution" value="待补充"/>
+		<Attribute name="warning_class" value="replace"/>
+	</Warning>
+</WarningInfo>

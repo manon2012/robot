@@ -3,5 +3,7 @@
 
 CMakeFiles/mqtest.dir/src/gof2025.cpp.o
  /opt/wupei/git/code/projectMQ/src/gof2025.cpp
+CMakeFiles/mqtest.dir/src/testframework.cpp.o
+ /opt/wupei/git/code/projectMQ/src/testframework.cpp
 CMakeFiles/mqtest.dir/src/testfuture1.cpp.o
  /opt/wupei/git/code/projectMQ/src/testfuture1.cpp

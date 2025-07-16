@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/mqtest.dir/src/testfuture1.cpp.o CMakeFiles/mqtest.dir/src/gof2025.cpp.o  -o mqtest -lpthread 
+/usr/bin/c++  -g   CMakeFiles/mqtest.dir/src/testfuture1.cpp.o CMakeFiles/mqtest.dir/src/testframework.cpp.o CMakeFiles/mqtest.dir/src/gof2025.cpp.o  -o mqtest -lpthread 

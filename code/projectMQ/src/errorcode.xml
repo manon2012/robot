@@ -1,0 +1,1071 @@
+﻿<?xml version = "1.0" encoding = "utf-8" ?>
+<!-- 目前error_class有：CNormalError、CStringError、CScuError、CCollisionError和CHardwareError -->
+<ErrorInfo>
+	<Error index="0">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2202"/>
+		<!--  Detected a collision! [STOP%d] -->
+		<Attribute name="error_description" value="Detected a collision! [STOP%d]"/>
+		<!-- ECODE_COLLISION_ERROR -->
+		<Attribute name="error_solution" value="产品确认"/>
+		<Attribute name="error_class" value="CCollisionError"/>
+	</Error>
+	<Error index="1">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2203"/>
+		<Attribute name="error_description" value="Can not follow position cmd! [STOP2]"/>
+		<!-- 清错后重试，如依旧有问题请联系厂家 -->
+		<Attribute name="error_solution" value="Please clear the error and try again. If the issue persists, contact the manufacturer for assistance."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="2">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2204"/>
+		<!-- 清错后重试，如依旧有问题请联系厂家 -->
+		<Attribute name="error_description" value="Can not follow tcp cmd! [STOP1]"/>
+		<Attribute name="error_solution" value="Please clear the error and try again. If the issue persists, contact the manufacturer for assistance."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="3">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2205"/>
+		<!-- 运行过程中，有关节意外发生抱闸 -->
+		<Attribute name="error_description" value="During operation, an unexpected joint brake activation occurred! [STOP0]"/>
+		<!-- 清错后重试，如依旧有问题请联系厂家 -->
+		<Attribute name="error_solution" value="Please clear the error and try again. If the issue persists, contact the manufacturer for assistance."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="4">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2206"/>
+		<Attribute name="error_description" value="Joints position is out of extreme range! [STOP1]"/>
+		<!-- 进入安全处理，手动回到限位内，再重试 -->
+		<Attribute name="error_solution" value="Enter safety handling mode, manually return to within the limit, and try again."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="5">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2207"/>
+		<Attribute name="error_description" value="Robot is in emergency stop state. [STOP0]"/>
+		<!-- 旋起急停按钮，并按下复位键 -->
+		<Attribute name="error_solution" value="Release the emergency stop button and press the reset button."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="6">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2212"/>
+		<!-- 用户的实时指令超过系统响应速度，实时指令缓冲区溢出 -->
+		<Attribute name="error_description" value="The user's real-time commands exceed the system's response speed, causing the real-time command buffer to overflow! [STOP2]"/>
+		<!-- 调整用户代码以及提高用户代码实时性 -->
+		<Attribute name="error_solution" value="Adjust the user code and improve its real-time performance."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="7">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2213"/>
+		<!-- 没有及时收到来自用户的实时指令 -->
+		<Attribute name="error_description" value="Real-time commands from the user were not received in time! [STOP2]"/>
+		<!-- 调整用户代码以及提高用户代码实时性 -->
+		<Attribute name="error_solution" value="Adjust the user code and improve its real-time performance."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="8">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2218"/>
+		<Attribute name="error_description" value="The Conveyor that being enabled is not online. [STOP2]"/>
+		<Attribute name="error_solution" value="Make sure the conveyor that being enabled is online"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="9">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2221"/>
+		<Attribute name="error_description" value="Joint count is unmatched! [STOP2]"/>
+		<!-- 检查算法配置版本，与臂型号是否匹配，并联系厂商 -->
+		<Attribute name="error_solution" value="Check the algorithm configuration version and ensure it matches the arm model. If the issue persists, contact the manufacturer."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="10">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2222"/>
+		<Attribute name="error_description" value="Robot pose has slopover safe virtualwall! [STOP1]"/>
+		<Attribute name="error_solution" value="Please return to within the virtualwall range."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="11">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2223"/>
+		<Attribute name="error_description" value="Pose has slopover reduce virtualwall! [STOP2]"/>
+		<Attribute name="error_solution" value="Please return to within the virtualwall range."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="12">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2224"/>
+		<!-- SCU发生护性停止 -->
+		<Attribute name="error_description" value="SCU has triggered a protective stop! [STOP2]"/>
+		<!-- 解决导致保护性停止的外部错误后并重试 -->
+		<Attribute name="error_solution" value="Resolve the external error that caused the protective stop and try again."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="13">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2226"/>
+		<!-- 机器人处于STO状态 -->
+		<Attribute name="error_description" value="The robot is in STO state! [STOP0]"/>
+		<!-- 同-2224 -->
+		<Attribute name="error_solution" value="Resolve the external error that caused the robot to enter the STO state and try again."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="14">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2227"/>
+		<!-- 安全门信号被触发 -->
+		<Attribute name="error_description" value="The safety door signal has been triggered! [STOP0]"/>
+		<!-- 关闭安全门，清错继续运行 -->
+		<Attribute name="error_solution" value="Close the safety door, clear the error, and resume operation."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="15">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2228"/>
+		<!-- 同-2226 机器人处于sto急停状态 -->
+		<Attribute name="error_description" value="The robot is in STO emergency stop state! [STOP0]"/>
+		<!-- 需要产品确认 -->
+		<Attribute name="error_solution" value=" ECODE_STO_EMGCY_STOP_ERROR，软件待补充"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="16">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2229"/>
+		<!-- 系统CPU资源占用高 -->
+		<Attribute name="error_description" value="The system's CPU usage is high.! [STOP1]"/>
+		<!-- 调整用户程序 -->
+		<Attribute name="error_solution" value="Adjust the user program."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="17">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2230"/>
+		<!-- 系统内存资源占用过高 -->
+		<Attribute name="error_description" value="High memory usage! [STOP1]"/>
+		<!-- 调整用户程序 -->
+		<Attribute name="error_solution" value="Adjust the user program."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="18">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2231"/>
+		<!-- ECODE_EXCEED_TEMPERATURE Joint exceed the temperature: Joint [%d] [STOP1] -->
+		<Attribute name="error_description" value="Joint exceed the temperature: Joint [%d] [STOP1]"/>
+		<!-- 产品待确认 -->
+		<Attribute name="error_solution" value=" ECODE_EXCEED_TEMPERATURE，软件待补充"/>
+		<Attribute name="error_class" value="CStringError"/>
+	</Error>
+	<Error index="19">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2232"/>
+		<!-- 机器人处于急停状态 -->
+		<Attribute name="error_description" value="The robot is in an emergency stop state! [STOP0]"/>
+		<!-- 旋起急停，按下复位按钮 -->
+		<Attribute name="error_solution" value="Release the emergency stop button and press the reset button."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<!-- ECODE_SCU_STOP0_ERROR -2234  -2235  -2236有具体对应的scu错误码 -->
+	<Error index="20">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2234"/>
+		<Attribute name="error_description" value=""/>
+		<Attribute name="error_solution" value="Please refer to the following SCU error codes."/>
+		<Attribute name="error_class" value="CScuError"/>
+	</Error>
+	<Error index="21">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2235"/>
+		<Attribute name="error_description" value=""/>
+		<Attribute name="error_solution" value="Please refer to the following SCU error codes."/>
+		<Attribute name="error_class" value="CScuError"/>
+	</Error>
+	<Error index="22">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2236"/>
+		<Attribute name="error_description" value=""/>
+		<Attribute name="error_solution" value="Please refer to the following SCU error codes."/>
+		<Attribute name="error_class" value="CScuError"/>
+	</Error>
+	<Error index="23">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2238"/>
+		<!-- SCU检测到关节超限 -->
+		<Attribute name="error_description" value="SCU detected a joint limit exceeded! [STOP1]"/>
+		<Attribute name="error_solution" value="Please return to within the joint range."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="24">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2239"/>
+		<!-- SCU 检测到TCP超限 -->
+		<Attribute name="error_description" value="SCU detected a tcp limit exceeded! [STOP1]"/>
+		<Attribute name="error_solution" value="Please return to within the tcp range."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="25">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SELF_COLLISION -->
+		<Attribute name="error_code" value="-2240"/>
+		<!-- 机械臂发生自碰撞 -->
+		<Attribute name="error_description" value="The robotic arm has experienced self-collision! [STOP2]"/>
+		<!-- 调整机械臂运动轨迹，避免碰撞 -->
+		<Attribute name="error_solution" value="Adjust the robotic arm's movement trajectory to avoid collisions."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="26">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2241"/>
+		<Attribute name="error_description" value="Robot pose has slopover safe workspace limits! [STOP1]"/>
+		<Attribute name="error_solution" value="Please return to within the safe workspace range."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="27">
+		<Attribute name="error_type" value="-2200"/>
+		<Attribute name="error_code" value="-2242"/>
+		<Attribute name="error_description" value="Pose has slopover reduce workspace limit! [STOP2]"/>
+		<Attribute name="error_solution" value="Please return to within the safe workspace range."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<!-- 算法错误码 -->
+	<Error index="28">
+		<Attribute name="error_type" value="-2300"/>
+		<Attribute name="error_code" value="-2301"/>
+		<!-- ECODE_PLAN_ERROR -->
+		<Attribute name="error_description" value=""/>
+		<Attribute name="error_solution" value=""/>
+		<Attribute name="error_class" value="CStringError"/>
+	</Error>
+	<Error index="29">
+		<Attribute name="error_type" value="-2300"/>
+		<Attribute name="error_code" value="-2302"/>
+		<Attribute name="error_description" value=""/>
+		<!-- ECODE_INTERPOLATE_POSITION_ERROR，可能有未定义的算法错误码 -->
+		<Attribute name="error_solution" value=" ECODE_INTERPOLATE_POSITION_ERROR，软件待补充"/>
+		<Attribute name="error_class" value="CStringError"/>
+	</Error>
+	<Error index="30">
+		<Attribute name="error_type" value="-2300"/>
+		<Attribute name="error_code" value="-2303"/>
+		<Attribute name="error_description" value="_interpolaterTorque failed! [STOP1]"/>
+		<!-- 调整轨迹后重试 -->
+		<Attribute name="error_solution" value=" ECODE_INTERPOLATE_TORQUE_ERROR，软件待补充"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<!-- 后续需要算法补充下description -->
+	<Error index="31">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SINGULAR -->
+		<Attribute name="error_code" value="-2304"/>
+		<Attribute name="error_description" value="Singular configuration. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible cartesian trajectory or enable singularity avoidance."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="32">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_FATAL -->
+		<Attribute name="error_code" value="-2307"/>
+		<Attribute name="error_description" value="Joint position or torque limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Adjust way-points or reduce trajectory speed/acceleration."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="33">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_POS_LIMIT -->
+		<Attribute name="error_code" value="-2308"/>
+		<Attribute name="error_description" value="Joint position limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Adjust way-points or modify the trajectory path."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="34">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_FORCE_LIMIT -->
+		<Attribute name="error_code" value="-2309"/>
+		<Attribute name="error_description" value="Joint torque limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory acceleration or speed or both."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="35">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SPEED_LIMIT -->
+		<Attribute name="error_code" value="-2310"/>
+		<Attribute name="error_description" value="Joint speed limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory speed."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="36">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_ACC_LIMIT -->
+		<Attribute name="error_code" value="-2311"/>
+		<Attribute name="error_description" value="Joint acceleration limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory acceleration or speed(cartesian trajectory)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="37">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_JERK_LIMIT -->
+		<Attribute name="error_code" value="-2312"/>
+		<Attribute name="error_description" value="Joint jerk limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory jerk"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="38">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_MOTION_LIMIT -->
+		<Attribute name="error_code" value="-2313"/>
+		<Attribute name="error_description" value="Motion limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory speed or acceleration or both."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="39">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_IK_TRACK -->
+		<Attribute name="error_code" value="-2314"/>
+		<Attribute name="error_description" value="Inverse kinematics failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="40">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_IK_GENERAL -->
+		<Attribute name="error_code" value="-2315"/>
+		<Attribute name="error_description" value="Inverse position kinematics failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the target or adjust the initial joint configuration."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="41">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_INPUT -->
+		<Attribute name="error_code" value="-2316"/>
+		<Attribute name="error_description" value="Illegal input values for trajectory planning. [STOP2]"/>
+		<Attribute name="error_solution" value="Input appropriate values for trajectory planning."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="42">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_MOVJ -->
+		<Attribute name="error_code" value="-2317"/>
+		<Attribute name="error_description" value="MoveJ trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(path/speed/acceleration/etc.)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="43">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_MOVL -->
+		<Attribute name="error_code" value="-2318"/>
+		<Attribute name="error_description" value="MoveL trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(path/speed/acceleration/etc.)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="44">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_MOVC -->
+		<Attribute name="error_code" value="-2319"/>
+		<Attribute name="error_description" value="MoveC trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(path/speed/acceleration/etc.)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="45">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_BLEND -->
+		<Attribute name="error_code" value="-2320"/>
+		<Attribute name="error_description" value="Trajectory blend planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify blend positions/speeds/accelerations."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="46">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_SPDJ -->
+		<Attribute name="error_code" value="-2321"/>
+		<Attribute name="error_description" value="SpeedJ trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(speed/acceleration/duration)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="47">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_SPDL -->
+		<Attribute name="error_code" value="-2322"/>
+		<Attribute name="error_description" value="SpeedL trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(speed/acceleration/duration)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="48">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_SRVJ -->
+		<Attribute name="error_code" value="-2323"/>
+		<Attribute name="error_description" value="ServoJ trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(command/gain/lookahead/duration)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="49">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_SRVL -->
+		<Attribute name="error_code" value="-2324"/>
+		<Attribute name="error_description" value="ServoL trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(command/gain/lookahead/duration)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="50">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_MOVE_UNKNOWN -->
+		<Attribute name="error_code" value="-2325"/>
+		<Attribute name="error_description" value="Unknown move type. [STOP2]"/>
+		<Attribute name="error_solution" value="Specify an existing move type."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="51">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_MOVE_UNPLAN -->
+		<Attribute name="error_code" value="-2326"/>
+		<Attribute name="error_description" value="Unplanned trajectory. [STOP2]"/>
+		<Attribute name="error_solution" value="Plan the trajectory successfully before moving."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="52">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_MOVE_INPUT -->
+		<Attribute name="error_code" value="-2327"/>
+		<Attribute name="error_description" value="Illegal input values for trajectory interpolation. [STOP2]"/>
+		<Attribute name="error_solution" value="Input allowable values for trajectory interpolation."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="53">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_MOVE_INTERP -->
+		<Attribute name="error_code" value="-2328"/>
+		<Attribute name="error_description" value="Trajectory interpolation failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify the trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="54">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SLFMOV_SINGULAR -->
+		<Attribute name="error_code" value="-2339"/>
+		<Attribute name="error_description" value="Singular configuration during self-motion. [STOP2]"/>
+		<Attribute name="error_solution" value="Self-motion cannot proceed further."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="55">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SLFMOV_FUTILE -->
+		<Attribute name="error_code" value="-2340"/>
+		<Attribute name="error_description" value="Unable to execute self motion. [STOP2]"/>
+		<Attribute name="error_solution" value="Self-motion is unavailable from current configuration."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="56">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SLFMOV_JNTLIM -->
+		<Attribute name="error_code" value="-2341"/>
+		<Attribute name="error_description" value="Joint position limit exceeded during self-motion. [STOP2]"/>
+		<Attribute name="error_solution" value="Reverse the moving direction."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="57">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SLFMOV_SPDLIM -->
+		<Attribute name="error_code" value="-2342"/>
+		<Attribute name="error_description" value="Joint speed limit exceeded during self-motion. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the moving speed."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="58">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SLFMOV_FAIL -->
+		<Attribute name="error_code" value="-2343"/>
+		<Attribute name="error_description" value="Self-motion interpolation failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Self-motion cannot proceed further."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="59">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SLFMOV_FFC_FAIL -->
+		<Attribute name="error_code" value="-2344"/>
+		<Attribute name="error_description" value="Joint torque limit exceeded during self-motion. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the moving speed/acceleration."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="60">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_TRACK -->
+		<Attribute name="error_code" value="-2349"/>
+		<Attribute name="error_description" value="Conveyor track planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify conveyor track planning inputs."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="61">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_POS_STEP -->
+		<Attribute name="error_code" value="-2350"/>
+		<Attribute name="error_description" value="Successive joint position commands differ too much. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="62">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SPEED_LIMIT_CART -->
+		<Attribute name="error_code" value="-2351"/>
+		<Attribute name="error_description" value="Cartesian speed limit exeeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory speed."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="63">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_ACC_LIMIT_CART -->
+		<Attribute name="error_code" value="-2352"/>
+		<Attribute name="error_description" value="Cartesian acceleration limit exeeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory acceleration."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="64">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_POWER_LIMIT -->
+		<Attribute name="error_code" value="-2353"/>
+		<Attribute name="error_description" value="Power limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce trajectory speed/acceleration."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="65">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_IK_POS_LIMIT -->
+		<Attribute name="error_code" value="-2354"/>
+		<Attribute name="error_description" value="Inverse kinematics failed due to joint position limits. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="66">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_FK_SCREW -->
+		<Attribute name="error_code" value="-2355"/>
+		<Attribute name="error_description" value="Screw mechanism kinematics failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="67">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_MOV -->
+		<Attribute name="error_code" value="-2356"/>
+		<Attribute name="error_description" value="Trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs(path/speed/acceleration/etc.)."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="68">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_SPD -->
+		<Attribute name="error_code" value="-2357"/>
+		<Attribute name="error_description" value="SpeedJ/SpeedL trajectory planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify trajectory inputs."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="69">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_CHMOD -->
+		<Attribute name="error_code" value="-2358"/>
+		<Attribute name="error_description" value="Fail to switch control mode."/>
+		<Attribute name="error_solution" value="Control mode switching is forbidden."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="70">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SIZE_MISMATCH -->
+		<Attribute name="error_code" value="-2359"/>
+		<Attribute name="error_description" value="Array size mismatched. [STOP2]"/>
+		<Attribute name="error_solution" value="Reallocate a correct size."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="71">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_EXCEED_RANGE -->
+		<Attribute name="error_code" value="-2360"/>
+		<Attribute name="error_description" value="Array index out of range. [STOP2]"/>
+		<Attribute name="error_solution" value="Input an index within range."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="72">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_SET_PARAMETER -->
+		<Attribute name="error_code" value="-2361"/>
+		<Attribute name="error_description" value="Incorrect parameter set. [STOP2]"/>
+		<Attribute name="error_solution" value="Set the parameter with right type and size."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="73">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_PLAN_AVOIDSINGULAR -->
+		<Attribute name="error_code" value="-2362"/>
+		<Attribute name="error_description" value="Singularity avoidance planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="74">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_IK_AVOIDSINGULAR -->
+		<Attribute name="error_code" value="-2363"/>
+		<Attribute name="error_description" value="Inverse kinematics during avoiding singularity failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="75">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_IK_NULLSPACE -->
+		<Attribute name="error_code" value="-2364"/>
+		<Attribute name="error_description" value="Inverse kinematics for null-space motion failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Infeasible null-space motion."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="76">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_TORQUE_LIMIT -->
+		<Attribute name="error_code" value="-2365"/>
+		<Attribute name="error_description" value="Joint torque limit exceeded. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce torque commands."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="77">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_TORQUE_DIFF_LIMIT -->
+		<Attribute name="error_code" value="-2366"/>
+		<Attribute name="error_description" value="Successive joint torque commands differ too much. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the rate of change of torque commands."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="78">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_TORQUE_PLAN -->
+		<Attribute name="error_code" value="-2367"/>
+		<Attribute name="error_description" value="Real-time joint torque generation planning failed. [STOP2]"/>
+		<Attribute name="error_solution" value="Increase the duration of command generation."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="79">
+		<Attribute name="error_type" value="-2300"/>
+		<!-- 对应算法错误码 ERR_TORQUE_NODIFF -->
+		<Attribute name="error_code" value="-2368"/>
+		<Attribute name="error_description" value="interp. error: torque nodiff. [STOP2]"/>
+		<Attribute name="error_solution" value="The Torque need to reduce to zero."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="80">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_MAX_GOAL_POSE_DEVIATION -->
+		<Attribute name="error_code" value="-6002"/>
+		<Attribute name="error_description" value="interp. error: max goal pose deviation. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the goal pose or Increase the max goal pose deviation."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="81">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_MAX_PATH_POSE_DEVIATION -->
+		<Attribute name="error_code" value="-6003"/>
+		<Attribute name="error_description" value="interp. error: max path pose deviation. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify the trajectory path or Increase the max path pose deviation."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="82">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CART_VEL_PROFILE -->
+		<Attribute name="error_code" value="-6004"/>
+		<Attribute name="error_description" value="interp. error: cart. vel. profile. [STOP2]"/>
+		<Attribute name="error_solution" value="Replan the cartesian velocity profile."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="83">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_JNTMOTION_START_POSE -->
+		<Attribute name="error_code" value="-6005"/>
+		<Attribute name="error_description" value="interp. error: joint motion start pose. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the first joint command position."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="84">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_JNTMOTION_POS_LIMITS -->
+		<Attribute name="error_code" value="-6006"/>
+		<Attribute name="error_description" value="interp. error: joint motion position limit. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify the joint path."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="85">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_JNTMOTION_VEL_LIMITS -->
+		<Attribute name="error_code" value="-6007"/>
+		<Attribute name="error_description" value="interp. error: joint motion vel. limit. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the speed of the joint trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="86">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_JNTMOTION_VEL_DISCONTINUITY -->
+		<Attribute name="error_code" value="-6008"/>
+		<Attribute name="error_description" value="interp. error: joint motion vel. disc. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the acceleration of the joint trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="87">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_JNTMOTION_ACC_DISCONTINUITY -->
+		<Attribute name="error_code" value="-6009"/>
+		<Attribute name="error_description" value="interp. error: joint motion acc. disc. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the jerk of the joint trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="88">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_START_POSE -->
+		<Attribute name="error_code" value="-6010"/>
+		<Attribute name="error_description" value="interp. error: cart. motion start pose. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the first cartesian command pose."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="89">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_ELBOW_LIMIT -->
+		<Attribute name="error_code" value="-6011"/>
+		<Attribute name="error_description" value="interp. error: cart. motion elbow limit. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the speed of the elbow trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="90">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_VEL_LIMIT -->
+		<Attribute name="error_code" value="-6012"/>
+		<Attribute name="error_description" value="interp. error: cart. motion vel. limit. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the velocity of the cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="91">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_VEL_DISCONTINUITY -->
+		<Attribute name="error_code" value="-6013"/>
+		<Attribute name="error_description" value="interp. error: cart. motion vel. disc. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the acceleration of the cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="92">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_ACC_DISCONTINUITY -->
+		<Attribute name="error_code" value="-6014"/>
+		<Attribute name="error_description" value="interp. error: cart. motion acc. disc. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the jerk of the cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="93">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_ELBOW_SIGN -->
+		<Attribute name="error_code" value="-6015"/>
+		<Attribute name="error_description" value="interp. error: cart. motion elbow sign. [STOP2]"/>
+		<Attribute name="error_solution" value="Determine the flip direction of the elbow."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="94">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_START_ELBOW -->
+		<Attribute name="error_code" value="-6016"/>
+		<Attribute name="error_description" value="interp. error: cart. motion start elbow. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the first command elbow position."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="95">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_JNTPOS_LIMIT -->
+		<Attribute name="error_code" value="-6017"/>
+		<Attribute name="error_description" value="interp. error: cart. motion joint pos limit. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify the cartesian path."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="96">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_JNTVEL_LIMIT -->
+		<Attribute name="error_code" value="-6018"/>
+		<Attribute name="error_description" value="interp. error: cart. motion joint vel. limit. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the velocity of the cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="97">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_JNTVEL_DISCONTINUITY -->
+		<Attribute name="error_code" value="-6019"/>
+		<Attribute name="error_description" value="interp. error: cart. motion joint vel. disc. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the acceleration of the cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="98">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_JNTACC_DISCONTINUITY -->
+		<Attribute name="error_code" value="-6020"/>
+		<Attribute name="error_description" value="interp. error: cart. motion joint acc. disc. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the jerk of the cartesian trajectory."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="99">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CART_FRAME_INVALID -->
+		<Attribute name="error_code" value="-6021"/>
+		<Attribute name="error_description" value="interp. error: cart. frame invalid. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the cartesian pose to homogeneous transformation matrix."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="100">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_DESFORCE_VIOLATION -->
+		<Attribute name="error_code" value="-6022"/>
+		<Attribute name="error_description" value="interp. error: desforce violation. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the desired force to the safety thresholds."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="101">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_TORQUE_DISCONTINUITY -->
+		<Attribute name="error_code" value="-6023"/>
+		<Attribute name="error_description" value="interp. error: torque discontinuity. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the torque rate."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="102">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_FCI_POWER_LIMIT -->
+		<Attribute name="error_code" value="-6024"/>
+		<Attribute name="error_description" value="interp. error: power limit. [STOP2]"/>
+		<Attribute name="error_solution" value="Reduce the speed/acceleration of the trajectory or the load"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="103">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_INSTALBILITY_DETETCTED -->
+		<Attribute name="error_code" value="-6025"/>
+		<Attribute name="error_description" value="interp. error: instalbility detetcted. [STOP2]"/>
+		<Attribute name="error_solution" value=" ERR_INSTALBILITY_DETETCTED."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="104">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_JNTMOVE_DIRECTION -->
+		<Attribute name="error_code" value="-6026"/>
+		<Attribute name="error_description" value="interp. error: joint move direction. [STOP2]"/>
+		<Attribute name="error_solution" value="change the direction of joint motion."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="105">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_CARTMOTION_GENERATOR_VIOLATION -->
+		<Attribute name="error_code" value="-6027"/>
+		<Attribute name="error_description" value="interp. error: cart. motion generator violation. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify the cartesian external generartor."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="106">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_JNTMOTION_GENERATOR_VIOLATION -->
+		<Attribute name="error_code" value="-6028"/>
+		<Attribute name="error_description" value="interp. error: joint motion generator violation. [STOP2]"/>
+		<Attribute name="error_solution" value="Modify the joint external generartor."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="107">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_BASE_ACC_INIT -->
+		<Attribute name="error_code" value="-6029"/>
+		<Attribute name="error_description" value="interp. error: base acceleration init. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the acceleration of base to acceleration of gravity."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="108">
+		<Attribute name="error_type" value="-6000"/>
+		<!-- 对应算法错误码 ERR_BASE_ACC_INVALID -->
+		<Attribute name="error_code" value="-6030"/>
+		<Attribute name="error_description" value="interp. error: base acceleration invalid. [STOP2]"/>
+		<Attribute name="error_solution" value="Change the acceleration of base to acceleration of gravity."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<!-- API错误码 -->
+	<!-- API是否只报出错误码 -->
+	<Error index="109">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1001"/>
+		<!-- 套接字初始化失败 ECODE_WSASTART_FAIL -->
+		<Attribute name="error_description" value="Socket initialization failed."/>
+		<!-- 检查网络配置或更换电脑后重试 -->
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="110">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1002"/>
+		<!-- 套接字初始化失败 ECODE_CREATE_SOCKET_FAIL -->
+		<Attribute name="error_description" value="Socket initialization failed."/>
+		<!-- 检查网络配置或更换电脑后重试 -->
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="111">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1003"/>
+		<!-- 套接字端口绑定失败，本地端口可能被占用 ECODE_BIND_PORT_FAIL -->
+		<Attribute name="error_description" value="Socket port binding failed. The local port may be in use."/>
+		<!-- 修改用户程序，更换套接字端口后重试 -->
+		<Attribute name="error_solution" value="Modify the user program, change the socket port, and try again."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="112">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1004"/>
+		<!-- 套接字读取失败 ECODE_SOCKET_READ_FAIL -->
+		<Attribute name="error_description" value="Socket read failed."/>
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<!-- 以下API的需要等孟姐 -->
+	<Error index="113">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1005"/>
+		<!-- ECODE_SOCKET_TIMEOUT -->
+		<Attribute name="error_description" value="Socket timeout."/>
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="114">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1006"/>
+		<!-- ECODE_RECVFROM_FAIL -->
+		<Attribute name="error_description" value="Socket reception failed."/>
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="115">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1007"/>
+		<!-- ECODE_SENDTO_FAIL -->
+		<Attribute name="error_description" value="Socket transmission failed."/>
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="116">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1008"/>
+		<!-- ECODE_LOST_HEARTBEAT -->
+		<Attribute name="error_description" value="Socket lost heartbeat."/>
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="117">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1009"/>
+		<!-- ECODE_LOST_ROBOTSTATE -->
+		<Attribute name="error_description" value="The socket lost the robot status."/>
+		<Attribute name="error_solution" value="Check the network configuration or try using a different computer before retrying."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="118">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1010"/>
+		<!-- ECODE_GET_DH_FAILED -->
+		<Attribute name="error_description" value="Failed to obtain DH parameters via the socket."/>
+		<Attribute name="error_solution" value="Please check the DH configuration parameters or network communication."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="119">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1011"/>
+		<!-- ECODE_RELEASE_BRAKE_FAILED -->
+		<Attribute name="error_description" value=" ECODE_RELEASE_BRAKE_FAILED，API错误码，软件待补充"/>
+		<Attribute name="error_solution" value=" ECODE_RELEASE_BRAKE_FAILED，API错误码，软件待补充"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="120">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1012"/>
+		<!-- ECODE_HOLD_BRAKE_FAILED -->
+		<Attribute name="error_description" value=" ECODE_HOLD_BRAKE_FAILED，API错误码，软件待补充"/>
+		<Attribute name="error_solution" value=" ECODE_HOLD_BRAKE_FAILED，API错误码，软件待补充"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="121">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1013"/>
+		<!-- ECODE_IP_ADDRESS_NOT_REGISTER -->
+		<Attribute name="error_description" value=" ECODE_IP_ADDRESS_NOT_REGISTER，API错误码，软件待补充"/>
+		<Attribute name="error_solution" value=" ECODE_IP_ADDRESS_NOT_REGISTER，API错误码，软件待补充"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="122">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1014"/>
+		<!-- ECODE_ROBOTARM_OVERNUMBER -->
+		<Attribute name="error_description" value=" ECODE_ROBOTARM_OVERNUMBER，API错误码，软件待补充"/>
+		<Attribute name="error_solution" value=" ECODE_ROBOTARM_OVERNUMBER，API错误码，软件待补充"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="123">
+		<Attribute name="error_type" value="-1000"/>
+		<Attribute name="error_code" value="-1015"/>
+		<!-- ECODE_SOCKET_OTHER_ERROR -->
+		<Attribute name="error_description" value=" ECODE_SOCKET_OTHER_ERROR，API错误码，软件待补充"/>
+		<Attribute name="error_solution" value=" ECODE_SOCKET_OTHER_ERROR，API错误码，软件待补充"/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<!-- 硬件错误码 -->
+	<Error index="124">
+		<Attribute name="error_type" value="-2000"/>
+		<Attribute name="error_code" value="-2001"/>
+		<Attribute name="error_description" value="Joint register error: %s [STOP%d]"/>
+		<!-- 关节寄存器报错 ECODE_JOINT_REGIST_ERROR -->
+		<Attribute name="error_solution" value=" ECODE_JOINT_REGIST_ERROR，硬件错误码，硬件待补充"/>
+		<Attribute name="error_class" value="CHardwareError"/>
+	</Error>
+	<Error index="125">
+		<Attribute name="error_type" value="-2000"/>
+		<Attribute name="error_code" value="-2023"/>
+		<Attribute name="error_description" value=""/>
+		<!-- ECODE_HVD_JCU_ERROR -->
+		<Attribute name="error_solution" value=" ECODE_HVD_JCU_ERROR，硬件错误码，待补充"/>
+		<Attribute name="error_class" value="CStringError"/>
+	</Error>
+	<Error index="126">
+		<Attribute name="error_type" value="-2000"/>
+		<Attribute name="error_code" value="-2024"/>
+		<Attribute name="error_description" value=""/>
+		<!-- ECODE_HVD_BCU_ERROR -->
+		<Attribute name="error_solution" value=" ECODE_HVD_BCU_ERROR，硬件错误码，待补充"/>
+		<Attribute name="error_class" value="CStringError"/>
+	</Error>
+	<!-- 通讯错误码 -->
+	<Error index="127">
+		<Attribute name="error_type" value="-2100"/>
+		<Attribute name="error_code" value="-2101"/>
+		<!-- 控制箱与臂或者臂的关节之间发生通信异常 -->
+		<Attribute name="error_description" value="A communication error occurred between the control box and the arm or between the arm's joints! [STOP0]"/>
+		<!-- 检查控制箱与机械臂之间的连接，如无问题，联系厂商 -->
+		<Attribute name="error_solution" value="Check the connection between the control box and the robotic arm. If no issues are found, contact the manufacturer."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<!-- 其它错误码 -->
+	<Error index="128">
+		<Attribute name="error_type" value="-3000"/>
+		<Attribute name="error_code" value="-3008"/>
+		<Attribute name="error_description" value="Tcp speed is over limit! [STOP1]"/>
+		<!-- ECODE_ROBOT_TCP_OVER_SPEED -->
+		<Attribute name="error_solution" value="Please reduce TCP speed."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="129">
+		<Attribute name="error_type" value="-3000"/>
+		<Attribute name="error_code" value="-3009"/>
+		<!-- ECODE_ROBOT_JOINTS_OVER_SPEED -->
+		<Attribute name="error_description" value="Joint speed is over limit! [STOP1]"/>
+		<Attribute name="error_solution" value="Please reduce joint speed."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+	<Error index="130">
+		<Attribute name="error_type" value="-3000"/>
+		<Attribute name="error_code" value="-3010"/>
+		<!-- ECODE_ROBOT_FREE_DRIVING_OVER_SPEED -->
+		<Attribute name="error_description" value="Free Driving Joint or Tcp speed is over limit! [STOP1]"/>
+		<Attribute name="error_solution" value="Please reduce speed during free driving."/>
+		<Attribute name="error_class" value="CNormalError"/>
+	</Error>
+</ErrorInfo>

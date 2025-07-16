@@ -150,6 +150,33 @@ src/gof2025.cpp.s:
 	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/gof2025.cpp.s
 .PHONY : src/gof2025.cpp.s
 
+src/testframework.o: src/testframework.cpp.o
+
+.PHONY : src/testframework.o
+
+# target to build an object file
+src/testframework.cpp.o:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/testframework.cpp.o
+.PHONY : src/testframework.cpp.o
+
+src/testframework.i: src/testframework.cpp.i
+
+.PHONY : src/testframework.i
+
+# target to preprocess a source file
+src/testframework.cpp.i:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/testframework.cpp.i
+.PHONY : src/testframework.cpp.i
+
+src/testframework.s: src/testframework.cpp.s
+
+.PHONY : src/testframework.s
+
+# target to generate assembly for a file
+src/testframework.cpp.s:
+	$(MAKE) -f CMakeFiles/mqtest.dir/build.make CMakeFiles/mqtest.dir/src/testframework.cpp.s
+.PHONY : src/testframework.cpp.s
+
 src/testfuture1.o: src/testfuture1.cpp.o
 
 .PHONY : src/testfuture1.o
@@ -189,6 +216,9 @@ help:
 	@echo "... src/gof2025.o"
 	@echo "... src/gof2025.i"
 	@echo "... src/gof2025.s"
+	@echo "... src/testframework.o"
+	@echo "... src/testframework.i"
+	@echo "... src/testframework.s"
 	@echo "... src/testfuture1.o"
 	@echo "... src/testfuture1.i"
 	@echo "... src/testfuture1.s"

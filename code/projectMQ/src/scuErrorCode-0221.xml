@@ -1,0 +1,988 @@
+﻿<?xml version = "1.0" encoding = "utf-8" ?>
+<!-- 目前scuErrorCode.xml中仅有error_code、error_description、error_solution需要被解析 -->
+<ErrorInfo>
+	<Error index="1">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00001"/>
+		<Attribute name="error_description" value="SCU: The emergency stop has been triggered. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="2">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00002"/>
+		<Attribute name="error_description" value="SCU: User-defined safety IO emergency stop triggered. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="3">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00003"/>
+		<Attribute name="error_description" value="SCU: Joint 1 torque limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="4">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00004"/>
+		<Attribute name="error_description" value="SCU: Joint 2 torque limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="5">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00005"/>
+		<Attribute name="error_description" value="SCU: Joint 3 torque limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="6">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00006"/>
+		<Attribute name="error_description" value="SCU: Joint 4 torque limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="7">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00007"/>
+		<Attribute name="error_description" value="SCU: Joint 5 torque limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="8">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00008"/>
+		<Attribute name="error_description" value="SCU: Joint 6 torque limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="9">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00009"/>
+		<Attribute name="error_description" value="SCU: Joint 7 torque limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="10">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00010"/>
+		<Attribute name="error_description" value="SCU: TCP X-axis force limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="11">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00011"/>
+		<Attribute name="error_description" value="SCU: TCP Y-axis force limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="12">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00012"/>
+		<Attribute name="error_description" value="SCU: TCP Z-axis force limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="13">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00013"/>
+		<Attribute name="error_description" value="SCU: TCP RX-axis force limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="14">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00014"/>
+		<Attribute name="error_description" value="SCU: TCP RY-axis force limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="15">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00015"/>
+		<Attribute name="error_description" value="SCU: TCP RZ-axis force limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="16">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00016"/>
+		<Attribute name="error_description" value="SCU: TCP joint force limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="17">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20018"/>
+		<Attribute name="error_description" value="SCU: Momentum limit enabled and exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="18">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20019"/>
+		<Attribute name="error_description" value="SCU: Power limit enabled and exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="19">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20020"/>
+		<Attribute name="error_description" value="SCU: TCP speed limit enabled and exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="20">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20021"/>
+		<Attribute name="error_description" value="SCU: TCP rotational speed limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="21">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20022"/>
+		<Attribute name="error_description" value="SCU: Elbow speed limit enabled and exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="22">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20023"/>
+		<Attribute name="error_description" value="SCU: Joint 1 speed limit exceeded. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="23">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20024"/>
+		<Attribute name="error_description" value="SCU: Joint 2 speed limit exceeded. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="24">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20025"/>
+		<Attribute name="error_description" value="SCU: Joint 3 speed limit exceeded. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="25">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20026"/>
+		<Attribute name="error_description" value="SCU: Joint 4 speed limit exceeded. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="26">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20027"/>
+		<Attribute name="error_description" value="SCU: Joint 5 speed limit exceeded. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="27">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20028"/>
+		<Attribute name="error_description" value="SCU: Joint 6 speed limit exceeded. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="28">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20029"/>
+		<Attribute name="error_description" value="SCU: Joint 7 speed limit exceeded. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="29">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20030"/>
+		<Attribute name="error_description" value="SCU: Joint 1 torque limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="30">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20031"/>
+		<Attribute name="error_description" value="SCU: Joint 2 torque limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="31">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20032"/>
+		<Attribute name="error_description" value="SCU: Joint 3 torque limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="32">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20033"/>
+		<Attribute name="error_description" value="SCU: Joint 4 torque limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="33">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20034"/>
+		<Attribute name="error_description" value="SCU: Joint 5 torque limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="34">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20035"/>
+		<Attribute name="error_description" value="SCU: Joint 6 torque limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="35">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20036"/>
+		<Attribute name="error_description" value="SCU: Joint 7 torque limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="36">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20017"/>
+		<Attribute name="error_description" value="SCU: Manual-auto mode switch error occurred. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="37">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20037"/>
+		<Attribute name="error_description" value="SCU: TCP X-axis force limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="38">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20038"/>
+		<Attribute name="error_description" value="SCU: TCP Y-axis force limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="39">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20039"/>
+		<Attribute name="error_description" value="SCU: TCP Z-axis force limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="40">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20040"/>
+		<Attribute name="error_description" value="SCU: TCP RX-axis force limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="41">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20041"/>
+		<Attribute name="error_description" value="SCU: TCP RY-axis force limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="42">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20042"/>
+		<Attribute name="error_description" value="SCU: TCP RZ-axis force limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="43">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20043"/>
+		<Attribute name="error_description" value="SCU: TCP joint force limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="44">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40044"/>
+		<Attribute name="error_description" value="SCU: Safety door stop signal enabled and triggered. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="45">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40045"/>
+		<Attribute name="error_description" value="SCU: Joint 1 torque limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="46">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40046"/>
+		<Attribute name="error_description" value="SCU: Joint 2 torque limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="47">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40047"/>
+		<Attribute name="error_description" value="SCU: Joint 3 torque limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="48">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40048"/>
+		<Attribute name="error_description" value="SCU: Joint 4 torque limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="49">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40049"/>
+		<Attribute name="error_description" value="SCU: Joint 5 torque limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="50">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40050"/>
+		<Attribute name="error_description" value="SCU: Joint 6 torque limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="51">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40051"/>
+		<Attribute name="error_description" value="SCU: Joint 7 torque limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="52">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40052"/>
+		<Attribute name="error_description" value="SCU: TCP X-axis force limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="53">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40053"/>
+		<Attribute name="error_description" value="SCU: TCP Y-axis force limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="54">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40054"/>
+		<Attribute name="error_description" value="SCU: TCP Z-axis force limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="55">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40055"/>
+		<Attribute name="error_description" value="SCU: TCP RX-axis force limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="56">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40056"/>
+		<Attribute name="error_description" value="SCU: TCP RY-axis force limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="57">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40057"/>
+		<Attribute name="error_description" value="SCU: TCP RZ-axis force limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="58">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="40058"/>
+		<Attribute name="error_description" value="SCU: TCP joint force limit exceeded error. [STOP2]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="59">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20301"/>
+		<Attribute name="error_description" value="SCU: Joint 1 position limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="60">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20302"/>
+		<Attribute name="error_description" value="SCU: Joint 2 position limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="61">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20303"/>
+		<Attribute name="error_description" value="SCU: Joint 3 position limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="62">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20304"/>
+		<Attribute name="error_description" value="SCU: Joint 4 position limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="63">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20305"/>
+		<Attribute name="error_description" value="SCU: Joint 5 position limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="64">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20306"/>
+		<Attribute name="error_description" value="SCU: Joint 6 position limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="65">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20307"/>
+		<Attribute name="error_description" value="SCU: Joint 7 position limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="66">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20308"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 1 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="67">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20309"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 2 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="68">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20310"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 3 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="69">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20311"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 4 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="70">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20312"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 5 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="71">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20313"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 6 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="72">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20314"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 7 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="73">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20315"/>
+		<Attribute name="error_description" value="SCU: Tool 1 virtual wall 8 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="74">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20316"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 1 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="75">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20317"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 2 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="76">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20318"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 3 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="77">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20319"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 4 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="78">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20320"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 5 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="79">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20321"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 6 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="80">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20322"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 7 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="81">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20323"/>
+		<Attribute name="error_description" value="SCU: Tool 2 virtual wall 8 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="82">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20324"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 1 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="83">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20325"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 2 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="84">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20326"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 3 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="85">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20327"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 4 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="86">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20328"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 5 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="87">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20329"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 6 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="88">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20330"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 7 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="89">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20331"/>
+		<Attribute name="error_description" value="SCU: Tool 3 virtual wall 8 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="90">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20332"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 1 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="91">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20333"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 2 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="92">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20334"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 3 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="93">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20335"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 4 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="94">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20336"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 5 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="95">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20337"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 6 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="96">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20338"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 7 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="97">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20339"/>
+		<Attribute name="error_description" value="SCU: Tool 4 virtual wall 8 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="98">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20340"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 1 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="99">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20341"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 2 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="100">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20342"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 3 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="101">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20343"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 4 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="102">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20344"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 5 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="103">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20345"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 6 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="104">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20346"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 7 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="105">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20347"/>
+		<Attribute name="error_description" value="SCU: Tool 5 virtual wall 8 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="106">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20348"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 1 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="107">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20349"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 2 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="108">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20350"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 3 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="109">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20351"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 4 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="110">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20352"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 5 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="111">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20353"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 6 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="112">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20354"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 7 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="113">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20355"/>
+		<Attribute name="error_description" value="SCU: TCP virtual wall 8 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="114">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20356"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 1 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="115">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20357"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 2 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="116">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20358"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 3 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="117">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20359"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 4 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="118">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20360"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 5 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="119">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20361"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 6 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="120">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20362"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 7 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="121">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20363"/>
+		<Attribute name="error_description" value="SCU: Elbow virtual wall 8 limit exceeded error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="122">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="20364"/>
+		<Attribute name="error_description" value="SCU: Tool deviation error. [STOP1]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="123">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00601"/>
+		<Attribute name="error_description" value="SCU: Stop1 or Stop2 execution time exceeded the limit. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="124">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="00602"/>
+		<Attribute name="error_description" value="SCU: Movement occurred after executing Stop2. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="125">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02101"/>
+		<Attribute name="error_description" value="SCU: ADC1 DMA timeout error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="126">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02102"/>
+		<Attribute name="error_description" value="SCU: ADC3 DMA timeout error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="127">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02103"/>
+		<Attribute name="error_description" value="SCU: ADC1 timeout error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="128">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02104"/>
+		<Attribute name="error_description" value="SCU: ADC3 timeout error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="129">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02105"/>
+		<Attribute name="error_description" value="SCU: 48V power voltage difference too high error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="130">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02106"/>
+		<Attribute name="error_description" value="SCU: 48V power CH1 voltage limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="131">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02107"/>
+		<Attribute name="error_description" value="SCU: 48V power CH2 voltage limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="132">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02108"/>
+		<Attribute name="error_description" value="SCU: 48V power down CH1 voltage limit exceeded. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="133">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02109"/>
+		<Attribute name="error_description" value="SCU: 48V power down CH2 voltage limit exceeded. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="134">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02110"/>
+		<Attribute name="error_description" value="SCU: Control power 3.3V voltage abnormal error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="135">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02111"/>
+		<Attribute name="error_description" value="SCU: Control power 24V voltage abnormal error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="136">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02112"/>
+		<Attribute name="error_description" value="SCU: Redundant MCU ADC1 self-check duty cycle error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="137">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02113"/>
+		<Attribute name="error_description" value="SCU: Redundant MCU ADC3 self-check duty cycle error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="138">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02114"/>
+		<Attribute name="error_description" value="SCU: Two MCUs temperature difference too high error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="139">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02115"/>
+		<Attribute name="error_description" value="SCU: Temperature limit exceeded error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="140">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02116"/>
+		<Attribute name="error_description" value="SCU: 24V overvoltage error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="141">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02117"/>
+		<Attribute name="error_description" value="24V undervoltage error. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="142">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02407"/>
+		<Attribute name="error_description" value="SCU: Safety input IO1 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="143">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02408"/>
+		<Attribute name="error_description" value="SCU: Safety input IO2 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="144">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02409"/>
+		<Attribute name="error_description" value="SCU: Safety input IO3 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="145">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02410"/>
+		<Attribute name="error_description" value="SCU: Safety input IO4 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="146">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02411"/>
+		<Attribute name="error_description" value="SCU: Safety input IO5 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="147">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02412"/>
+		<Attribute name="error_description" value="SCU: Safety input IO6 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="148">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02413"/>
+		<Attribute name="error_description" value="SCU: Safety input IO7 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="149">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02414"/>
+		<Attribute name="error_description" value="SCU: Safety input IO8 dual-channel state mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="150">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02415"/>
+		<Attribute name="error_description" value="SCU: Three-stage enable PIN dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="151">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02416"/>
+		<Attribute name="error_description" value="SCU: Key switch PIN dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="152">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02417"/>
+		<Attribute name="error_description" value="SCU: Emergency stop signal dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="153">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02418"/>
+		<Attribute name="error_description" value="SCU: Safety door signal dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="154">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02706"/>
+		<Attribute name="error_description" value="SCU: Safety output IO1 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="155">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02707"/>
+		<Attribute name="error_description" value="SCU: Safety output IO2 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="156">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02708"/>
+		<Attribute name="error_description" value="SCU: Safety output IO3 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="157">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02709"/>
+		<Attribute name="error_description" value="SCU: Safety output IO4 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="158">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02710"/>
+		<Attribute name="error_description" value="SCU: Safety output IO5 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="159">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02711"/>
+		<Attribute name="error_description" value="SCU: Safety output IO6 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="160">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02712"/>
+		<Attribute name="error_description" value="SCU: Safety output IO7 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="161">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="02713"/>
+		<Attribute name="error_description" value="SCU: Safety output IO8 feedback dual-channel mismatch. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="162">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="03001"/>
+		<Attribute name="error_description" value="SCU: Dual MCU synchronization failure. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="163">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="03002"/>
+		<Attribute name="error_description" value="SCU: Redundant MCU hardware watchdog not enabled. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+	<Error index="164">
+		<Attribute name="error_type" value=""/>
+		<Attribute name="error_code" value="03003"/>
+		<Attribute name="error_description" value="SCU: Redundant MCU error notification. [STOP0]"/>
+		<Attribute name="error_solution" value=""/>
+	</Error>
+</ErrorInfo>
