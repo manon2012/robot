@@ -8058,6 +8058,7 @@ using namespace std;
 // }
 
 
+class 
 
 
 int main(int argc, char const *argv[])
