@@ -7419,41 +7419,843 @@ using namespace std;
 //     pImpl->privateMethod();
 // }
 
+// class Widget
+// {
 
-class Widget
-{
+//     public:
+//     void publicMethod();
+//     Widget();
+
+// private:
+//    struct Impl;
+//    std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget():pImpl(std::make_unique<Impl>()){}
+
+// void Widget::publicMethod()
+// {
+//     cout<<"publicMethod..."<<endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privatedata;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+
+//     int privateData;
+//     void privatemethod()
+//     {
+//         cout << "privtemethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+
+// void Widget::publicMethod()
+// {
+//     cout << "publicmethod..." << endl;
+//     pImpl->privatemethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Context;
+// class IState
+// {
+// public:
+//     virtual void Handle(Context *context) = 0;
+
+// private:
+// };
+
+// class Context
+// {
+// public:
+//     Context(IState *st) : state(st) {}
+//     void Request()
+//     {
+//         state->Handle(this);
+//     }
+//     IState *state;
+// };
+
+// class ConcreteStateA : public IState
+// {
+// public:
+//     void Handle(Context *context);
+// };
+
+// class ConcreteStateB : public IState
+// {
+// public:
+//     void Handle(Context *context);
+// };
+
+// void ConcreteStateA::Handle(Context *context)
+// {
+//     context->state = new ConcreteStateB;
+//     cout << "changed to B now" << endl;
+// }
+
+// void ConcreteStateB::Handle(Context *context)
+// {
+//     context->state = new ConcreteStateA;
+//     cout << "changed to A now" << endl;
+// }
+
+// class Adaptee
+// {
+// public:
+//     virtual int foo() = 0;
+
+//     virtual void bar(int x) = 0;
+
+// private:
+// };
+
+// class oldclass : public Adaptee
+// {
+// public:
+//     int foo()
+//     {
+//         cout << "foo in old class" << endl;
+//         return 2025;
+//     }
+
+//     void bar(int x)
+//     {
+//         cout << x + 1 << endl;
+//     }
+// };
+
+// class Target
+// {
+// public:
+//     virtual void process() = 0;
+// };
+
+// class Adapter : public Target
+// {
+// public:
+//     void process()
+//     {
+//         int abc = ada->foo();
+//         ada->bar(abc);
+//     }
+//     Adapter(Adaptee *a) : ada(a) {}
+
+// private:
+//     Adaptee *ada;
+// };
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << std::endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMathod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicethod..."
+//          << endl;
+
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publieMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privteMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     std::cout << "publicMethod..." << std::endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget ::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Adaptee
+// {
+// public:
+//     virtual int foo() = 0;
+
+//     virtual void bar(int x) = 0;
+
+// private:
+// };
+
+// class oldclass : public Adaptee
+// {
+// public:
+//     int foo()
+//     {
+//         return 2025;
+//     }
+
+//     void bar(int x)
+//     {
+//         cout << x << endl;
+//     }
+// };
+
+// class Target
+// {
+// public:
+//     virtual void doprocess() = 0;
+// };
+
+// class Adapter : public Target
+// {
+// public:
+//     void doprocess()
+//     {
+//         int x = ada->foo();
+//         ada->bar(x);
+//     }
+//     Adapter(Adaptee *ad) : ada(ad) {}
+
+// private:
+//     Adaptee *ada;
+// };
+
+// void Test(int x, string y)
+// {
+//     while (x-- > 0)
+//     {
+//         cout << y << endl;
+//     }
+// }
+
+// typedef void (*pfunc)(int, string);
+// class caller
+// {
+// public:
+//     void setfunc(pfunc f)
+//     {
+//         m_func = f;
+//     }
+//     void letrun(int x, string y)
+//     {
+//         m_func(x, y);
+//     }
+
+// private:
+//     pfunc m_func;
+// };
+// #include <thread>
+// class Task
+// {
+// public:
+//     Task(int x) : m_id(x) {}
+//     int operator()()
+//     {
+//         std::this_thread::sleep_for(std::chrono::seconds(2));
+//         return m_id * 2;
+//     }
+
+// private:
+//     int m_id;
+// };
+
+// int a = 100;
+// int b = 200;
+
+// #include "thread"
+// class Task
+// {
+// public:
+//     Task(int x) : m_id(x) {}
+//     int operator()(int x)
+//     {
+//         std::this_thread::sleep_for(std::chrono::seconds(2));
+//         return m_id * (2 + x);
+//     }
+
+// private:
+//     int m_id;
+// };
+// void printMessage(string abc, int x)
+// {
+//     cout << abc << x << endl;
+// }
+
+// void printMessage(string abc, int x)
+// {
+//     cout << abc << x << endl;
+// // }
+// #include <thread>
+// class Task
+// {
+// public:
+//     Task(int x) : m_id(x) {}
+//     int operator()(int x)
+//     {
+//         std::this_thread::sleep_for(std::chrono::seconds(2));
+//         return (m_id + x) * 2;
+//     }
+
+// private:
+//     int m_id;
+// };
+
+// class CDocument
+// {
+// public:
+//     void OnFileOpen()
+//     {
+//         open();
+//         serilize();
+//         close();
+//     }
+//     void open()
+//     {
+//         cout << "CDoc open..." << endl;
+//     }
+//     void close()
+//     {
+//         cout << "CDoc close..." << endl;
+//     }
+//     virtual void serilize() = 0;
+// };
+
+// class MyDoc : public CDocument
+// {
+// public:
+//     void serilize()
+//     {
+//         cout << "Mydoc serilize..." << endl;
+//     }
+// };
+
+// void printMessage(string y, int x)
+// {
+//     cout << x << y << endl;
+// }
+
+// void printMessage(string y, int x)
+// {
+//     cout << x << y << endl;
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMthod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "pubicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
 
 
-    public:
-    void publicMethod();
-    Widget();
 
-private:
-   struct Impl;
-   std::unique_ptr<Impl> pImpl;
-}; 
-
-struct Widget::Impl
-{
-    int privateData;
-    void privateMethod()
-    {
-        cout << "privateMethod..." << endl;
-    }
-};
-
-Widget::Widget():pImpl(std::make_unique<Impl>()){}
-
-void Widget::publicMethod()
-{
-    cout<<"publicMethod..."<<endl;
-    pImpl->privateMethod();
-}
 
 int main(int argc, char const *argv[])
 {
-    Widget w1;
-    w1.publicMethod();
+    // Widget w;
+    // w.publicMethod();
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // std::sort(v.begin(), v.end(), [](int a, int b)
+    //           { return a > b; });
+    // for (auto &x : v)
+    // {
+    //     cout << x << endl;
+    // }
+
+    // int count = 100;
+    // auto f = [=]() mutable
+    // {
+    //     count++;
+    //     cout << count << endl;
+    // };
+    // f();
+    // f();
+
+    // int a = 100;
+    // int b = 200;
+    // auto f = [=]() -> int
+    // { return a + b; };
+    // cout << f() << endl;
+
+    // auto func = std::bind(printMessage, "hello", std::placeholders::_1);
+    // std::function<void(int)> f = func;
+    // f(1000);
+
+    // auto f = std::bind(std::ref(printMessage), "hello", std::placeholders::_1);
+    // std::function<void(int)> ff = f;
+    // ff(2000);
+
+    // auto bind_task = std::bind(std::ref(printMessage), "hello", std::placeholders::_1);
+    // std::function<void(int)> f = bind_task;
+    // f(2000);
+
+    // CDocument *cd = new MyDoc;
+    // cd->OnFileOpen();
+    // vector<Task> tasks = {Task(1), Task(2), Task(3), Task(4), Task(5), Task(6)};
+    // vector<future<int>> futures;
+
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     int dynamic_arg = i * 10;
+    //     futures.push_back(std::async(std::launch::async, [&tasks, i, dynamic_arg]()
+    //                                  { return tasks[i](dynamic_arg); }));
+    // }
+
+    // int argument = 2000;
+    // for (auto &task : tasks)
+    // {
+    //     auto bind_task = std::bind(std ::ref(task), argument);
+    //     // futures.push_back(std::async(std::launch::async, [&task, argument]()
+    //     //                              { return task(argument); }));
+    //     futures.push_back(std::async(std::launch::async, bind_task));
+    // }
+
+    // for (auto &future : futures)
+    // {
+    //     cout << future.get() << endl;
+    // }
+    // int count = 0;
+    // auto x = [=]() mutable
+    // {
+    //     count++;
+    //     cout << count << endl;
+    // };
+    // x();
+    // x();
+
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // std::sort(v.begin(), v.end(), [](int a, int b)
+    //           { return a > b; });
+    // for (auto &x : v)
+    // {
+    //     cout << x << endl;
+    // }
+
+    // int x = 100;
+    // int y = 100;
+    // auto f = [=]()
+    // { return x + y; };
+    // cout << f();
+
+    // auto bind_task = std::bind(std::ref(printMessage), "hello", std::placeholders::_1);
+    // std::function<void(int)> f = bind_task;
+    // f(2000);
+
+    // auto bind_task = std::bind(ref(printMessage), "hello", std::placeholders::_1);
+    // std::function<void(int)> f = bind_task;
+    // f(1000);
+
+    // auto bind_task = std::bind(std::ref(printMessage), "Hello", std::placeholders::_1);
+    // std::function<void(int)> f1 = bind_task;
+    // f1(2000);
+
+    // std::function<void()> f1 = []()
+    // {
+    //     cout << "lambda" << endl;
+    // };
+
+    // vector<Task> tasks = {Task(1), Task(2), Task(3), Task(4), Task(5), Task(6)};
+    // vector<future<int>> futures;
+    // for (auto &task : tasks)
+    // {
+    //     int x = 1000;
+    //     auto f = std::bind(task, x);
+    //     futures.push_back(std::async(std::launch::async, f));
+    // }
+    // for (auto &future : futures)
+    // {
+    //     std::cout << future.get() << endl;
+    // }
+
+    // int x = 5;
+
+    // auto f = [x](int y)
+    // {
+    //     return x * y;
+    // };
+
+    // cout << f(3) << endl;
+
+    // int count = 1;
+    // auto x = [count]() mutable
+    // {
+    //     count++;
+    //     cout << count << endl;
+    // };
+    // x();
+    // x();
+
+    // vector<int> v = {1, 2, 3, 4, 5};
+    // std::sort(v.begin(), v.end(), [](int a, int b)
+    //           { return a > b; });
+
+    // for (auto &x : v)
+    // {
+    //     cout << x << endl;
+    // }
+
+    // auto f = [](int x, int y) -> int
+    // { return x + y; };
+
+    // cout << f(1, 2) << endl;
+
+    // auto x = [=]()
+    // {
+    //     return a + b;
+    // };
+    // cout << x() << endl;
+
+    // vector<Task> tasks = {Task(1), Task(2), Task(3), Task(4), Task(5), Task(6)};
+    // vector<future<int>> futures;
+
+    // for (auto &task : tasks)
+    // {
+    //     futures.push_back(std::async(std::launch::async, task));
+    // }
+
+    // for (auto &future : futures)
+    // {
+    //     std::cout << future.get() << std::endl;
+    // }
+
+    // caller c1;
+    // c1.setfunc(Test);
+    // c1.letrun(6, "hello");
+    // Adaptee *ada = new oldclass;
+    // Target *it = new Adapter(ada);
+    // it->doprocess();
+
+    // Widget w;
+    // w.publicMethod();
+    // Widget w;
+    // w.publicMethod();
+    // Widget w;
+    // w.publicMethod();
+    // Widget w1;
+    // w1.publicMethod();
+    // Adaptee *ada = new oldclass();
+    // Target *it = new Adapter(ada);
+    // it->process();
+
+    // IState *state = new ConcreteStateA();
+    // Context *context = new Context(state);
+    // context->Request();
+    // context->Request();
+    // context->Request();
+
+    // Widget w1;
+    // w1.publicMethod();
 
     // Widget w1;
     // w1.publicMethod();
