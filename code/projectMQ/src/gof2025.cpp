@@ -8057,12 +8057,2488 @@ using namespace std;
 //     pImpl->privateMethod();
 // }
 
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
 
-class 
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privatemethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+// #include <thread>
+// class Task
+// {
+// public:
+//     Task(int x) : m_id(x) {}
+//     int operator()(int x)
+//     {
+//         std::this_thread::sleep_for(std::chrono::seconds(2));
+//         return (m_id + x) * 2;
+//     }
+
+// private:
+//     int m_id;
+// };
+
+// void printMessage(string abc, int xyz)
+// {
+//     cout << abc << xyz << endl;
+// }
+
+// void processNum(vector<int> &num, std::function<void(int)> processor)
+// {
+//     for (auto &x : num)
+//     {
+//         processor(x);
+//     }
+// }
+
+// void printMessage(string x, int y)
+// {
+//     cout << x << y << endl;
+// }
+
+// void processNum(vector<int> &num, std::function<void(int)> process)
+// {
+//     for (auto &x : num)
+//     {
+//         // cout << x << endl;
+//         process(x);
+//     }
+// }
+// #include <thread>
+// class Task
+// {
+// public:
+//     Task(int x) : m_id(x) {}
+//     int operator()(int x)
+//     {
+//         std::this_thread::sleep_for(std::chrono::seconds(2));
+//         return (m_id + x) * 2;
+//     }
+
+// private:
+//     int m_id;
+// };
+
+// void test(int x, string y)
+// {
+//     while (x-- > 0)
+//     {
+//         cout << y << endl;
+//     }
+// }
+// typedef void (*pfunc)(int, string);
+
+// class caller
+// {
+// public:
+//     void setFunc(pfunc f)
+//     {
+//         m_func = f;
+//     }
+//     void letRun(int x, string y)
+//     {
+//         m_func(x, y);
+//     }
+
+// private:
+//     pfunc m_func;
+// };
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// void processNum(vector<int> &v, std::function<void(int)> f)
+// {
+//     for (auto &x : v)
+//     {
+//         f(x);
+//     }
+// }
+
+// #include <thread>
+// class Task
+// {
+// public:
+//     Task(int x) : m_id(x) {}
+//     int operator()(int x)
+//     {
+//         std::this_thread::sleep_for(std::chrono::seconds(2));
+//         return (m_id + x) * 2;
+//     }
+
+// private:
+//     int m_id;
+// };
+
+// void printMessage(string a, int b)
+// {
+//     cout << a << b << endl;
+// }
+
+// void processFunc(vector<int> &v, std::function<void(int)> processNum)
+// {
+//     for (auto &x : v)
+//     {
+//         processNum(x);
+//     }
+// }
+
+// void test(int x, string y)
+// {
+//     while (x-- > 0)
+//     {
+//         cout << y << endl;
+//     }
+// }
+
+// typedef void (*pfunc)(int, string);
+// class caller
+// {
+// public:
+//     void setFunc(pfunc x)
+//     {
+//         m_func = x;
+//     }
+//     void letRun(int x, string y)
+//     {
+//         m_func(x, y);
+//     }
+
+// private:
+//     pfunc m_func;
+// };
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMehtod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Context;
+// class IState
+// {
+// public:
+//     virtual void Handle(Context *context) = 0;
+// };
+
+// class Context
+// {
+// public:
+//     void Request()
+//     {
+//         m_state->Handle(this);
+//     }
+//     Context(IState *state) : m_state(state) {}
+
+//     IState *m_state;
+// };
+
+// class ConcreteStateA : public IState
+// {
+// public:
+//     void Handle(Context *context);
+// };
+
+// class ConcreteStateB : public IState
+// {
+// public:
+//     void Handle(Context *context);
+// };
+
+// void ConcreteStateA::Handle(Context *context)
+// {
+//     context->m_state = new ConcreteStateB();
+//     cout << "changed to stateB now" << endl;
+// }
+// void ConcreteStateB::Handle(Context *context)
+// {
+//     context->m_state = new ConcreteStateB();
+//     cout << "changed to stateA now" << endl;
+// }
+
+// class Adaptee
+// {
+// public:
+//     virtual int foo() = 0;
+//     virtual void bar(int x) = 0;
+// };
+
+// class olcclass : public Adaptee
+// {
+// public:
+//     int foo()
+//     {
+//         return 2000;
+//     }
+//     void bar(int x)
+//     {
+//         cout << x << endl;
+//     }
+// };
+
+// class ITarget
+// {
+// public:
+//     virtual void doprocess() = 0;
+// };
+
+// class Adapter : public ITarget
+// {
+// public:
+//     Adapter(Adaptee *a) : ada(a) {}
+//     void doprocess()
+//     {
+//         int x = ada->foo();
+//         ada->bar(x);
+//     }
+
+// private:
+//     Adaptee *ada;
+// };
+
+// class Weapon
+// {
+// public:
+//     virtual void dodo() = 0;
+// };
+
+// class AK47 : public Weapon
+// {
+// public:
+//     void dodo()
+//     {
+//         cout << "AK47 dodo." << endl;
+//     }
+// };
+
+// class Knife : public Weapon
+// {
+// public:
+//     void dodo()
+//     {
+//         cout << "knife dodo" << endl;
+//     }
+// };
+
+// class Person
+// {
+// public:
+//     void setWeapon(Weapon *w)
+//     {
+//         ws = w;
+//     }
+//     void fire()
+//     {
+//         ws->dodo();
+//     }
+//     Person(Weapon *ws = nullptr) {}
+
+// private:
+//     Weapon *ws;
+// };
+
+// class Fruit
+// {
+// public:
+//     virtual void show() = 0;
+// };
+
+// class Apple : public Fruit
+// {
+// public:
+//     void show()
+//     {
+//         cout << "Apple..." << endl;
+//     }
+// };
+
+// class Banana : public Fruit
+// {
+// public:
+//     void show()
+//     {
+//         cout << "Banana..." << endl;
+//     }
+// };
+
+// class SimpleFactory
+// {
+// public:
+//     static Fruit *Createfruit(string abc)
+//     {
+//         static Fruit *ft;
+//         if (abc == "Apple")
+//         {
+//             ft = new Apple;
+//         }
+//         else if (abc == "Banana")
+//         {
+//             ft = new Banana;
+//         }
+//         return ft;
+//     }
+
+// private:
+// };
+
+// class FruitFactory
+// {
+// public:
+//     virtual Fruit *CreateFruit() = 0;
+// };
+
+// class AppleFactory : public FruitFactory
+// {
+// public:
+//     Fruit *CreateFruit()
+//     {
+//         return new Apple;
+//     }
+// };
+
+// class BananaFactory : public FruitFactory
+// {
+// public:
+//     Fruit *CreateFruit()
+//     {
+//         return new Banana;
+//     }
+// };
+
+// class Singleton
+// {
+// public:
+//     static Singleton *GetInstance();
+//     static Singleton *m_instance;
+//     void show()
+//     {
+//         cout << "show." << endl;
+//     }
+
+// private:
+//     Singleton();
+// };
+
+// Singleton *Singleton::m_instance = new Singleton;
+// Singleton *Singleton::GetInstance()
+// {
+//     // if (m_instance == nullptr)
+//     //{
+//     //  m_instance = new Singleton;
+//     //}
+//     return m_instance;
+// }
+// #include <list>
+// class Subject;
+// class Observer
+// {
+// public:
+//     void update()
+//     {
+//         cout << "obs update." << endl;
+//     }
+// };
+
+// class Subject
+// {
+// public:
+//     void addobj(Observer *obs)
+//     {
+//         m_list.push_back(obs);
+//     }
+//     void removeobj(Observer *obs)
+//     {
+//         m_list.remove(obs);
+//     }
+//     void notify()
+//     {
+//         for (auto &x : m_list)
+//         {
+//             x->update();
+//         }
+//     }
+
+// private:
+//     list<Observer *> m_list;
+// };
+
+// class quanwang
+// {
+// public:
+//     void encrypt()
+//     {
+//         cout << "encrypt..." << endl;
+//     }
+//     void decrypt()
+//     {
+//         cout << "decrypt..." << endl;
+//     }
+// };
+
+// class SystemSafe
+// {
+// public:
+//     virtual void encrypt() = 0;
+//     virtual void decrypy() = 0;
+// };
+
+// class eTrust : public SystemSafe
+// {
+// public:
+//     void encrypt()
+//     {
+//         cout << "eTrust..." << endl;
+//     }
+//     void decrypy()
+//     {
+//         cout << "...eTrust" << endl;
+//     }
+// };
+
+// #include <mutex>
+
+// class Singleton
+// {
+// public:
+//     static Singleton *GetInstance()
+//     {
+//         std::call_once(initFlag, []()
+//                        { m_instance = new Singleton(); });
+//         return m_instance;
+//     }
+
+//     // ... rest of the class ...
+//     void show()
+//     {
+//         cout << "thread safe" << endl;
+//     }
+
+// private:
+//     static Singleton *m_instance;
+//     static std::once_flag initFlag;
+// };
+
+// Singleton *Singleton::m_instance = nullptr;
+// std::once_flag Singleton::initFlag;
+
+// class Singleton
+// {
+// public:
+//     static Singleton *GetInstance()
+//     {
+//         if (m_instance == nullptr)
+//         {
+//             m_instance = new Singleton;
+//         }
+//         return m_instance;
+//     }
+//     void show()
+//     {
+//         cout << "show" << endl;
+//     }
+
+// private:
+//     Singleton() = default;
+//     Singleton(const Singleton &) = default;
+//     static Singleton *m_instance;
+// };
+
+// Singleton *Singleton::m_instance = nullptr;
+
+// class SystemSafe
+// {
+// public:
+//     virtual void encrypt() = 0;
+//     virtual void decrypt() = 0;
+// };
+
+// class etrust : public SystemSafe
+// {
+// public:
+//     void encrypt()
+//     {
+//         cout << "etrust en" << endl;
+//     }
+//     void decrypt()
+//     {
+//         cout << "etrust de" << endl;
+//     }
+// };
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Context;
+// class ConcreteStateA;
+
+// class ConcreteStateB;
+
+// class IState
+// {
+// public:
+//     virtual void Handle(Context *context) = 0;
+
+// private:
+// };
+
+// class Context
+// {
+// public:
+//     Context(IState *state) : m_state(state) {}
+//     void Request()
+//     {
+//         m_state->Handle(this);
+//     }
+
+//     IState *m_state;
+// };
+
+// class ConcreteStateA : public IState
+// {
+// public:
+//     void Handle(Context *context)
+//     {
+//         context->m_state = new ConcreteStateB;
+//     }
+// };
+
+// class ConcreteStateB : public IState
+// {
+// public:
+//     void Handle(Context *context)
+//     {
+//         context->m_state = new ConcreteStateA;
+//     }
+// };
+
+// class Text
+// {
+// public:
+//     virtual string Render() = 0;
+// };
+
+// class PlaneText : public Text
+// {
+// public:
+//     string Render()
+//     {
+//         return content;
+//     }
+//     PlaneText(string s) : content(s) {}
+
+// private:
+//     string content;
+// };
+
+// class DecoratorText : public Text
+// {
+// public:
+//     DecoratorText(Text *t) : text(t) {}
+
+// protected:
+//     Text *text;
+// };
+
+// class DecoratorTextBold : public DecoratorText
+// {
+// public:
+//     DecoratorTextBold(Text *t) : DecoratorText(t) {}
+//     string Render()
+//     {
+//         return text->Render() + "Bold";
+//     }
+// };
+
+// class Business
+// {
+// public:
+//     virtual void charge(int x) = 0;
+// };
+
+// class CMCC : public Business
+// {
+// public:
+//     void charge(int x)
+//     {
+//         cout << "charge " << x << "done." << endl;
+//     }
+// };
+
+// class CMCCProxy : public Business
+// {
+// public:
+//     // CMCCProxy(CMCC *c= nul) : m_cmcc(c) {}
+//     void charge(int x)
+//     {
+//         if (x < 100)
+//         {
+//             cout << "need >=100" << endl;
+//         }
+//         else
+//         {
+//             if (m_cmcc == nullptr)
+//             {
+//                 m_cmcc = new CMCC;
+//             }
+//             std::cout << "m_cmcc: " << m_cmcc << std::endl;
+//             m_cmcc->charge(x);
+//             delete m_cmcc;
+//             //  m_cmcc = nullptr;
+//         }
+//     }
+//     // ~CMCCProxy()
+//     // {
+//     //     if (m_cmcc)
+//     //     {
+//     //         delete m_cmcc;
+//     //         m_cmcc = nullptr;
+//     //     }
+//     // }
+
+// private:
+//     CMCC *m_cmcc = nullptr;
+// };
+
+// class Widget
+// {
+// public:
+//     void pubicMethod();
+
+//     Widget();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(make_unique<Impl>()) {}
+// void Widget::pubicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// void test(int x, string y)
+// {
+//     while (x-- > 0)
+//     {
+//         cout << y << endl;
+//     }
+// }
+
+// typedef void (*pfunc)(int, string);
+// class caller
+// {
+// public:
+//     void setFunc(pfunc p)
+//     {
+//         m_func = p;
+//     }
+//     void letRun(int x, string y)
+//     {
+//         m_func(x, y);
+//     }
+
+// private:
+//     pfunc m_func;
+// };
+
+// #include <thread>
+// class Task
+// {
+// public:
+//     Task(int x) : m_id(x) {}
+//     int operator()(int x)
+//     {
+//         std::this_thread::sleep_for(std::chrono::seconds(2));
+//         return (m_id + x) * 2;
+//     }
+
+// private:
+//     int m_id;
+// };
+
+// void process(vector<int> &v, std::function<void(int)> processNum)
+// {
+//     for (auto &x : v)
+//     {
+//         processNum(x);
+//     }
+// }
+
+// class CDocument
+// {
+// public:
+//     void OnFileOpen()
+//     {
+//         Open();
+//         Serialize();
+//         Close();
+//     }
+
+// private:
+//     void Open()
+//     {
+//         cout << "Codc open" << endl;
+//     }
+
+//     virtual void Serialize() = 0;
+
+//     void Close()
+//     {
+//         cout << "cdoc close" << endl;
+//     }
+// };
+
+// class Mydoc : public CDocument
+// {
+
+// public:
+//     void Serialize()
+//     {
+//         cout << "mydoc serialzie" << endl;
+//     }
+// };
+
+// bool isodd(int n)
+// { // the body of the function begins
+//     return n % 2;
+// }
+
+// class FileLogger
+// {
+// public:
+//     void logg(const string &messages)
+//     {
+//         cout << messages << endl;
+//     }
+// };
+// class DBLogger
+// {
+// public:
+//     void logg(const string &messages)
+//     {
+//         cout << messages << endl;
+//     }
+// };
+
+// class APP
+// {
+
+// public:
+//     void process()
+//     {
+//         fl.logg("file log haha.");
+//         dl.logg("dl log haha");
+//     }
+
+// private:
+//     FileLogger fl;
+//     DBLogger dl;
+// };
+
+// class ILogger
+// {
+// public:
+//     virtual void logger(const string &message) = 0;
+// };
+
+// class FileLogger : public ILogger
+// {
+// public:
+//     void logger(const string &x)
+//     {
+//         cout << x << endl;
+//     }
+// };
+
+// class DBLogger : public ILogger
+// {
+// public:
+//     void logger(const string &x)
+//     {
+//         cout << x << endl;
+//     }
+// };
+
+// class APP
+// {
+
+// public:
+//     void addlog(std::shared_ptr<ILogger> v)
+//     {
+//         vlist.push_back(v);
+//     }
+//     // Option 1: Accept by value (recommended)
+//     // void addlog(std::shared_ptr<ILogger> v)
+//     // {
+//     //     vlist.push_back(std::move(v));
+//     // }
+
+//     // Option 2: Accept by const reference
+//     // void addlog(const std::shared_ptr<ILogger> &v)
+//     // {
+//     //     vlist.push_back(v);
+//     // }
+//     void process()
+//     {
+//         for (auto &x : vlist)
+//         {
+//             x->logger("test");
+//         }
+//     }
+//     APP(vector<std::shared_ptr<ILogger>> &v) : vlist(v) {}
+
+// private:
+//     std::vector<std::shared_ptr<ILogger>> vlist;
+// };
+
+// class LoggerFactory
+// {
+// public:
+//     static shared_ptr<ILogger> CreateFileLogger()
+//     {
+//         return make_shared<FileLogger>();
+//     }
+//     static shared_ptr<ILogger> CreateDBLogger()
+//     {
+//         return make_shared<DBLogger>();
+//     }
+// };
+
+// void testsp(shared_ptr<int> sp)
+// {
+//     cout << *sp << endl;
+// }
+
+// class Text
+// {
+// public:
+//     virtual string Render() = 0;
+// };
+
+// class PlaneText : public Text
+// {
+// public:
+//     string Render()
+//     {
+//         return content;
+//     }
+//     PlaneText(string abc) : content(abc) {}
+
+// private:
+//     string content;
+// };
+
+// class DecoratorText : public Text
+// {
+// public:
+//     DecoratorText(Text *t) : text(t) {}
+
+// protected:
+//     Text *text;
+// };
+
+// class DecoratorTextBold : public DecoratorText
+// {
+// public:
+//     DecoratorTextBold(Text *t) : DecoratorText(t) {}
+
+//     string Render()
+//     {
+//         return text->Render() + "bold";
+//     }
+// };
+
+// void test(vector<int> &v, std::function<void(int)> processNum)
+// {
+//     for (auto &x : v)
+//     {
+//         processNum(x);
+//     }
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     void publicMethod();
+//     Widget();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// void test(vector<int> &v, std::function<void(int)> f)
+// {
+//     for (auto &x : v)
+//     {
+//         f(x);
+//     }
+// }
+
+// class Widget
+// {
+// public:
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// void test(vector<int> &v, std::function<void(int)> f)
+// {
+//     for (auto &x : v)
+//     {
+//         f(x);
+//     }
+// }
+
+// class Context;
+// class IState
+// {
+// public:
+//     virtual void Handle(Context *context) = 0;
+// };
+
+// class Context
+// {
+// public:
+//     Context(IState *st) : state(st) {}
+//     void Request()
+//     {
+//         state->Handle(this);
+//     }
+
+//     IState *state;
+// };
+
+// class ConcreteStateA : public IState
+// {
+// public:
+//     void Handle(Context *context);
+// };
+
+// class ConcreteStateB : public IState
+// {
+// public:
+//     void Handle(Context *context);
+// };
+
+// void ConcreteStateA::Handle(Context *context)
+// {
+//     context->state = new ConcreteStateB;
+//     cout << "changed to B" << endl;
+// }
+
+// void ConcreteStateB::Handle(Context *context)
+// {
+//     context->state = new ConcreteStateA;
+//     cout << "changed to A" << endl;
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privteMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "privateMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Text
+// {
+// public:
+//     virtual string Render() = 0;
+// };
+
+// class PlaneText : public Text
+// {
+// public:
+//     string Render()
+//     {
+//         return content;
+//     }
+//     PlaneText(string abc) : content(abc) {}
+
+// private:
+//     string content;
+// };
+
+// class Decorator : public Text
+// {
+// public:
+//     Text *text;
+//     Decorator(Text *t) : text(t) {}
+// };
+
+// class DecoratorBold : public Decorator
+// {
+// public:
+//     DecoratorBold(Text *t) : Decorator(t) {}
+//     string Render()
+//     {
+//         return text->Render() + "bold";
+//     }
+// };
+
+// class IAdaptee
+// {
+//     public:
+//         virtual int foo() = 0;
+//         virtual void bar(int x) = 0;
+// };
+
+// class oldclass : public IAdaptee
+// {
+//     public:
+//     int foo()
+//     {
+//         return 2025;
+//     }
+//     void bar(int x)
+//     {
+//         cout << x << endl;
+//     }
+// };
+
+// class ITarget
+// {
+//     public:
+//     virtual void process() = 0;
+
+// };
+
+// class Adapter : public ITarget
+// {
+//     public:
+//         Adapter(IAdaptee *id ): ida(id){}
+//         void process()
+//         {
+//             int x = ida->foo();
+//             ida->bar(x);
+//         }
+
+//     private:
+//         IAdaptee* ida;
+// };
+
+// class Widget
+// {
+// public:
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     ~Widget();
+
+//     // 禁止拷贝
+//     Widget(const Widget &) = delete;
+//     Widget &operator=(const Widget &) = delete;
+
+//     // 允许移动
+//     Widget(Widget &&) noexcept = default;
+//     Widget &operator=(Widget &&) noexcept = default;
+
+//     // 公共接口
+//     void publicMethod();
+//     void setPrivateData(int value);
+//     int getPrivateData() const;
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// // 实现细节
+// struct Widget::Impl
+// {
+//     int privateData = 0;
+
+//     void privateMethod()
+//     {
+//         cout << "privateMethod called, data: " << privateData << endl;
+//     }
+
+//     void anotherPrivateMethod()
+//     {
+//         cout << "anotherPrivateMethod..." << endl;
+//     }
+// };
+
+// // 构造函数
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+
+// // 析构函数（必须在Impl定义后定义）
+// Widget::~Widget() = default;
+
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+//     pImpl->anotherPrivateMethod();
+// }
+
+// void Widget::setPrivateData(int value)
+// {
+//     pImpl->privateData = value;
+// }
+
+// int Widget::getPrivateData() const
+// {
+//     return pImpl->privateData;
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+//     void setValue(int x);
+//     Widget(const Widget &) = delete;
+//     Widget &operator=(const Widget &) = delete;
+
+//     Widget(Widget &&) noexcept = default;
+//     Widget &operator=(Widget &&) noexcept = default;
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+
+// Widget::~Widget() {};
+
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+//     cout << "privteData is: " << pImpl->privateData << endl;
+// }
+
+// void Widget::setValue(int x)
+// {
+//     pImpl->privateData = x;
+// }
+
+// class Widget
+// {
+// public:
+//     //Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Text
+// {
+// public:
+//     virtual string Render() = 0;
+// };
+
+// class PlaneText : public Text
+// {
+// public:
+//     string Render()
+//     {
+//         return content;
+//     }
+//     PlaneText(string abc) : content(abc) {}
+
+// private:
+//     string content;
+// };
+
+// class DecoratorText : public Text
+// {
+// public:
+//     Text *text;
+//     DecoratorText(Text *t) : text(t) {}
+// };
+
+// class DecortorTextBold : public DecoratorText
+// {
+// public:
+//     string Render()
+//     {
+//         return text->Render() + "bold";
+//     }
+//     DecortorTextBold(Text *t) : DecoratorText(t) {}
+// };
+
+// class FileLog
+// {
+// public:
+//     void log()
+//     {
+//         cout << "filelog..." << endl;
+//     }
+// };
+
+// class DBLog
+// {
+// public:
+//     void log()
+//     {
+//         cout << "dblog..." << endl;
+//     }
+// };
+
+// class APP
+// {
+// public:
+//     void log()
+//     {
+//         fl.log();
+//         dl.log();
+//     }
+
+// private:
+//     FileLog fl;
+//     DBLog dl;
+// };
+
+// class Ilog
+// {
+// public:
+//     virtual void log() = 0;
+// };
+
+// class filelog : public Ilog
+// {
+// public:
+//     void log()
+//     {
+//         cout << "flog..." << endl;
+//     }
+// };
+
+// class dblog : public Ilog
+// {
+// public:
+//     void log()
+//     {
+//         cout << "dblog..." << endl;
+//     }
+// };
+
+// class application
+// {
+// public:
+//     application() = default;
+//     void log()
+//     {
+//         // flog->log();
+//         // dblog->log();
+//         for (auto &x : vlog)
+//         {
+//             x->log();
+//         }
+//     }
+//     void addlog(std::shared_ptr<Ilog> log)
+//     {
+//         vlog.push_back(log);
+//     }
+
+// private:
+//     // Ilog *flog;
+//     // Ilog *dblog;
+//     // vector<Ilog *> loglist;
+//     vector<std::shared_ptr<Ilog>> vlog;
+// };
+
+// class gof2025
+// {
+// private:
+//     /* data */
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+
+// public:
+//     gof2025(/* args */);
+//     ~gof2025();
+//     void publicMehod();
+// };
+
+// struct gof2025::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMthod..." << endl;
+//     }
+// };
+
+// gof2025::gof2025(/* args */) : pImpl(std::make_unique<Impl>())
+// {
+// }
+
+// gof2025::~gof2025()
+// {
+// }
+
+// void gof2025::publicMehod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class Text
+// {
+// public:
+//     virtual string Render() = 0;
+// };
+
+// class PlaneText : public Text
+// {
+// public:
+//     string Render()
+//     {
+//         return content;
+//     }
+//     PlaneText(string abc) : content(abc) {}
+
+// private:
+//     string content;
+// };
+
+// class Decorator : public Text
+// {
+// public:
+//     Text *text;
+//     Decorator(Text *t) : text(t) {}
+// };
+
+// class DecoratorBold : public Decorator
+// {
+// public:
+//     DecoratorBold(Text *t) : Decorator(t) {}
+//     string Render()
+//     {
+//         return text->Render() + "bold";
+//     }
+// };
+
+// class Context;
+// class IState
+// {
+// public:
+//     virtual void Handle(Context *context) = 0;
+// };
+
+// class Context
+// {
+// public:
+//     void Request()
+//     {
+//         m_state->Handle(this);
+//     }
+//     Context(IState *st) : m_state(st) {}
+//     IState *m_state;
+// };
+
+// class ConcreteStateA: public IState
+// {
+//     public:
+//         void Handle(Context *context);
+// };
+
+// class ConcreteStateB : public IState
+// {
+// public:
+//     void Handle(Context *context);
+// };
+
+// void ConcreteStateA::Handle(Context * context)
+// {
+//     context->m_state = new ConcreteStateB;
+//     cout << "changed to B now" << endl;
+// }
+
+// void ConcreteStateB::Handle(Context *context)
+// {
+//     context->m_state = new ConcreteStateB;
+//     cout << "changed to A now" << endl;
+// }
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privateMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
+// class IAdaptee
+// {
+// public:
+//     virtual int foo() = 0;
+//     virtual void bar(int x) = 0;
+// };
+
+// class oldclass : public IAdaptee
+// {
+// public:
+//     int foo()
+//     {
+//         return 2025;
+//     }
+//     void bar(int x)
+//     {
+//         cout << x << endl;
+//     }
+// };
+
+// class ITarget
+// {
+// public:
+//     virtual void progress() = 0;
+// };
+
+// class Adapter : public ITarget
+// {
+// public:
+//     Adapter(IAdaptee *a) : ada(a) {}
+//     void progress()
+//     {
+//         int x = ada->foo();
+//         ada->bar(x);
+//     }
+
+// private:
+//     IAdaptee *ada;
+// };
+
+// class Business
+// {
+// public:
+//     virtual void charge(int x) = 0;
+// };
+
+// class CMCC : public Business
+// {
+// public:
+//     void charge(int x)
+//     {
+//         cout << "charge " << x << "done." << endl;
+//     }
+// };
+
+// class CMCCProxy : public Business
+// {
+// public:
+//     void charge(int x)
+//     {
+//         if (x < 10)
+//         {
+//             cout << "need >10" << endl;
+//         }
+//         else
+//         {
+//             if (m_cmcc == nullptr)
+//             {
+//                 m_cmcc = new CMCC;
+//             }
+//             m_cmcc->charge(x);
+//         }
+//     }
+//     ~CMCCProxy()
+//     {
+//         if (m_cmcc)
+//         {
+//             delete m_cmcc;
+//             m_cmcc = nullptr;
+//         }
+//     }
+
+// private:
+//     CMCC *m_cmcc;
+// };
+
+// class Singleton
+// {
+// public:
+//     static Singleton *getInstance()
+//     {
+//         return m_instance; //= new Singleton;
+//     }
+//     void show()
+//     {
+//         cout << "show it" << endl;
+//     }
+
+// private:
+//     Singleton() = default;
+//     Singleton(const Singleton &) = default;
+//     static Singleton *m_instance;
+// };
+
+// Singleton *Singleton::m_instance = new Singleton;
+
+// class weapon
+// {
+// public:
+//     virtual void fire() = 0;
+// };
+
+// class AK : public weapon
+// {
+// public:
+//     void fire()
+//     {
+//         cout << "ak..." << endl;
+//     }
+// };
+
+// class Knife : public weapon
+// {
+// public:
+//     void fire()
+//     {
+//         cout << "knfie" << endl;
+//     }
+// };
+
+// class Person
+// {
+// public:
+//     Person(weapon *w = nullptr) : w(w) {}
+//     void doit()
+//     {
+//         w->fire();
+//     }
+//     void setweapon(weapon *obj)
+//     {
+//         w = obj;
+//     }
+
+// private:
+//     weapon *w = nullptr;
+// };
+
+// class Fruit
+// {
+// public:
+//     virtual void show() = 0;
+// };
+
+// class Apple : public Fruit
+// {
+// public:
+//     void show()
+//     {
+//         cout << "apple..." << endl;
+//     }
+// };
+
+// class SimpleFactory
+// {
+// public:
+//     static Fruit *CreateFruit(string abc)
+//     {
+//         if (abc == "apple")
+//         {
+//             f = new Apple;
+//         }
+
+//         return f;
+//     }
+
+// private:
+//     static Fruit *f;
+// };
+// Fruit *SimpleFactory::f = nullptr;
+
+// class FruitFactory
+// {
+// public:
+//     virtual Fruit *CreateFruit() = 0;
+// };
+
+// class AppleFactory : public FruitFactory
+// {
+// public:
+//     Fruit *CreateFruit()
+//     {
+//         return new Apple;
+//     }
+// };
+
+// class Subject
+// {
+//     public:
+
+//     private:
+// };
+
+// class Observer
+// {
+//     public:
+// };
+
+// class Widget
+// {
+// public:
+//     Widget();
+//     void publicMethod();
+
+// private:
+//     struct Impl;
+//     std::unique_ptr<Impl> pImpl;
+// };
+
+// struct Widget::Impl
+// {
+//     int privateData;
+//     void privateMethod()
+//     {
+//         cout << "privteMethod..." << endl;
+//     }
+// };
+
+// Widget::Widget : pImpl(std::make_unique<Impl>()) {}
+// // Widget::Widget() : pImpl(std::make_unique<Impl>()) {}
+
+// void Widget::publicMethod()
+// {
+//     cout << "publicMethod..." << endl;
+//     pImpl->privateMethod();
+// }
+
 
 
 int main(int argc, char const *argv[])
 {
+    // Widget w;
+    // w.publicMethod();
+    // FruitFactory *ff = new AppleFactory;
+    // Fruit *f = ff->CreateFruit();
+    // f->show();
+
+    // delete f;
+    // f = ff->CreateFruit();
+    // f->show();
+
+    // Fruit *f = SimpleFactory::CreateFruit("apple");
+    // f->show();
+
+    // weapon *w = new AK;
+    // weapon *ww = new Knife;
+    // Person p;
+    // p.setweapon(w);
+    // p.doit();
+    // p.setweapon(ww);
+    // p.doit();
+
+    // Singleton *s = Singleton::getInstance();
+    // s->show();
+    // std::cout << s << endl;
+    // Singleton *s1 = Singleton::getInstance();
+    // s1->show();
+    // std::cout << s1 << endl;
+
+    // Business *b = new CMCCProxy;
+    // b->charge(1);
+    // b->charge(10);
+    // b->charge(100);
+    // b->charge(1000);
+
+    // IAdaptee *ada = new oldclass;
+    // ITarget *it = new Adapter(ada);
+    // it->progress();
+
+    // Widget w;
+    // w.publicMethod();
+    // IState *state = new ConcreteStateA;
+    // Context *context = new Context(state);
+    // context->Request();
+    // context->Request();
+    // context->Request();
+
+    // Text *text = new PlaneText("hello");
+    // cout << text->Render();
+    // text = new DecoratorBold(text);
+    // cout << text->Render();
+
+    // gof2025 gf;
+    // gf.publicMehod();
+    // std::shared_ptr<Ilog> flog = std::make_shared(new filelog);
+    // auto abc = make_shared<int>(2000);
+    // auto flog = std::make_shared<filelog>();
+    // auto dlog = std::make_shared<dblog>();
+    // application *abc = new application();
+    // abc->addlog(flog);
+    // abc->addlog(dlog);
+    // abc->log();
+
+    // auto f1 = std::make_shared<int>(2000);
+    // std::cout << f1 << std::endl;
+    // std::cout << *f1 << std::endl;
+
+    // int *p = new int(2000);
+    // std::shared_ptr<int> sp = p;
+
+    // Ilog *f = new filelog();
+    // Ilog *db = new dblog();
+    // application *abc = new application();
+    // abc->addlog(f);
+    // abc->addlog(db);
+    // abc->log();
+
+    // APP app;
+    // app.log();
+    // Text *text = new PlaneText("hello");
+    // cout << text->Render();
+
+    // text = new DecortorTextBold(text);
+    // cout << text->Render();
+
+    // Widget w;
+    // w.publicMethod();
+    // Widget w;
+    // w.setValue(2000);
+    // w.publicMethod();
+    // Widget w1;
+    // w1.setPrivateData(42);
+    // w1.publicMethod();
+
+    // cout << "Private data: " << w1.getPrivateData() << endl;
+
+    // // 移动语义示例
+    // Widget w2 = std::move(w1);
+    // w2.publicMethod();
+
+    // Widget w;
+    // w.publicMethod();
+    // Widget w;
+    // w.publicMethod();
+    // IAdaptee *id = new oldclass;
+    // ITarget *it = new Adapter(id);
+    // it->process();
+
+    // Text *text = new PlaneText("hello");
+    // text->Render();
+
+    // text = new DecoratorBold(text);
+    // cout << text->Render();
+
+    // Widget w;
+    // w.publicMethod();
+
+    // IState *state = new ConcreteStateA;
+    // Context *context = new Context(state);
+    // context->Request();
+    // context->Request();
+    // context->Request();
+
+    // int *p = new int(1);
+    // std::cout << p << std::endl;
+    // std::cout << *p << std::endl;
+
+    // std::shared_ptr<int> sp(p);
+    // std::cout << sp << std::endl;
+    // std::cout << *sp << std::endl;
+
+    // std::cout << sp.use_count() << std::endl;
+    // shared_ptr<int> sp2 = sp;
+    // std::cout << sp.use_count() << std::endl;
+    // sp2.reset();
+    // std::cout << sp.use_count() << std::endl;
+    // std::cout << sp2.use_count() << std::endl;
+
+    // auto f = [](int x)
+    // {
+    //     cout << 2 * x;
+    // };
+
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // test(v, f);
+
+    // Widget w1;
+    // w1.publicMethod();
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+
+    // test(v, [](int x)
+    //      { cout << 2 * x << endl; });
+
+    // Widget w;
+    // w.publicMethod();
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // auto f = [](int x)
+    // {
+    //     cout << 2 * x;
+    // };
+
+    // test(v, f);
+
+    // Text *t = new PlaneText("hello");
+    // cout << t->Render();
+
+    // t = new DecoratorTextBold(t);
+    // cout << t->Render();
+
+    // auto flog = LoggerFactory::CreateFileLogger();
+    // auto dblog = LoggerFactory::CreateDBLogger();
+
+    // vector<shared_ptr<ILogger>> v = {flog, dblog};
+    // APP a1(v);
+    // a1.process();
+    // auto f1 = make_shared<FileLogger>();
+    // a1.addlog(f1);
+    // a1.process();
+    // return 0;
+
+    // int *p = new int(2000);
+    // cout << p << endl;
+    // cout << *p << endl;
+
+    // shared_ptr<int> ps = make_shared<int>(1000);
+    // std::cout << ps << std::endl;
+    // cout << *ps << endl;
+
+    // shared_ptr<int> ps2(p);
+    // cout << ps2 << endl;
+    // cout << *ps2 << endl;
+
+    // cout << ps2.get() << endl;
+    // cout << ps2.use_count() << endl;
+
+    // shared_ptr<int> ps3 = ps2;
+    // cout << ps3 << endl;
+    // cout << *ps3 << endl;
+
+    // cout << ps3.get() << endl;
+    // cout << ps3.use_count() << endl;
+
+    // // ps3.reset();
+    // // cout << ps3.get() << endl;
+    // // cout << ps3.use_count() << endl;
+
+    // cout << ps2.get() << endl;
+    // cout << ps2.use_count() << endl;
+
+    // cout << "after set ps3 3000" << endl;
+    // ps3 = make_shared<int>(3000);
+    // cout << ps2.get() << endl;
+    // cout << ps2.use_count() << endl;
+    // cout << *ps2 << endl;
+    // cout << ps3.get() << endl;
+    // cout << ps3.use_count() << endl;
+    // cout << *ps3 << endl;
+
+    // std::shared_ptr<int> sp1 = make_shared<int>(1);
+    // int *p2 = new int(2);
+    // std::shared_ptr<int> sp2(p2);
+    // std::shared_ptr<int> sp3(new int(3));
+
+    // vector<shared_ptr<int>> v;
+    // v.push_back(sp1);
+    // v.push_back(sp2);
+    // v.push_back(sp3);
+    // // v.push_back(p2);
+    // int *pp = sp3.get();
+    // cout << *pp << endl;
+
+    // for (auto x : v)
+    // {
+    //     cout << x << endl;
+    // }
+
+    // for (auto x : v)
+    // {
+    //     testsp(x);
+    // }
+
+    // return 0;
+
+    // ps2.reset();
+    // cout << ps2.get() << endl;
+    // cout << ps2.use_count() << endl;
+    // ILogger *f = new FileLogger;
+    // ILogger *db = new DBLogger;
+    // vector<shared_ptr<ILogger>> vlist = {f, db};
+
+    // auto filelog = make_shared<FileLogger>();
+    // auto dblog = make_shared<DBLogger>();
+
+    // vector<shared_ptr<ILogger>> vlist = {filelog, dblog};
+    // APP app(vlist);
+    // app.process();
+
+    // ILogger *f = new FileLogger;
+    // ILogger *db = new DBLogger;
+    // APP app;
+    // app.addlog(f);
+    // app.addlog(db);
+    // app.process();
+
+    // FileLogger ff;
+    // ff.logg("abc");
+
+    // APP app;
+    // app.process();
+    // for (int arg : {-3, -2, -1, 0, 1, 2, 3})
+    //     std::cout << isodd(arg) << ' ';
+    // CDocument *cd = new Mydoc;
+    // cd->OnFileOpen();
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // process(v, [](int x)
+    //         { cout << 2 * x; });
+
+    // vector<Task> tasks = {Task(1), Task(2), Task(3), Task(4), Task(5), Task(6)};
+    // vector<future<int>> futures;
+    // int x = 2000;
+
+    // for (auto &task : tasks)
+    // {
+    //     futures.push_back(std::async(std::launch::async, [&task, x]()
+    //                                  { return task(x); }));
+    // }
+
+    // for (auto &future : futures)
+    // {
+    //     cout << future.get() << endl;
+    // }
+
+    // caller c1;
+    // c1.setFunc(test);
+    // c1.letRun(6, "hello");
+    // Widget w;
+    // w.pubicMethod();
+    // Business *x = new CMCCProxy;
+    // x->charge(10);
+    // x->charge(100);
+    // x->charge(100);
+
+    // Text *t = new PlaneText("hello");
+    // cout << t->Render() << endl;
+
+    // t = new DecoratorTextBold(t);
+    // cout << t->Render() << endl;
+
+    // Widget w;
+    // w.publicMethod();
+    // SystemSafe *s = new etrust;
+    // s->encrypt();
+    // s->decrypt();
+    // Singleton *s = Singleton::GetInstance();
+    // s->show();
+    // std::cout << s << endl;
+
+    // Singleton *s1 = Singleton::GetInstance();
+    // s1->show();
+    // std::cout << s1 << endl;
+
+    // Singleton *s = Singleton::GetInstance();
+    // s->show();
+
+    // auto f1 = []()
+    // { return Singleton::GetInstance(); };
+
+    // auto f2 = []()
+    // { return Singleton::GetInstance(); };
+
+    // thread t1(f1);
+    // thread t2(f2);
+    // t1.join();
+    // t2.join();
+
+    // SystemSafe *ss = new eTrust;
+    // ss->encrypt();
+    // ss->decrypy();
+
+    // quanwang *q1 = new quanwang;
+    // q1->encrypt();
+    // q1->decrypt();
+    // Observer *obs1 = new Observer;
+    // Observer *obs2 = new Observer;
+    // Subject s1;
+    // s1.addobj(obs1);
+    // s1.addobj(obs2);
+    // s1.notify();
+
+    // Singleton *s1 = Singleton::GetInstance();
+    // s1->show();
+
+    // FruitFactory *ff = new AppleFactory;
+    // Fruit *f = ff->CreateFruit();
+    // f->show();
+
+    // ff = new BananaFactory();
+    // f = ff->CreateFruit();
+    // f->show();
+    // Fruit *ff = SimpleFactory::Createfruit("Apple");
+    // ff->show();
+
+    // ff = SimpleFactory::Createfruit("Banana");
+    // ff->show();
+    // Weapon *ak = new AK47;
+    // Weapon *kn = new Knife;
+    // Person p;
+    // p.setWeapon(ak);
+    // p.fire();
+    // p.setWeapon(kn);
+    // p.fire();
+
+    // Adaptee *ada = new olcclass;
+    // ITarget *it = new Adapter(ada);
+    // it->doprocess();
+
+    // IState *state = new ConcreteStateA;
+    // Context *context = new Context(state);
+    // context->Request();
+    // context->Request();
+
+    // Widget w;
+    // w.publicMethod();
+    // caller c1;
+    // c1.setFunc(test);
+    // c1.letRun(6, "hello");
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // auto f = [](int x)
+    // {
+    //     cout << 3 * x << endl;
+    // };
+    // processFunc(v, [](int x)
+    //             { cout << 2 * x << endl; });
+    // processFunc(v, f);
+
+    // auto bind_task = std::bind(std ::ref(printMessage), "hello", std::placeholders::_1);
+    // bind_task(1000);
+
+    // std::function<void(int)> f = bind_task;
+    // f(2000);
+    // vector<Task> tasks = {Task(1), Task(2), Task(3), Task(4), Task(5), Task(6)};
+    // vector<future<int>> futures;
+
+    // int x = 2000;
+    // for (auto &task : tasks)
+    // {
+    //     auto f = [&task, x]()
+    //     { return task(x); };
+    //     // futures.push_back(std::async(std::launch::async, [&task, x]()
+    //     //                              { return task(x); }));
+    //     // futures.push_back(std::async(std::launch::async, f));
+
+    //     auto bind_task = std::bind(std::ref(task), x);
+    //     futures.push_back(std::async(std::launch::async, f));
+    // }
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // for (int i = 0; i < v.size(); i++)
+    // {
+    //     int argument = i * 10;
+    //     futures.push_back(std::async(std::launch::async, [&tasks, argument, i]()
+    //                                  { return tasks[i](argument); }));
+    // }
+
+    // for (auto &future : futures)
+    // {
+    //     cout << future.get() << endl;
+    // }
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // auto f = [](int x)
+    // {
+    //     cout << 2 * x << endl;
+    // };
+    // processNum(v, f);
+
+    // processNum(v, [](int x)
+    //            { cout << 3 * x << endl; });
+
+    // Widget w;
+    // w.publicMethod();
+    // caller c1;
+    // c1.setFunc(test);
+    // c1.letRun(6, "hello");
+
+    // vector<Task> tasks = {Task(1), Task(2), Task(3), Task(4), Task(5), Task(6)};
+    // vector<future<int>> futures;
+
+    // for (auto &task : tasks)
+    // {
+    //     int x = 2000;
+    //     auto bind_task = std::bind(task, x);
+    //     // futures.push_back(std::async(std::launch::async, bind_task));
+
+    //     futures.push_back(std::async(std::launch::async, [&task, x]()
+    //                                  { return task(x); }));
+    // }
+
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // for (int i = 0; i < 6; i++)
+    // {
+    //     int argument = i * 100;
+    //     // futures.push_back(std::async(std::launch::async, [&tasks, v, i]()
+    //     //                              { return tasks[i](v[i]); }));
+    //     futures.push_back(std::async(std::launch::async, [&tasks, i, argument]()
+    //                                  { return tasks[i](argument); }));
+    // }
+
+    // for (auto &future : futures)
+    // {
+    //     cout << future.get() << endl;
+    // }
+
+    // vector<int> Num = {1, 2, 3, 4, 5, 6};
+    // auto f = [](int x)
+    // { cout << 2 * x << endl; };
+    // processNum(Num, [](int x)
+    //            { cout << 2 * x << endl; });
+    // processNum(Num, f);
+
+    // auto f = std::bind(std::ref(printMessage), "hello", std::placeholders::_1);
+    // std::function<void(int)> ff = f;
+    // ff(1000);
+    // f(1000);
+
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // processNum(v, [](int x)
+    //            { cout << 2 * x << endl; });
+
+    // auto bind_task = std::bind(std::ref(printMessage), "hello", std::placeholders::_1);
+    // // std::function<void(int)> f = bind_task;
+    // // f(1000);
+    // bind_task(1000);
+
+    // vector<Task> tasks = {Task(1), Task(2), Task(3), Task(4), Task(5), Task(6)};
+    // vector<future<int>> futures;
+    // for (auto &task : tasks)
+    // {
+    //     int x = 100;
+    //     auto bind_task = std::bind(std::ref(task), x);
+    //     futures.push_back(std::async(std::launch::async, bind_task));
+    // }
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     int argument = i * 10;
+    //     futures.push_back(std::async(std::launch::async, [&tasks,argument, i]()
+    //                                  { return tasks[i](argument); }));
+    // }
+
+    // for (auto &future : futures)
+    // {
+    //     cout << future.get() << endl;
+    // }
+    // vector<int> v = {1, 2, 3, 4, 5, 6};
+
+    // std::sort(v.begin(), v.end(), [](int a, int b)
+    //           { return a > b; });
+    // for (auto &x : v)
+    // {
+    //     cout << x << endl;
+    // }
+
+    // int count = 1;
+    // auto f = [&]()
+    // {
+    //     count++;
+    //     cout << count << endl;
+    // };
+    // f();
+    // f();
+    // Widget w;
+    // w.publicMethod();
     // Widget w;
     // w.publicMethod();
     // vector<int> v = {1, 2, 3, 4, 5, 6};
