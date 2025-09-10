@@ -1,0 +1,419 @@
+I'll show you a complete gRPC example in Python with detailed step-by-step explanation.
+Step 1: Create the Protocol Buffer Definition
+
+greeter.proto:
+protobuf
+
+syntax = "proto3";
+
+package greeter;
+
+// The greeting service definition
+service Greeter {
+  // Unary RPC - Single request, single response
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  
+  // Server streaming RPC - Single request, multiple responses
+  rpc SayHelloStream (HelloRequest) returns (stream HelloReply) {}
+  
+  // Client streaming RPC - Multiple requests, single response
+  rpc SayHelloToMany (stream HelloRequest) returns (HelloReply) {}
+  
+  // Bidirectional streaming RPC - Multiple requests, multiple responses
+  rpc Chat (stream HelloRequest) returns (stream HelloReply) {}
+}
+
+// The request message containing the user's name
+message HelloRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+  string timestamp = 2;
+  string server_id = 3;
+}
+
+Step 2: Generate Python Code from .proto File
+
+Generate the stubs:
+bash
+
+# Install required tools
+pip install grpcio grpcio-tools
+
+# Generate Python code from .proto file
+python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./grpc/greeter.proto
+
+This generates two files:
+
+    greeter_pb2.py - Contains message classes (HelloRequest, HelloReply)
+
+    greeter_pb2_grpc.py - Contains server (GreeterServicer) and client (GreeterStub) classes
+
+Step 3: Implement the Server
+
+server.py:
+python
+
+import grpc
+from concurrent import futures
+import time
+from datetime import datetime
+import greeter_pb2
+import greeter_pb2_grpc
+import socket
+
+class GreeterServicer(greeter_pb2_grpc.GreeterServicer):
+    def __init__(self):
+        self.server_id = socket.gethostname()
+        self.request_count = 0
+    
+    def SayHello(self, request, context):
+        """Unary RPC - Single request, single response"""
+        self.request_count += 1
+        print(f"[{self.request_count}] Unary request from: {request.name} (age: {request.age})")
+        
+        # Create response
+        response = greeter_pb2.HelloReply()
+        response.message = f"Hello, {request.name}! You are {request.age} years old."
+        response.timestamp = datetime.now().isoformat()
+        response.server_id = self.server_id
+        
+        return response
+    
+    def SayHelloStream(self, request, context):
+        """Server streaming RPC - Single request, multiple responses"""
+        self.request_count += 1
+        print(f"[{self.request_count}] Streaming request from: {request.name}")
+        
+        # Send multiple responses over time
+        for i in range(5):
+            if context.is_active():  # Check if client is still connected
+                response = greeter_pb2.HelloReply()
+                response.message = f"Hello {request.name}! This is message #{i+1}"
+                response.timestamp = datetime.now().isoformat()
+                response.server_id = self.server_id
+                
+                yield response
+                time.sleep(1)  # Simulate processing time
+            else:
+                break
+    
+    def SayHelloToMany(self, request_iterator, context):
+        """Client streaming RPC - Multiple requests, single response"""
+        self.request_count += 1
+        names = []
+        total_age = 0
+        count = 0
+        
+        # Process stream of incoming requests
+        for request in request_iterator:
+            names.append(request.name)
+            total_age += request.age
+            count += 1
+            print(f"Received: {request.name} (age: {request.age})")
+        
+        # Create final response
+        response = greeter_pb2.HelloReply()
+        response.message = f"Hello to {count} people! Average age: {total_age/count:.1f}"
+        response.timestamp = datetime.now().isoformat()
+        response.server_id = self.server_id
+        
+        print(f"Processed {count} requests from client streaming")
+        return response
+    
+    def Chat(self, request_iterator, context):
+        """Bidirectional streaming RPC - Multiple requests, multiple responses"""
+        self.request_count += 1
+        message_count = 0
+        
+        # Process incoming stream and send responses
+        for request in request_iterator:
+            message_count += 1
+            print(f"Chat received [{message_count}]: {request.name}")
+            
+            # Create response for each request
+            response = greeter_pb2.HelloReply()
+            response.message = f"Echo #{message_count}: {request.name}"
+            response.timestamp = datetime.now().isoformat()
+            response.server_id = self.server_id
+            
+            yield response
+
+def serve():
+    # Create a gRPC server with thread pool
+    server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+    
+    # Add our service implementation to the server
+    greeter_pb2_grpc.add_GreeterServicer_to_server(GreeterServicer(), server)
+    
+    # Listen on port 50051
+    server.add_insecure_port('[::]:50051')
+    
+    # Start the server
+    server.start()
+    print("gRPC Server started on port 50051")
+    print("Server ID:", socket.gethostname())
+    print("Press Ctrl+C to stop...")
+    
+    # Keep the server running
+    try:
+        while True:
+            time.sleep(86400)  # One day
+    except KeyboardInterrupt:
+        print("\nShutting down server...")
+        server.stop(0)
+
+if __name__ == '__main__':
+    serve()
+
+Step 4: Implement the Client
+
+client.py:
+python
+
+import grpc
+import greeter_pb2
+import greeter_pb2_grpc
+import time
+from datetime import datetime
+
+def run_unary_rpc(stub):
+    """Example of unary RPC call - Single request, single response"""
+    print("=== Unary RPC Example ===")
+    
+    # Create a request
+    request = greeter_pb2.HelloRequest(name="Alice", age=25)
+    
+    # Make the RPC call with timeout
+    try:
+        response = stub.SayHello(request, timeout=10)
+        print(f"✅ Response: {response.message}")
+        print(f"   Timestamp: {response.timestamp}")
+        print(f"   Server: {response.server_id}")
+    except grpc.RpcError as e:
+        print(f"❌ RPC failed: {e.code()} - {e.details()}")
+    print()
+
+def run_server_streaming(stub):
+    """Example of server streaming RPC - Single request, multiple responses"""
+    print("=== Server Streaming RPC Example ===")
+    
+    request = greeter_pb2.HelloRequest(name="Bob", age=30)
+    
+    try:
+        # Get the stream of responses
+        responses = stub.SayHelloStream(request, timeout=15)
+        
+        for i, response in enumerate(responses, 1):
+            print(f"📨 Stream response #{i}: {response.message}")
+            print(f"   Timestamp: {response.timestamp}")
+    except grpc.RpcError as e:
+        print(f"❌ Streaming failed: {e.code()} - {e.details()}")
+    print()
+
+def run_client_streaming(stub):
+    """Example of client streaming RPC - Multiple requests, single response"""
+    print("=== Client Streaming RPC Example ===")
+    
+    # Create a generator that yields multiple requests
+    def generate_requests():
+        people = [
+            ("Charlie", 28),
+            ("David", 35),
+            ("Eve", 22),
+            ("Frank", 40)
+        ]
+        
+        for name, age in people:
+            request = greeter_pb2.HelloRequest(name=name, age=age)
+            print(f"📤 Sending: {name} (age: {age})")
+            yield request
+            time.sleep(0.5)  # Simulate time between requests
+    
+    try:
+        # Make the streaming call
+        response = stub.SayHelloToMany(generate_requests(), timeout=20)
+        print(f"✅ Final response: {response.message}")
+        print(f"   Timestamp: {response.timestamp}")
+        print(f"   Server: {response.server_id}")
+    except grpc.RpcError as e:
+        print(f"❌ Client streaming failed: {e.code()} - {e.details()}")
+    print()
+
+def run_bidirectional_streaming(stub):
+    """Example of bidirectional streaming RPC - Multiple requests, multiple responses"""
+    print("=== Bidirectional Streaming RPC Example ===")
+    
+    # Create a generator for requests
+    def generate_requests():
+        messages = ["Hello", "How are you?", "What's your name?", "Goodbye"]
+        
+        for msg in messages:
+            request = greeter_pb2.HelloRequest(name=msg, age=0)
+            print(f"💬 Client sending: {msg}")
+            yield request
+            time.sleep(1)  # Wait before sending next message
+    
+    try:
+        # Make the bidirectional call
+        responses = stub.Chat(generate_requests(), timeout=20)
+        
+        for i, response in enumerate(responses, 1):
+            print(f"🔁 Server responded #{i}: {response.message}")
+            print(f"   Timestamp: {response.timestamp}")
+    except grpc.RpcError as e:
+        print(f"❌ Bidirectional streaming failed: {e.code()} - {e.details()}")
+    print()
+
+def main():
+    # Create a channel to connect to the server
+    print("Connecting to gRPC server...")
+    channel = grpc.insecure_channel('localhost:50051')
+    
+    # Create a stub (client)
+    stub = greeter_pb2_grpc.GreeterStub(channel)
+    
+    # Test connection with a simple call
+    try:
+        # Wait for channel to be ready (optional)
+        grpc.channel_ready_future(channel).result(timeout=5)
+        print("✅ Connected to server successfully!\n")
+    except grpc.FutureTimeoutError:
+        print("❌ Could not connect to server. Make sure server is running.")
+        return
+    
+    # Run all examples
+    run_unary_rpc(stub)
+    time.sleep(1)
+    
+    run_server_streaming(stub)
+    time.sleep(1)
+    
+    run_client_streaming(stub)
+    time.sleep(1)
+    
+    run_bidirectional_streaming(stub)
+    
+    print("All examples completed! 🎉")
+
+if __name__ == '__main__':
+    main()
+
+Step 5: Create Requirements File
+
+requirements.txt:
+txt
+
+grpcio==1.60.0
+grpcio-tools==1.60.0
+protobuf==4.25.1
+
+Step 6: Run the Example
+
+Terminal 1 - Start the server:
+bash
+
+python server.py
+
+Terminal 2 - Run the client:
+bash
+
+python client.py
+
+Step-by-Step Explanation
+1. Protocol Buffer Definition (.proto)
+
+    syntax = "proto3": Specifies Protocol Buffers version 3
+
+    service Greeter: Defines the RPC service with methods
+
+    message: Defines data structures (HelloRequest, HelloReply)
+
+    Streaming types: stream keyword defines different streaming patterns
+
+2. Code Generation
+
+    grpc_tools.protoc: Compiler that generates Python code
+
+    greeter_pb2.py: Contains serialization/deserialization code
+
+    greeter_pb2_grpc.py: Contains server and client stub classes
+
+3. Server Implementation
+
+    GreeterServicer: Implements all service methods
+
+    Unary RPC: Simple request → response
+
+    Server Streaming: Uses yield to send multiple responses
+
+    Client Streaming: Processes stream of requests → single response
+
+    Bidirectional: Processes stream ↔ sends stream of responses
+
+4. Client Implementation
+
+    Channel: Manages connection to server (grpc.insecure_channel)
+
+    Stub: Client-side proxy for service methods
+
+    Stream handling: Uses generators for client streaming
+
+    Error handling: Catches grpc.RpcError exceptions
+
+5. Key gRPC Concepts
+
+    HTTP/2: Underlying transport protocol (multiplexing, header compression)
+
+    Protocol Buffers: Efficient binary serialization format
+
+    Streaming: Four different patterns for various use cases
+
+    Type Safety: Strongly typed interface from .proto definition
+
+6. Error Handling & Timeouts
+
+    Timeouts: Set timeout for each RPC call
+
+    Status codes: Handle different gRPC status codes
+
+    Connection checking: Verify channel readiness
+
+Advanced Features You Can Add
+1. Authentication
+python
+
+# Server with SSL/TLS
+server_credentials = grpc.ssl_server_credentials(...)
+server.add_secure_port('[::]:50051', server_credentials)
+
+# Client with SSL/TLS
+channel_credentials = grpc.ssl_channel_credentials()
+channel = grpc.secure_channel('localhost:50051', channel_credentials)
+
+2. Metadata and Interceptors
+python
+
+# Add metadata to calls
+metadata = [('authorization', 'bearer token123')]
+response = stub.SayHello(request, metadata=metadata)
+
+# Server reading metadata
+def SayHello(self, request, context):
+    metadata = dict(context.invocation_metadata())
+    auth_token = metadata.get('authorization')
+
+3. Health Checking
+python
+
+from grpc_health.v1 import health_pb2, health_pb2_grpc
+
+# Add health service to server
+health_servicer = health.HealthServicer()
+health_pb2_grpc.add_HealthServicer_to_server(health_servicer, server)
+
+This example demonstrates all fundamental gRPC concepts in Python, providing a solid foundation for building production-grade microservices.

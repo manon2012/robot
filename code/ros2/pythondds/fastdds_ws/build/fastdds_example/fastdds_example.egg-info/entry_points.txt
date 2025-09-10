@@ -1,0 +1,4 @@
+[console_scripts]
+publisher = fastdds_example.publisher_node:main
+subscriber = fastdds_example.subscriber_node:main
+

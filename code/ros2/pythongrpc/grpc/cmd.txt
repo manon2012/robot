@@ -1,0 +1,8 @@
+
+
+
+(.venv) peiwu@CNBEDZPL210041:~/work/pythongrpc/grpc$ source .venv/bin/activate
+
+
+(.venv) peiwu@CNBEDZPL210041:~/work/pythongrpc/grpc$ python server.py
+(.venv) peiwu@CNBEDZPL210041:~/work/pythongrpc/grpc$ python client.py

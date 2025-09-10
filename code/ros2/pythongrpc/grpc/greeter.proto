@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package greeter;
+
+// The greeting service definition
+service Greeter {
+  // Unary RPC - Single request, single response
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  
+  // Server streaming RPC - Single request, multiple responses
+  rpc SayHelloStream (HelloRequest) returns (stream HelloReply) {}
+  
+  // Client streaming RPC - Multiple requests, single response
+  rpc SayHelloToMany (stream HelloRequest) returns (HelloReply) {}
+  
+  // Bidirectional streaming RPC - Multiple requests, multiple responses
+  rpc Chat (stream HelloRequest) returns (stream HelloReply) {}
+}
+
+// The request message containing the user's name
+message HelloRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+  string timestamp = 2;
+  string server_id = 3;
+}
