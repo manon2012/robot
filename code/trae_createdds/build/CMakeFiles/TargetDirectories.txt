@@ -1,0 +1,4 @@
+/workspace/code/trae_createdds/build/CMakeFiles/trae_publisher.dir
+/workspace/code/trae_createdds/build/CMakeFiles/trae_subscriber.dir
+/workspace/code/trae_createdds/build/CMakeFiles/edit_cache.dir
+/workspace/code/trae_createdds/build/CMakeFiles/rebuild_cache.dir
